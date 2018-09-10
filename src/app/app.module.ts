@@ -7,6 +7,9 @@ import { DizionarioComponent } from './dizionario/dizionario.component';
 import { SchedaVisitaChirurgiaToracicaComponent } from './scheda-visita-chirurgia-toracica/scheda-visita-chirurgia-toracica.component';
 import { SchedaDopplerArtiInfComponent } from './scheda-doppler-arti-inf/scheda-doppler-arti-inf.component';
 import { SchedaVisitaChirurgicaVascolare2Component } from './scheda-visita-chirurgica-vascolare2/scheda-visita-chirurgica-vascolare2.component';
+import { SchedaEcocolorDopplerArtiInferioriVenosoComponent } from './scheda-ecocolor-doppler-arti-inferiori-venoso/scheda-ecocolor-doppler-arti-inferiori-venoso.component';
+import { SchedaEcocolorDopplerArtiInferioriArteriosoComponent } from './scheda-ecocolor-doppler-arti-inferiori-arterioso/scheda-ecocolor-doppler-arti-inferiori-arterioso.component';
+import { SchedaEcocolorDopplerVasiColloComponent } from './scheda-ecocolor-doppler-vasi-collo/scheda-ecocolor-doppler-vasi-collo.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { SchedaVisitaChirurgicaVascolare2Component } from './scheda-visita-chiru
     DizionarioComponent,
     SchedaVisitaChirurgiaToracicaComponent,
     SchedaDopplerArtiInfComponent,
-    SchedaVisitaChirurgicaVascolare2Component
+    SchedaVisitaChirurgicaVascolare2Component,
+    SchedaEcocolorDopplerArtiInferioriVenosoComponent,
+    SchedaEcocolorDopplerArtiInferioriArteriosoComponent,
+    SchedaEcocolorDopplerVasiColloComponent
   ],
   imports: [
     BrowserModule

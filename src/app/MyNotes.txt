@@ -1,0 +1,15 @@
+NOTE 10/09/2018:
+7.- I0067922-EcocolorDoppler Vasi Collo
+- Con imagine.
+6.- I0067573-EcocolorDoppler Arti Inferiori Arterioso
+- con immagine
+5.- I0067622-EcoColorDoppler Arti Inferiori Venoso
+- con immagine DX - SX
+4.- I0067923-Visita Chirurgica Vascolare
+- con immagine, le gambe.
+3.- I0067569-Doppler Arti Inf
+- Tabella di dati.
+- risolvere formula
+2.- I0067567-VisitaChirurgicaToracica
+1.- I0067944-Visita Chirurgica Vascolare
+- pulsanti per somma y resta degli input type number

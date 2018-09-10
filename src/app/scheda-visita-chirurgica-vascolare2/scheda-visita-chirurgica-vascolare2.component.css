@@ -1,0 +1,31 @@
+input#vena1check:hover path#vena1{
+  fill: blue !important;
+  stroke-width: 50 !important;
+}
+input#vena1check:hover,input#vena2check:hover,input#vena3check:hover,input#vena4check:hover{
+  transition: ease 1s all;
+  box-shadow: 1px 1px 18px 2px black;
+}
+input#vena1check:checked,input#vena2check:checked,input#vena3check:checked,input#vena4check:checked{
+  transition: ease 1s all;
+  box-shadow: 1px 1px 18px 2px gold;
+}
+
+/* input#vena1check:hover svg#imgesame{
+  opacity: .1 !important;
+} */
+
+input#vena1check:checked + path#vena1{
+  fill: blue !important;
+  stroke: rgba(0,0,0,1);
+  stroke-width: 50;
+}
+/* input#vena1check:checked ~ *  */
+/* input#vena1check:checked ~ * textarea{
+  fill: gold !important;
+  background-color: purple !important;
+} */
+
+svg:hover + svg g path#vena1{
+  fill: gold !important;
+}
