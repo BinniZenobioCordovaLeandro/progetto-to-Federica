@@ -16,4 +16,7 @@ registerFunction("switchBoolean",switchBoolean);
 
 var switchBoolean =function(boolean){
   boolean = !boolean;
+  return boolean;
 };
+
+
