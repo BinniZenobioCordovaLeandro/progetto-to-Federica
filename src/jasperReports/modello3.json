@@ -1,0 +1,256 @@
+{
+	"id": "5a8d6e5f76072c2cf007c927",
+	"insertUserId": 4,
+	"insertUser": "Katie Wilson",
+	"insertTimeUTC": "2018-02-21T13:04:31.809+0000",
+	"insertTime": "2018-02-21T13:04:31.809+0000",
+	"updateUserId": 4,
+	"updateUser": "Katie Wilson",
+	"updateTimeUTC": "2018-02-15T10:02:06.062+0000",
+	"updateTime": "2018-02-15T10:02:06.062+0000",
+	"organizationId": 2,
+	"valid": null,
+	"cancellationTime": null,
+	"cancellationUser": null,
+	"cancellationUserId": null,
+	"cancellationTimeUTC": null,
+	"formInstanceId": "5a8d6e5f76072c2cf007c926",
+	"formDocument": {
+		"id": null,
+		"insertUserId": 4,
+		"insertUser": "Katie Wilson",
+		"insertTimeUTC": "2018-01-19T09:57:40.747+0000",
+		"insertTime": "2018-01-19T09:57:40.748+0000",
+		"updateUserId": 4,
+		"updateUser": "Katie Wilson",
+		"updateTimeUTC": "2018-02-15T10:02:06.062+0000",
+		"updateTime": "2018-02-15T10:02:06.062+0000",
+		"organizationId": 2,
+		"valid": null,
+		"cancellationTime": null,
+		"cancellationUser": null,
+		"cancellationUserId": null,
+		"cancellationTimeUTC": null,
+		"initData": {
+			"requestDate": "08/06/2018",
+			"generalData": {
+				"userId": "15",
+				"userFullName": "Infermiere Riab",
+				"userLanguage": "it_IT",
+				"currentDateTime": "08/06/2018 13:52:55",
+				"userHealthCareProvider": null,
+				"userProfile": "Infermiere_riab"
+			},
+			"encounter": {
+				"counter": "E2018000009",
+				"type": "ADMISSION",
+				"entryDate": "21/05/2018 13:47:00",
+				"priority": "Urgente",
+				"entryReason": "ALTRO",
+				"clinicalSpeciality": "",
+				"treatmentType": "MEDICO",
+				"clinicalQuestion": "",
+				"diagnosis": "",
+				"bed": "",
+				"agreement": "S.S.N.",
+				"priceList": "",
+				"priceListId": null,
+				"servicePoint": "SCLEROSI MULTIPLA",
+				"servicePointCode": "C1501",
+				"servicePointMedicalSpecializationCode": "",
+				"servicePointMedicalSpecializationDescription": "",
+				"organizationUnit": "Degenze",
+				"organizationUnitCode": "030939",
+				"organizationUnitAddress": "Via Mondino 2",
+				"organizationUnitZipCode": "27100",
+				"organizationUnitMunicipality": "PAVIA",
+				"organizationUnitCountry": "",
+				"patientSource": "ALTRO",
+				"facility": "",
+				"ward": "",
+				"category": "",
+				"note": "",
+				"servicePointCustomParameters": {},
+				"organizationUnitCustomParameters": {}
+			},
+			"patient": {
+				"patientId": "9",
+				"taxCode": "PRVPRT72D02B079F",
+				"patientFirstName": "LUIGIA",
+				"patientSecondName": "",
+				"patientThirdName": "",
+				"patientLastName": "NERI",
+				"sex": "F",
+				"birthdate": "02/02/1972",
+				"age": "46 anni",
+				"birthPlace": "",
+				"legalAddressMunicipality": "MILAZZO",
+				"legalAddressProvince": "MESSINA",
+				"legalAddressStreet": "VIA MILANO 2",
+				"legalAddressZipCode": "",
+				"legalAddressCountry": "",
+				"phone": "",
+				"mobilePhone": "",
+				"email": "",
+				"healthDistrict": "",
+				"generalPractitioner": "",
+				"contactName": "",
+				"contactPhone": "",
+				"contactEmail": "",
+				"maritalStatus": "",
+				"education": "",
+				"profession": "",
+				"problemSummary": "Diagnosi: \n   FUGA, Tenta la fuga, Tenta la fuga, Sospetto, mag 2018\n   25000, DIABETE MELLITO,TIPO II O NON SPECIFICATO,NON DEFINITO SE SCOMPENSATO,SENZA MENZIONE DI COMPLICAZIONI, DIABETE MELLITO,TIPO II O NON SPECIFICATO,NON DEFINITO SE SCOMPENSATO,SENZA MENZIONE DI COMPLICAZIONI, gen 2008\n   PROB_INF, Problema rilevato da infermiere, Tricotillomania, Cronico\n\nValutazione clinica:\n",
+				"allergiesSummary": [
+					{
+						"tipoAllergia": "Alimentari",
+						"allergenePrincipioAttivo": "Latte e prodotti a base di latte (incluso lattosio)",
+						"provenienza": "Paziente",
+						"gravita": null,
+						"nota": "Dichiarato dal paziente",
+						"dataChisura": "",
+						"notaChiusura": null
+					},
+					{
+						"tipoAllergia": "Ambientale",
+						"allergenePrincipioAttivo": "Pollini di piante erbacee",
+						"provenienza": "Paziente",
+						"gravita": null,
+						"nota": "In primavera",
+						"dataChisura": "",
+						"notaChiusura": null
+					}
+				],
+				"allergiesSummaryFormatted": "Latte e prodotti a base di latte (incluso lattosio) (Dichiarato dal paziente)\nPollini di piante erbacee (In primavera)\n",
+				"diagnosisSummary": [
+					{
+						"codiceDiagnosi": "FUGA",
+						"descrizioneDiagnosi": "Tenta la fuga",
+						"stadioDiagnosi": "",
+						"statoDiagnosi": "Sospetto",
+						"tipoDiagnosi": "Infermieristico",
+						"dataInsorgenza": "mag 2018"
+					},
+					{
+						"codiceDiagnosi": "25000",
+						"descrizioneDiagnosi": "DIABETE MELLITO,TIPO II O NON SPECIFICATO,NON DEFINITO SE SCOMPENSATO,SENZA MENZIONE DI COMPLICAZIONI",
+						"stadioDiagnosi": "",
+						"statoDiagnosi": "",
+						"tipoDiagnosi": "Infermieristico",
+						"dataInsorgenza": "gen 2008"
+					},
+					{
+						"codiceDiagnosi": "PROB_INF",
+						"descrizioneDiagnosi": "Problema rilevato da infermiere",
+						"stadioDiagnosi": "",
+						"statoDiagnosi": "Cronico",
+						"tipoDiagnosi": "Infermieristico",
+						"dataInsorgenza": ""
+					}
+				],
+				"diagnosisSummaryFormatted": "mag 2018 - Tenta la fuga \ngen 2008 - DIABETE MELLITO,TIPO II O NON SPECIFICATO,NON DEFINITO SE SCOMPENSATO,SENZA MENZIONE DI COMPLICAZIONI \n - Problema rilevato da infermiere \n",
+				"homeTherapiesSummary": [],
+				"homeTherapiesFormatted": "",
+				"anamnesisSummary": [
+					{
+						"dataInserimento":"08/06/2018 13:52:55",
+						"utenteInserimento":"user",
+						"tipologia":"test",
+						"descrizione":"Descrizione anamnesi 1",
+					},
+					{
+						"dataInserimento":"07/06/2018 13:52:55",
+						"utenteInserimento":"user",
+						"tipologia":"test",
+						"descrizione":"Descrizione anamnesi 2",
+					}
+				],
+				"anamnesisSummaryFormatted": "",
+				"language": null
+			},
+			"orders": [
+				{
+					"additionalPrescriptions": "",
+					"exams": [
+						{
+							"doctorName": "",
+							"examsDescription": "ECOGRAFIA TIROIDE",
+							"medicalSpecialization": "",
+							"price": null,
+							"exam": {
+								"description": "ECOGRAFIA TIROIDE",
+								"descriptionLang1": "ECOGRAFIA TIROIDE",
+								"code": "88.71.4_5"
+							}
+						}
+					]
+				},
+				{
+					"additionalPrescriptions": "",
+					"exams": [
+						{
+							"doctorName": "",
+							"examsDescription": "MEDICAZIONE DI FERITA",
+							"medicalSpecialization": "",
+							"price": null,
+							"exam": {
+								"description": "MEDICAZIONE DI FERITA",
+								"descriptionLang1": "MEDICAZIONE DI FERITA",
+								"code": "88.71.4_5"
+							}
+						}
+					]
+				}
+			],
+			"folder": {
+				"counter": "F2018000009",
+				"openDate": "21/05/2018 13:47:00",
+				"closeDate": "",
+				"notes": "",
+				"closureNotes": "",
+				"referringDoctor": ""
+			}
+		},
+		"formData": {
+			"stampaAllergie": true,
+			"stampaDiagnosi": true,
+			"stampaTerapie": false,
+			"stampaAnamnesi": false,
+			"referto": "<p>abc</p>",
+			"allergie": "aaa",
+			"diagnosiNote": "bbb",
+			"terapieInAtto": "ccc",
+			"anamnesi": "ddd"
+		}
+	},
+	"version": 1,
+	"status": "PUBLISHED",
+	"patient": {
+		"insertUserId": null,
+		"insertUser": null,
+		"insertTimeUTC": null,
+		"insertTime": null,
+		"updateUserId": null,
+		"updateUser": null,
+		"updateTimeUTC": null,
+		"updateTime": null,
+		"organizationId": null,
+		"valid": null,
+		"cancellationTime": null,
+		"cancellationUser": null,
+		"cancellationUserId": null,
+		"cancellationTimeUTC": null,
+		"firstName": "Giovannini",
+		"lastName": "Giovanni",
+		"sex": "F",
+		"birthDate": "1968-01-19T09:57:40.747+0000",
+		"uniqueIdentifier": null,
+		"phone": null,
+		"mobilePhone": null,
+		"email": null,
+		"language": null,
+		"deathDate": null,
+		"isDead": null,
+		"patientId": null
+	}
+}

@@ -1,0 +1,73 @@
+Variabili da traduzione (BUNDLES):
+
+{{'schedaTittle'|translate}}
+it-IT : Ambulatorio di Chirurgia Vascolare
+de-DE : Gefäßchirurgisches Ambulatorium
+
+{{'variabileAnamnesi'|translate}}
+it-IT : Anamnesi
+de-DE : Anamnese
+
+{{'variabileNicotina'|translate}}
+it-IT : Nicotina
+de-DE : Nikotin
+
+{{'variabileAdiposita'|translate}}
+it-IT : Adiposità
+de-DE : Adipositas
+
+{{'variabileCic'|translate}}
+it-IT : CIC
+de-DE : KHK
+
+{{'variabileDislipidemia'|translate}}
+it-IT : Dislipidemia
+de-DE : Dyslipidämie
+
+{{'variabileDiabete'|translate}}
+it-IT : Diabete
+de-DE : Diabetes
+
+{{'variabileIpertensione'|translate}}
+it-IT : Ipertensione
+de-DE : Hypertonie
+
+{{'variabileDisturbi'|translate}}
+it-IT : Disturbi
+de-DE : Beschwerdwn
+
+{{'variabileEsame'|translate}}
+it-IT : Esame Obiettivo
+de-DE : Untersuchungsbefund
+
+{{'variabilePresioni'|translate}}
+it-IT : Pressioni Doppler
+de-DE : Dopplerdrucke
+
+{{'variabilePolsi'|translate}}
+it-IT : Polsi periferici
+de-DE : Pulsstatus peripher
+
+{{'variabileRadialis'|translate}}
+it-IT : A.radialis
+de-DE : A.radialis
+
+{{'variabilePost'|translate}}
+it-IT : A.tib.post
+de-DE : A.tib.post
+
+{{'variabileAnt'|translate}}
+it-IT : A.tib.Ant
+de-DE : A.tib.Ant
+
+{{'variabileAbi'|translate}}
+it-IT : ABI
+de-DE : ABI
+
+{{'variabileDiagnosi'|translate}}
+it-IT : Diagnosi
+de-DE : Diagnose
+
+{{'variabileConsigli'|translate}}
+it-IT : Consigli
+de-DE : Empfehlungen

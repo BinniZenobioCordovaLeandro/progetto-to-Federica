@@ -1,0 +1,158 @@
+{
+   "id":"5b4cbd4e00f8253d4eb96510",
+   "insertUserId":5,
+   "insertUser":"Di Sistema Amministratore",
+   "insertTimeUTC":1531755854964,
+   "insertTime":1531755854964,
+   "updateUserId":5,
+   "updateUser":"Di Sistema Amministratore",
+   "updateTimeUTC":1536671351274,
+   "updateTime":1536671351274,
+   "organizationId":1,
+   "valid":true,
+   "cancellationTime":null,
+   "cancellationUser":null,
+   "cancellationUserId":null,
+   "cancellationTimeUTC":null,
+   "formInstanceId":"5b4cbd4e00f8253d4eb9650f",
+   "formDocument":{
+      "initData":{
+         "requestDate":"16/07/2018",
+         "generalData":{
+            "userId":"5",
+            "userFullName":"Di Sistema Amministratore",
+            "userLanguage":"it_IT",
+            "currentDateTime":"16/07/2018 17:44:14",
+            "userHealthCareProvider":null,
+            "userProfile":"Amministratore"
+         },
+         "encounter":{
+            "counter":"E2018000033",
+            "type":"ADMISSION",
+            "entryDate":"26/02/2018 15:26:00",
+            "priority":"Normale",
+            "entryReason":"RICOVERO",
+            "clinicalSpeciality":"",
+            "treatmentType":"",
+            "clinicalQuestion":"",
+            "diagnosis":"",
+            "bed":"",
+            "agreement":"Servizio Sanitario Nazionale",
+            "priceList":"",
+            "priceListId":null,
+            "servicePoint":"Medicina 1",
+            "servicePointCode":"MED1",
+            "organizationUnit":"MDA 4° PIANO",
+            "organizationUnitCode":"MDA4",
+            "organizationUnitAddress":" ",
+            "organizationUnitZipCode":null,
+            "organizationUnitMunicipality":"",
+            "organizationUnitCountry":"",
+            "patientSource":"ACCESSO DIRETTO",
+            "facility":"",
+            "ward":"",
+            "category":"",
+            "note":"",
+            "servicePointCustomParameters":{
+
+            },
+            "organizationUnitCustomParameters":{
+
+            }
+         },
+         "patient":{
+            "patientId":"50",
+            "taxCode":"PPRSLX2017",
+            "patientFirstName":"PROVA SOLATRIX",
+            "patientSecondName":"",
+            "patientThirdName":"",
+            "patientLastName":"PROVA",
+            "sex":"F",
+            "birthdate":"18/01/1931",
+            "age":"87 anni",
+            "birthPlace":"",
+            "legalAddressMunicipality":"",
+            "legalAddressProvince":"",
+            "legalAddressStreet":"via. ",
+            "legalAddressZipCode":"",
+            "legalAddressCountry":"",
+            "phone":"",
+            "mobilePhone":"",
+            "email":"",
+            "healthDistrict":"",
+            "generalPractitioner":"",
+            "contactName":"",
+            "contactPhone":"",
+            "contactEmail":"",
+            "maritalStatus":"",
+            "education":"",
+            "profession":"",
+            "problemSummary":"Diagnosi: \n\nValutazione clinica:\n",
+            "allergiesSummary":[
+
+            ],
+            "allergiesSummaryFormatted":"",
+            "diagnosisSummary":[
+
+            ],
+            "diagnosisSummaryFormatted":"",
+            "homeTherapiesSummary":[
+
+            ],
+            "homeTherapiesFormatted":"",
+            "anamnesisSummary":[
+
+            ],
+            "anamnesisSummaryFormatted":"",
+            "language":null
+         },
+         "orders":null,
+         "folder":{
+            "counter":"F2018000147",
+            "openDate":"02/02/2018 15:36:00",
+            "closeDate":"",
+            "notes":"",
+            "closureNotes":"",
+            "referringDoctor":""
+         }
+      },
+      "formData":{
+
+      },
+      "summaryFieldsData":{
+
+      },
+      "conceptFieldsData":null
+   },
+   "version":1,
+   "status":"DRAFT",
+   "patient":{
+      "insertUserId":null,
+      "insertUser":null,
+      "insertTimeUTC":null,
+      "insertTime":null,
+      "updateUserId":null,
+      "updateUser":null,
+      "updateTimeUTC":null,
+      "updateTime":null,
+      "organizationId":null,
+      "valid":true,
+      "cancellationTime":null,
+      "cancellationUser":null,
+      "cancellationUserId":null,
+      "cancellationTimeUTC":null,
+      "firstName":"PROVA SOLATRIX",
+      "lastName":"PROVA",
+      "sex":"F",
+      "birthDate":-1229299200000,
+      "uniqueIdentifier":null,
+      "phone":null,
+      "mobilePhone":null,
+      "email":null,
+      "language":null,
+      "deathDate":null,
+      "isDead":null,
+      "patientId":"50",
+      "accountNumber":"PPRSLX2017"
+   }
+}

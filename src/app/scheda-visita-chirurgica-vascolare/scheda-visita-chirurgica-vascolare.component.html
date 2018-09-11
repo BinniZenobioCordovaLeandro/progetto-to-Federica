@@ -1,163 +1,219 @@
-<div class="panel">
-  <div class="panel-header">
+<div class="panel panel-primary">
+  <div class="panel-heading">
     CHIRURGIA VASCOLARE
   </div>
   <div class="panel-body">
-    <div class="">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <section class="">
         <div class="row">
           <div class="col-xs-12">
-            <h3>variabileAnamnesi</h3>
+            <h3>{{'variabileAnamnesi'|translate}}</h3>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 colxl-6" style="background: none;">
             <div class="form-group">
-              <textarea class="form-control" name="name" rows="6" cols="80"></textarea>
+              <textarea ng-model="formData.schedaVisitaChirurgicaVascolare.anamnesi" class="form-control" name="name" rows="6" cols="80"></textarea>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-lg-4 colxl-6" style="background: nonde;">
+          <div class="col-xs-6 col-sm-6 col-lg-6 colxl-6" style="background: none;">
             <div class="row">
               <div class="col-xs-12 col-sm-6" style="background: none;">
-                <label for="">variabileNicotina</label>&nbsp;
-                <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-lg-6" ng-click="formData.schedaVisitaChirurgicaVascolare.nicotina=switchBoolean(formData.schedaVisitaChirurgicaVascolare.nicotina);" style="cursor:pointer; background: none;">
+                    <label for="" style="cursor:pointer; background: none;">{{'variabileNicotina'|translate}}</label>&nbsp;
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-lg-6">
+                    <label style="cursor:pointer; background: none;" class="ui-checkbox"><input ng-model="formData.schedaVisitaChirurgicaVascolare.nicotina" name="checkbox-nicotina" type="checkbox" value="true"><span>&nbsp;</span></label>
+                  </div>
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6" style="background: none;">
-                <label for="">variabileNicotina</label>&nbsp;
-                <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-lg-6" ng-click="formData.schedaVisitaChirurgicaVascolare.adiposita=switchBoolean(formData.schedaVisitaChirurgicaVascolare.adiposita);" style="cursor:pointer; background: none;">
+                    <label style="cursor:pointer; background: none;" for="" >{{'variabileAdiposita'|translate}}</label>&nbsp;
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-lg-6">
+                    <label style="cursor:pointer; background: none;" class="ui-checkbox"><input ng-model="formData.schedaVisitaChirurgicaVascolare.adiposita" name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-6" style="background: none;">
-                <label for="">variabileNicotina</label>&nbsp;
-                <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-lg-6" ng-click="formData.schedaVisitaChirurgicaVascolare.cic=switchBoolean(formData.schedaVisitaChirurgicaVascolare.cic);" style="cursor:pointer; background: none;">
+                    <label style="cursor:pointer; background: none;" for="" >{{'variabileCic'|translate}}</label>&nbsp;
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-lg-6">
+                    <label style="cursor:pointer; background: none;" class="ui-checkbox"><input ng-model="formData.schedaVisitaChirurgicaVascolare.cic" name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                  </div>
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6" style="background: none;">
-                <label for="">variabileNicotina</label>&nbsp;
-                <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-lg-6" ng-click="formData.schedaVisitaChirurgicaVascolare.dislipidemia=switchBoolean(formData.schedaVisitaChirurgicaVascolare.dislipidemia);" style="cursor:pointer; background: none;">
+                    <label style="cursor:pointer; background: none;" for="" >{{'variabileDislipidemia'|translate}}</label>&nbsp;
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-lg-6">
+                    <label style="cursor:pointer; background: none;" class="ui-checkbox"><input ng-model="formData.schedaVisitaChirurgicaVascolare.dislipidemia" name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12 col-sm-6" style="background: none;">
-                <label for="">variabileNicotina</label>&nbsp;
-                <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-lg-6" ng-click="formData.schedaVisitaChirurgicaVascolare.diabete=switchBoolean(formData.schedaVisitaChirurgicaVascolare.diabete);" style="cursor:pointer; background: none;">
+                    <label style="cursor:pointer; background: none;" for="" >{{'variabileDiabete'|translate}}</label>&nbsp;
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-lg-6">
+                    <label style="cursor:pointer; background: none;" class="ui-checkbox"><input ng-model="formData.schedaVisitaChirurgicaVascolare.diabete" name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                  </div>
+                </div>
               </div>
               <div class="col-xs-12 col-sm-6" style="background: none;">
-                <label for="">variabileNicotina</label>&nbsp;
-                <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-lg-6" ng-click="formData.schedaVisitaChirurgicaVascolare.ipertensione=switchBoolean(formData.schedaVisitaChirurgicaVascolare.ipertensione);" style="cursor:pointer; background: none;">
+                    <label style="cursor:pointer; background: none;" for="" >{{'variabileIpertensione'|translate}}</label>&nbsp;
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-lg-6">
+                    <label style="cursor:pointer; background: none;" class="ui-checkbox"><input ng-model="formData.schedaVisitaChirurgicaVascolare.ipertensione" name="checkbox1" type="checkbox" value="option1"><span>&nbsp;</span></label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <h3>variabileAnamnesi</h3>
+            <h3>{{'variabileDisturbi'|translate}}</h3>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 colxl-6" style="background: none;">
             <div class="form-group">
-              <textarea class="form-control" name="name" rows="6" cols="80"></textarea>
+              <textarea ng-model="formData.schedaVisitaChirurgicaVascolare.disturbi" class="form-control" name="name" rows="6" cols="80"></textarea>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <h3>variabileAnamnesi</h3>
+            <h3>{{'variabileEsame'|translate}}</h3>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 colxl-6" style="background: none;">
             <div class="form-group">
-              <textarea class="form-control" name="name" rows="6" cols="80"></textarea>
+              <textarea ng-model="formData.schedaVisitaChirurgicaVascolare.esame" class="form-control" name="name" rows="6" cols="80"></textarea>
             </div>
           </div>
-          <div class="col-xs-12 col-sm-6 col-lg-5 colxl-6" style="background: none;">
+          <div class="col-xs-12 col-sm-6 col-lg-6 col-xl-6" style="background: none;">
             <div class="row text-center">
-              <h4>variabileDoppler && variabilePeriferici</h4>
+              <h4>{{'variabilePresioni'|translate}} && {{'variabilePolsi'|translate}}</h4>
             </div>
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <label for="">Sx</label>&nbsp;
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4 col-xl-3">
                   </div>
-                </div>
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <label for="">Dx</label>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <label>variabileRadialis</label>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
-                  </div>
-                </div>
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <h3>SX</h3>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <h3>DX</h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6">
-                <label>variabileRadialis</label>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4 col-xl-3">
+                    <label>{{'variabileRadialis'|translate}}</label>
                   </div>
-                </div>
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <label>variabileRadialis</label>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
-                  </div>
-                </div>
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                  <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 col-xl-9">
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.radialis.sx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.radialis.sx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.radialis.sx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.radialis.sx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.radialis.sx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.radialis.dx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.radialis.dx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.radialis.dx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.radialis.dx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.radialis.dx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6">
-                <label>variabileRadialis</label>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4 col-xl-3">
+                    <label>{{'variabilePost'|translate}}</label>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 col-xl-9">
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.post.sx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.post.sx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.post.sx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.post.sx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.post.sx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.post.dx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.post.dx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.post.dx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.post.dx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.post.dx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-xs-6 text-center">
-                  <div class="form-group">
-                    <button type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
-                    <input type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
-                    <button type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4 col-xl-3">
+                    <label>{{'variabileAnt'|translate}}</label>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 col-xl-9">
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.ant.sx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.ant.sx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.ant.sx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.ant.sx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.ant.sx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.ant.dx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.ant.dx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.ant.dx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.ant.dx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.ant.dx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4 col-xl-3">
+                    <label>{{'variabileAbi'|translate}}</label>
+                  </div>
+                  <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 col-xl-9">
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.abi.sx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.abi.sx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.abi.sx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.abi.sx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.abi.sx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 text-center">
+                      <div class="form-group">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.abi.dx=aumentareNumero(formData.schedaVisitaChirurgicaVascolare.abi.dx,1);" type="button" name="button" class="btn btn-sm btn-success"><b>+</b></button>
+                        <input ng-model="formData.schedaVisitaChirurgicaVascolare.abi.dx" type="form-control input-sm" style="width: 30px; margin: 1%; border: 2px none solid; color: none; text-align:right;">
+                        <button ng-click="formData.schedaVisitaChirurgicaVascolare.abi.dx=diminuireNumero(formData.schedaVisitaChirurgicaVascolare.abi.dx,1);" type="button" name="button" class="btn btn-sm btn-danger"><b>-</b></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -166,21 +222,21 @@
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <h3>variabileAnamnesi</h3>
+            <h3>{{'variabileDiagnosi'|translate}}</h3>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 colxl-6" style="background: none;">
             <div class="form-group">
-              <textarea class="form-control" name="name" rows="6" cols="80"></textarea>
+              <textarea ng-model="formData.schedaVisitaChirurgicaVascolare.diagnosi" class="form-control" name="name" rows="6" cols="80"></textarea>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <h3>variabileAnamnesi</h3>
+            <h3>{{'variabileConsigli'|translate}}</h3>
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-6 colxl-6" style="background: none;">
             <div class="form-group">
-              <textarea class="form-control" name="name" rows="6" cols="80"></textarea>
+              <textarea ng-model="formData.schedaVisitaChirurgicaVascolare.consigli" class="form-control" name="name" rows="6" cols="80"></textarea>
             </div>
           </div>
         </div>

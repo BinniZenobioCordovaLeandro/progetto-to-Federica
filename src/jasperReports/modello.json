@@ -1,0 +1,162 @@
+{
+   "id":"5b9679db00f8250fddb10f7a",
+   "insertUserId":5,
+   "insertUser":"Di Sistema Amministratore",
+   "insertTimeUTC":1536588251346,
+   "insertTime":1536588251346,
+   "updateUserId":5,
+   "updateUser":"Di Sistema Amministratore",
+   "updateTimeUTC":1536669368723,
+   "updateTime":1536669368723,
+   "organizationId":1,
+   "valid":true,
+   "cancellationTime":null,
+   "cancellationUser":null,
+   "cancellationUserId":null,
+   "cancellationTimeUTC":null,
+   "formInstanceId":"5b9679db00f8250fddb10f79",
+   "formDocument":{
+      "initData":{
+         "requestDate":"10/09/2018",
+         "generalData":{
+            "userId":"5",
+            "userFullName":"Di Sistema Amministratore",
+            "userLanguage":"it_IT",
+            "currentDateTime":"10/09/2018 16:04:11",
+            "userHealthCareProvider":null,
+            "userProfile":"Amministratore"
+         },
+         "encounter":{
+            "counter":"E2017000032",
+            "type":"ADMISSION",
+            "entryDate":"19/10/2017 13:51:00",
+            "priority":"Semi Urgent",
+            "entryReason":"PRIMO RICOVERO",
+            "clinicalSpeciality":"",
+            "treatmentType":"",
+            "clinicalQuestion":"",
+            "diagnosis":"",
+            "bed":"",
+            "agreement":"Servizio Sanitario Nazionale",
+            "priceList":"",
+            "priceListId":null,
+            "servicePoint":"Medicina 1",
+            "servicePointCode":"MED1",
+            "organizationUnit":"MDA 4° PIANO",
+            "organizationUnitCode":"MDA4",
+            "organizationUnitAddress":" ",
+            "organizationUnitZipCode":null,
+            "organizationUnitMunicipality":"",
+            "organizationUnitCountry":"",
+            "patientSource":"ACCESSO DIRETTO",
+            "facility":"",
+            "ward":"",
+            "category":"",
+            "note":"",
+            "servicePointCustomParameters":{
+
+            },
+            "organizationUnitCustomParameters":{
+
+            }
+         },
+         "patient":{
+            "patientId":"29",
+            "taxCode":"FRSFRC80xx",
+            "patientFirstName":"FEDERICA",
+            "patientSecondName":"",
+            "patientThirdName":"",
+            "patientLastName":"PROVA",
+            "sex":"F",
+            "birthdate":"03/08/1980",
+            "age":"38 anni",
+            "birthPlace":"",
+            "legalAddressMunicipality":"Venice",
+            "legalAddressProvince":"",
+            "legalAddressStreet":"VIA ST. LAURENT 6",
+            "legalAddressZipCode":"36020",
+            "legalAddressCountry":"Italy",
+            "phone":"",
+            "mobilePhone":"",
+            "email":"",
+            "healthDistrict":"",
+            "generalPractitioner":"",
+            "contactName":"",
+            "contactPhone":"",
+            "contactEmail":"",
+            "maritalStatus":"",
+            "education":"",
+            "profession":"",
+            "problemSummary":"Diagnosi: \n\nValutazione clinica:\n",
+            "allergiesSummary":[
+               {
+                  "tipoAllergia":"Alimentari",
+                  "allergenePrincipioAttivo":"Lattosio",
+                  "provenienza":"Paziente",
+                  "gravita":"",
+                  "nota":"introlleranza al lattosio",
+                  "dataChisura":"",
+                  "notaChiusura":null
+               }
+            ],
+            "allergiesSummaryFormatted":"Alimentari: Lattosio  (introlleranza al lattosio) \n",
+            "diagnosisSummary":[
+
+            ],
+            "diagnosisSummaryFormatted":"",
+            "homeTherapiesSummary":[
+
+            ],
+            "homeTherapiesFormatted":"",
+            "anamnesisSummary":[
+
+            ],
+            "anamnesisSummaryFormatted":"",
+            "language":null
+         },
+         "orders":null,
+         "folder":{
+            "counter":"F2017000031",
+            "openDate":"19/10/2017 13:51:00",
+            "closeDate":"",
+            "notes":"",
+            "closureNotes":"",
+            "referringDoctor":""
+         }
+      },
+      "formData":null,
+      "summaryFieldsData":null,
+      "conceptFieldsData":null
+   },
+   "version":1,
+   "status":"NEW",
+   "patient":{
+      "insertUserId":null,
+      "insertUser":null,
+      "insertTimeUTC":null,
+      "insertTime":null,
+      "updateUserId":null,
+      "updateUser":null,
+      "updateTimeUTC":null,
+      "updateTime":null,
+      "organizationId":null,
+      "valid":true,
+      "cancellationTime":null,
+      "cancellationUser":null,
+      "cancellationUserId":null,
+      "cancellationTimeUTC":null,
+      "firstName":"FEDERICA",
+      "lastName":"PROVA",
+      "sex":"F",
+      "birthDate":334108800000,
+      "uniqueIdentifier":null,
+      "phone":null,
+      "mobilePhone":null,
+      "email":null,
+      "language":null,
+      "deathDate":null,
+      "isDead":null,
+      "patientId":"29",
+      "accountNumber":"FRSFRC80xx"
+   }
+}

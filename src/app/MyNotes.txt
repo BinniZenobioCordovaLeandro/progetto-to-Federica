@@ -13,3 +13,16 @@ NOTE 10/09/2018:
 2.- I0067567-VisitaChirurgicaToracica
 1.- I0067944-Visita Chirurgica Vascolare
 - pulsanti per somma y resta degli input type number
+
+
+TODO: inizio [10/09/2018]
+[*] Ordinare le schede per livello di complessità.
+[*] Fare i modelli HTML di ognuna Scheda (a locale e seconda la richiesta) per prendere una idea generale di ognuna.
+[ ] Perfezionare ognuna scheda
+    (*) 1.- I0067944 - Visita Chirurgica Vascolare.
+    ( ) 2.- I0067567-VisitaChirurgicaToracica
+    ( ) 3.- I0067569-Doppler Arti Inf
+    ( ) 4.- I0067923-Visita Chirurgica Vascolare
+    ( ) 5.- I0067622-EcoColorDoppler Arti Inferiori Venoso
+    ( ) 6.- I0067573-EcocolorDoppler Arti Inferiori Arterioso
+    ( ) 7.- I0067922-EcocolorDoppler Vasi Collo

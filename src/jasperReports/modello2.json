@@ -1,0 +1,229 @@
+{
+   "id":"5a8d6e5f76072c2cf007c927",
+   "insertUserId":4,
+   "insertUser":"Katie Wilson",
+   "insertTimeUTC":"2018-02-21T13:04:31.809+0000",
+   "insertTime":"2018-02-21T13:04:31.809+0000",
+   "updateUserId":4,
+   "updateUser":"Katie Wilson",
+   "updateTimeUTC":"2018-02-15T10:02:06.062+0000",
+   "updateTime":"2018-02-15T10:02:06.062+0000",
+   "organizationId":2,
+   "valid":null,
+   "cancellationTime":null,
+   "cancellationUser":null,
+   "cancellationUserId":null,
+   "cancellationTimeUTC":null,
+   "formInstanceId":"5a8d6e5f76072c2cf007c926",
+   "formDocument":{
+      "id":null,
+      "insertUserId":4,
+      "insertUser":"Katie Wilson",
+      "insertTimeUTC":"2018-01-19T09:57:40.747+0000",
+      "insertTime":"2018-01-19T09:57:40.748+0000",
+      "updateUserId":4,
+      "updateUser":"Katie Wilson",
+      "updateTimeUTC":"2018-02-15T10:02:06.062+0000",
+      "updateTime":"2018-02-15T10:02:06.062+0000",
+      "organizationId":2,
+      "valid":null,
+      "cancellationTime":null,
+      "cancellationUser":null,
+      "cancellationUserId":null,
+      "cancellationTimeUTC":null,
+      "initData":{
+         "requestDate":"16/07/2018",
+         "generalData":{
+            "userId":"2",
+            "userFullName":"Gianpaolo Zanella",
+            "userLanguage":"it_IT",
+            "currentDateTime":"16/07/2018 17:16:25",
+            "userHealthCareProvider":null,
+            "userProfile":"Specific Profile",
+            "username":"gianpaolo.zanella"
+         },
+         "encounter":{
+            "counter":"E_CAR_A2018000002",
+            "type":"ADMISSION",
+            "entryDate":"13/07/2018 10:10:00",
+            "priority":"Non Urgente",
+            "entryReason":"INTERVENTO CHIRURGICO",
+            "clinicalSpeciality":"",
+            "treatmentType":"",
+            "clinicalQuestion":"",
+            "diagnosis":"",
+            "bed":"",
+            "agreement":"DEFAULT",
+            "priceList":"",
+            "priceListId":null,
+            "servicePoint":"Ward Cardiology",
+            "servicePointCode":"CAR",
+            "servicePointMedicalSpecializationCode":"08",
+            "servicePointMedicalSpecializationDescription":"CARDIOLOGIA",
+            "organizationUnit":"Central Wards",
+            "organizationUnitCode":"CW",
+            "organizationUnitAddress":" ",
+            "organizationUnitZipCode":null,
+            "organizationUnitMunicipality":"",
+            "organizationUnitCountry":"",
+            "patientSource":"RICORSO DIRETTO",
+            "facility":"",
+            "ward":"",
+            "category":"",
+            "note":"",
+            "servicePointCustomParameters":{
+
+            },
+            "organizationUnitCustomParameters":{
+
+            }
+         },
+         "patient":{
+            "patientId":"3",
+            "taxCode":"00002",
+            "patientFirstName":"PROVA",
+            "patientSecondName":"",
+            "patientThirdName":"",
+            "patientLastName":"PROVA",
+            "sex":"M",
+            "birthdate":"11/07/2018",
+            "age":"5 giorni",
+            "birthPlace":"",
+            "legalAddressMunicipality":null,
+            "legalAddressProvince":null,
+            "legalAddressStreet":null,
+            "legalAddressZipCode":null,
+            "legalAddressCountry":null,
+            "phone":"",
+            "mobilePhone":"",
+            "email":"",
+            "healthDistrict":"",
+            "generalPractitioner":"",
+            "contactName":"",
+            "contactPhone":"",
+            "contactEmail":"",
+            "maritalStatus":"",
+            "education":"",
+            "profession":"",
+            "problemSummary":"Diagnosi: \n\nValutazione clinica:\n",
+            "allergiesSummary":[
+
+            ],
+            "allergiesSummaryFormatted":"",
+            "diagnosisSummary":[
+
+            ],
+            "diagnosisSummaryFormatted":"",
+            "homeTherapiesSummary":[
+
+            ],
+            "homeTherapiesFormatted":"",
+            "anamnesisSummary":[
+
+            ],
+            "anamnesisSummaryFormatted":"",
+            "language":null
+         },
+         "orders":null,
+         "folder":{
+            "counter":"F2018000002",
+            "openDate":"13/07/2018 10:10:00",
+            "closeDate":"",
+            "notes":"",
+            "closureNotes":"",
+            "referringDoctor":""
+         }
+      },
+      "formData":{
+         "sesioneInfermeristica":{
+            "dataOra":"2018-07-13T08:56:24.846Z",
+            "dataRicovero":"2018-07-09T22:00:00.000Z",
+            "ultimoPunteggio":"1234",
+            "openDataCompilazione":"2018-07-24T22:00:00.000Z",
+            "giorno":"Feriale",
+            "totalPazienti":"12354",
+            "cadutePr":"Si",
+            "Quando":"ieri",
+            "StatoConscienza":"Comatoso",
+            "MovilitaCaduta":{
+               "deambula":"Deambula",
+               "Autonomamente":true,
+               "CamminaAusili":true,
+               "CamminaAusiliQuali":"Risposta Camina Ausili"
+            },
+            "luogoEvento":"true",
+            "LuogoEventaRispotaAltro":"Risposta Altro",
+            "ChiPresente":"Personale sanitario",
+            "ModalitaCaduta":"Caduto da seduto",
+            "MotivoCaduta":"1",
+            "FattoriCaduta":"1",
+            "AusilliPrevenzioneCaduta":{
+               "Nessuno":true,
+               "CinturaPe":true,
+               "Altro":true,
+               "LettoAlMinima":true,
+               "ContenzioneAd":true,
+               "Spondine":true,
+               "Quali":"Risposta Altro"
+            },
+            "TipoCalzatura":"4"
+         },
+         "sesioneCompilazioneMedica":{
+            "StatoCosienzaValutazione":"2",
+            "Laccaduto":"",
+            "Lesione":"No",
+            "LesioneSi":"Risposta Lessione si",
+            "TerapiaAtto":{
+               "SedativiSNC":true,
+               "Ipontensive":true,
+               "Altro":true,
+               "Lassativi":true,
+               "Diuretici":true,
+               "AltroRisposta":"Risposta Altro"
+            },
+            "RecentiPrescrizioni":"Sì",
+            "AccertamentiDiagRichieste":{
+               "tac":true,
+               "rx":true,
+               "altro":true,
+               "altroRispota":"Risposta altro"
+            },
+            "Trasferimento":{
+               "DiagnosiOption":true,
+               "Diagnosi":"Rsiposta Diagnosi"
+            },
+            "Prognosi":"3"
+         }
+      }
+   },
+   "version":1,
+   "status":"PUBLISHED",
+   "patient":{
+      "insertUserId":"fewf",
+      "insertUser":"vegvf",
+      "insertTimeUTC":null,
+      "insertTime":null,
+      "updateUserId":null,
+      "updateUser":null,
+      "updateTimeUTC":null,
+      "updateTime":null,
+      "organizationId":null,
+      "valid":null,
+      "cancellationTime":null,
+      "cancellationUser":null,
+      "cancellationUserId":null,
+      "cancellationTimeUTC":null,
+      "firstName":"Cristella",
+      "lastName":"Vito",
+      "sex":"F",
+      "birthDate":"1968-01-19T09:57:40.747+0000",
+      "uniqueIdentifier":null,
+      "phone":null,
+      "mobilePhone":null,
+      "email":null,
+      "language":null,
+      "deathDate":null,
+      "isDead":null,
+      "patientId":null
+   }
+}
