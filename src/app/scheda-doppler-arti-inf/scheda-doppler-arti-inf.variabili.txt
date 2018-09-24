@@ -1,0 +1,47 @@
+{{'variabileTittle'|translate}}
+it_IT : Doppler Arti_INF
+de_DE : Doppler Arti_INF
+
+{{'variabileQuesito'|translate}}
+it_IT : Quesito Clinico
+de_DE : Klinische Frage
+
+{{'variabilePressione'|translate}}
+it_IT : Pressioni doppler
+de_DE : dopplerdrucke
+
+{{'variabilePulso'|translate}}
+it_IT : polso
+de_DE : puls
+
+{{'variabileRad'|translate}}
+it_IT : a.radialis
+de_DE : a.radialis
+
+{{'variabileAnt'|translate}}
+it_IT : a.tib.ant
+de_DE : a.tib.ant
+
+{{'variabilePost'|translate}}
+it_IT : a.tib.post
+de_DE : a.tib.post
+
+{{'variabileAbi'|translate}}
+it_IT : ABI
+de_DE : ABI
+
+{{'variabileCritico'|translate}}
+it_IT : Critico
+de_DE : Kritisch
+
+{{'variabilePatologico'|translate}}
+it_IT : Patologico
+de_DE : Phatologisch
+
+{{'variabileLimite'|translate}}
+it_IT : A limite
+de_DE : Grenzwerting
+
+{{'variabileNormale'|translate}}
+it_IT : Normale
+de_DE : normal

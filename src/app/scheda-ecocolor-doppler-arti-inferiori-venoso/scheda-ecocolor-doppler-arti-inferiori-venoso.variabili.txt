@@ -1,0 +1,35 @@
+{{'variabileTittle'|translate}}
+it_IT : Doppler Arti Inferiore
+de_DE : _Doppler Arti Inferiore
+
+{{'variabileQuesito'|translate}}
+it_IT : Quesito Clinico
+de_DE : Klinische Frage
+
+{{'variabileSistema'|translate}}
+it_IT : Sistema Venoso Profondo
+de_DE : Tiefes beinvenensystem
+
+{{'variabileCrosseVsm'|translate}}
+it_IT : Crosse vsm
+de_DE : Crosse vsm
+
+{{'variabileCrosseVsp'|translate}}
+it_IT : Crosse vsp
+de_DE : Crosse vsp
+
+{{'variabileVsm'|translate}}
+it_IT : vsm
+de_DE : vsm
+
+{{'variabileVsp'|translate}}
+it_IT : vsp
+de_DE : vsp
+
+{{'variabileVene'|translate}}
+it_IT : Vene perforantes
+de_DE : Perforansvenen
+
+{{'variabileAltro'|translate}}
+it_IT : Altro
+de_DE : Sonstiges

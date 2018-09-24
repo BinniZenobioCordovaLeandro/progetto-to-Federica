@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h4>
+      <label>{{'referto'|translate}}</label>
+    </h4>
+    <div text-angular ng-model="formData.referto" ta-toolbar="[['h1','h2','h3','h4','h5','h6','p','pre','quote'],['bold','italics','underline','strikeThrough','ul','ol','undo','redo','clear'],['justifyLeft','justifyCenter','justifyRight','justifyFull','indent','outdent'],['wordcount','charcount']]"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6">
+    <label>{{'attachment_1' | translate}}</label>
+    <div text-angular ng-model="formData.allegato1" ta-toolbar="[['uploadImage']]"></div>
+  </div>
+  <div class="col-xs-6">
+    <label>{{'attachment_2' | translate}}</label>
+    <div text-angular ng-model="formData.allegato2" ta-toolbar="[['uploadImage']]"></div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-4">
+    <label>{{'allergy' | translate}}</label>
+    <textarea style="resize: none; width: 100%" rows="5" ng-model="formData.allergie" readonly></textarea>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-model="formData.stampaAllergie">{{'dont_print' | translate}}
+      </label>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label>{{'diagnosis' | translate}}</label>
+    <textarea style="resize: none; width: 100%" rows="5" ng-model="formData.diagnosiNote" readonly></textarea>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-model="formData.stampaDiagnosi">{{'dont_print' | translate}}
+      </label>
+      <p></p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label>{{'therapy' | translate}}</label>
+    <textarea style="resize: none; width: 100%" rows="5" ng-model="formData.terapieInAtto" readonly></textarea>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-model="formData.stampaTerapie">{{'dont_print' | translate}}
+      </label>
+      <p></p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <label>{{'anamnesis' | translate}}</label>
+    <textarea style="resize: none; width: 100%" rows="5" ng-model="formData.anamnesi"></textarea>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" ng-model="formData.stampaAnamnesi">{{'dont_print' | translate}}
+      </label>
+      <p></p>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <label>{{'prescription' | translate}}</label>
+    <textarea style="resize: none; width: 100%" rows="5" ng-model="formData.prescrizioni"  ng-readonly="true"></textarea>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+{{'variabileTittle'|translate}}
+it_IT : Ambulatorio di chirurgia vascolare
+de_DE : Gefäßchirurgisches Ambulatorium
+
+{{'variabileAnamnesi'|translate}}
+it_IT : Anamnesi
+de_DE : Anamnese
+
+{{'variabileFamigliarita'|translate}}
+it_IT : Famigliarità
+de_DE : Famigliäre Belastring
+
+{{'variabileAdiposita'|translate}}
+it_IT : Adiposità
+de_DE : Adipositas
+
+{{'variabileGravidanze'|translate}}
+it_IT : Gravidanze
+de_DE : Schwangerschaften
+
+{{'variabileAllergie'|translate}}
+it_IT : Allergie
+de_DE : Allergia
+
+{{'variabileDisturbi'|translate}}
+it_IT : Disturbi
+de_DE : Beschwerdwn
+
+{{'variabileEsame'|translate}}
+it_IT : Esame Obiettivo
+de_DE : Untersuchungsbefund
+
+{{'variabileDiagnosi'|translate}}
+it_IT : Diagnosi
+de_DE : Diagnose
+
+{{'variabileConsigli'|translate}}
+it_IT : Consigli
+de_DE : Empfehlungen

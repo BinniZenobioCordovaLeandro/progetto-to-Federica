@@ -10,6 +10,8 @@ import { SchedaVisitaChirurgicaVascolare2Component } from './scheda-visita-chiru
 import { SchedaEcocolorDopplerArtiInferioriVenosoComponent } from './scheda-ecocolor-doppler-arti-inferiori-venoso/scheda-ecocolor-doppler-arti-inferiori-venoso.component';
 import { SchedaEcocolorDopplerArtiInferioriArteriosoComponent } from './scheda-ecocolor-doppler-arti-inferiori-arterioso/scheda-ecocolor-doppler-arti-inferiori-arterioso.component';
 import { SchedaEcocolorDopplerVasiColloComponent } from './scheda-ecocolor-doppler-vasi-collo/scheda-ecocolor-doppler-vasi-collo.component';
+import { SchedaEcografiaAddominaleComponent } from './scheda-ecografia-addominale/scheda-ecografia-addominale.component';
+import { SchedaRefertoBreveComponent } from './scheda-referto-breve/scheda-referto-breve.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SchedaEcocolorDopplerVasiColloComponent } from './scheda-ecocolor-doppl
     SchedaVisitaChirurgicaVascolare2Component,
     SchedaEcocolorDopplerArtiInferioriVenosoComponent,
     SchedaEcocolorDopplerArtiInferioriArteriosoComponent,
-    SchedaEcocolorDopplerVasiColloComponent
+    SchedaEcocolorDopplerVasiColloComponent,
+    SchedaEcografiaAddominaleComponent,
+    SchedaRefertoBreveComponent
   ],
   imports: [
     BrowserModule

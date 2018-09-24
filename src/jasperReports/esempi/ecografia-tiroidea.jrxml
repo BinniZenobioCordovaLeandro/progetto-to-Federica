@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final utlizzo versione della libreria JasperReports6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="anamnesi-neurochirurgia" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b7ec35db-5922-4a8d-b477-dd8cbaf60fe8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="data\ecografia-tiroideaDataAdapter.xml"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="481"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="507"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="userLanguage" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.name]]></fieldDescription>
+	</field>
+	<field name="voldx" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.voldx]]></fieldDescription>
+	</field>
+	<field name="volsx" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.volsx]]></fieldDescription>
+	</field>
+	<field name="voltot" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.voltot]]></fieldDescription>
+	</field>
+	<field name="clinicalQuestion" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.clinicalQuestion]]></fieldDescription>
+	</field>
+	<field name="clinicalData" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.clinicalData]]></fieldDescription>
+	</field>
+	<field name="sendingMed" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.sendingMed]]></fieldDescription>
+	</field>
+	<field name="textOther" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.textOther]]></fieldDescription>
+	</field>
+	<field name="dxcc" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.dxcc]]></fieldDescription>
+	</field>
+	<field name="dxll" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.dxll]]></fieldDescription>
+	</field>
+	<field name="dxap" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.dxap]]></fieldDescription>
+	</field>
+	<field name="sxcc" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.sxcc]]></fieldDescription>
+	</field>
+	<field name="sxll" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.sxll]]></fieldDescription>
+	</field>
+	<field name="sxap" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.sxap]]></fieldDescription>
+	</field>
+	<field name="report" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.report]]></fieldDescription>
+	</field>
+	<field name="diagnosis" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.diagnosis]]></fieldDescription>
+	</field>
+	<field name="doctor" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.doctor]]></fieldDescription>
+	</field>
+	<field name="visitDate" class="java.util.Date">
+		<fieldDescription><![CDATA[formDocument.formData.visitDate]]></fieldDescription>
+	</field>
+	<background>
+		<band height="729"/>
+	</background>
+	<pageHeader>
+		<band height="70" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="370" y="0" width="180" height="51" uuid="351d2414-7b67-4884-8d55-d23c2707e1e9"/>
+				<imageExpression><![CDATA["images/altoadige.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="54">
+			<textField>
+				<reportElement x="4" y="10" width="546" height="30" uuid="90e3f899-1198-44bf-bada-6f9fe1fed721"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "	ECOGRAFIA TIROIDEA" : "SONOGRAPHIE DER SCHILDDRÜSE"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="560">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement positionType="Float" x="4" y="10" width="546" height="25" uuid="6ff1e4ff-5767-49b2-9e5f-25e23567a5fc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Nome " : "Name"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="90" y="13" width="444" height="22" uuid="c81a8c49-d0ca-40e4-a5e6-10e2fd77a1ba"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="35" width="546" height="25" uuid="1e3ca9dc-725a-4184-84c5-0fce1d0e80d5"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Quesito clinico" : "Fragestellung"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="20" y="60" width="514" height="22" uuid="3c7d8901-9385-4c91-9b80-04daa4f048d8"/>
+				<textFieldExpression><![CDATA[$F{clinicalQuestion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="82" width="546" height="25" uuid="be536eb5-e0cd-4063-8825-252013908be0"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Dati clinici" : "Klinische Angaben"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="20" y="107" width="514" height="22" uuid="1aa00ecc-0aef-41ec-aa96-37572c2e500b"/>
+				<textFieldExpression><![CDATA[$F{clinicalData}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="129" width="546" height="25" uuid="1d6f4171-de83-461f-98fc-b51eb0ab247e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Medico inviante Dr." : "Zuweisender Artz"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="20" y="154" width="514" height="22" uuid="550ae314-4e4e-4f91-8e95-00413e163a93"/>
+				<textFieldExpression><![CDATA[$F{sendingMed}.equals( "other" ) ? $F{textOther} : $F{sendingMed}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="80" y="176" width="80" height="25" uuid="d23e6571-c36f-4fee-ac6d-2612899b2e4e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CC"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="160" y="176" width="40" height="25" uuid="bc7f4475-71cb-45b5-ad35-d84c18b6196c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["LL"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="201" width="76" height="25" uuid="c6a3bb1b-84b2-4ed2-98be-328668121765"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DX"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="201" width="80" height="25" uuid="485df4ad-0f55-4cf5-ab55-e135fce219d6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dxcc}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="160" y="201" width="40" height="25" uuid="d49410da-2244-4b79-8f86-943ec9ab1cd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dxll}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="200" y="201" width="80" height="25" uuid="5c2d8fd4-03e6-48dc-b4e7-12b5aa53cca9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dxap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="200" y="176" width="80" height="25" uuid="c47c4a9d-854b-4586-b27a-e3b7c1e2b3f6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["AP"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="226" width="76" height="25" uuid="00c648c5-bf19-4eed-8b36-66192f0ddb24"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["SX"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="226" width="80" height="25" uuid="d9972b0c-0270-4501-ac6b-cbeb71d85027"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sxcc}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="160" y="226" width="40" height="25" uuid="5cf538b9-2a46-4e17-b95d-4ccfcb973d0a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sxll}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="200" y="226" width="80" height="25" uuid="10269c6e-6c7d-4c52-8a82-005e4baebe10"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sxap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="280" y="201" width="76" height="25" uuid="7f555feb-608b-44c3-b690-daa56d1f38b8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Vol. DX"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="356" y="201" width="178" height="25" uuid="2fb746bd-b928-48c5-a876-2bcd2958a742"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{voldx} + "ml"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="280" y="226" width="76" height="25" uuid="5dfd6958-0b2e-4a75-ad55-d64aa3d49f96"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Vol. SX"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="356" y="226" width="178" height="25" uuid="e6157c1e-b758-4411-af89-d781c095acc2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{volsx} + "ml"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="280" y="251" width="76" height="25" uuid="948d98eb-3f21-4cde-bf20-af547450bb40"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Vol. TOT"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="356" y="251" width="178" height="25" uuid="32b9c3f7-4311-46a7-8f5f-34eb632ee9d6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{voltot} + "ml"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="290" width="546" height="25" uuid="f5f6f91c-8445-4b64-b7e1-8ee1ddfd34f2"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Referto" : "Befund"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="20" y="315" width="514" height="22" uuid="2cf5aa2e-6968-46d6-9dbb-ea961dc0638f"/>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{report}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="337" width="546" height="25" uuid="cb79a66f-1541-45ff-96c6-da6d2ffbc807"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Diagnosi" : "Diagnoses"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="20" y="362" width="514" height="22" uuid="21a57026-df6e-43dd-9a47-7a0c31a1e907"/>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{diagnosis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="407" width="176" height="25" uuid="5935fda5-856c-41e8-b0ae-30c83c92d610"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Data" : "Datium"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="100" y="410" width="210" height="22" uuid="ff7a22fe-98ae-4994-b0a7-0e2e4c4eaa39"/>
+				<textFieldExpression><![CDATA[$F{visitDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="310" y="407" width="150" height="25" uuid="812875b9-6726-4119-9aca-dfa9cdb9d937"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Medico" : "Artz"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="380" y="410" width="170" height="22" uuid="2dda6824-cae8-4959-8b58-cb7441d708a5"/>
+				<textFieldExpression><![CDATA[$F{doctor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

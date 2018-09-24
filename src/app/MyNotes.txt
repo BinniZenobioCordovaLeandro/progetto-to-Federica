@@ -1,28 +1,117 @@
+Carrateri ASCII :
+ä : 132
+ß : 225
+
 NOTE 10/09/2018:
-7.- I0067922-EcocolorDoppler Vasi Collo
-- Con imagine.
-6.- I0067573-EcocolorDoppler Arti Inferiori Arterioso
-- con immagine
-5.- I0067622-EcoColorDoppler Arti Inferiori Venoso
-- con immagine DX - SX
-4.- I0067923-Visita Chirurgica Vascolare
-- con immagine, le gambe.
-3.- I0067569-Doppler Arti Inf
-- Tabella di dati.
-- risolvere formula
-2.- I0067567-VisitaChirurgicaToracica
-1.- I0067944-Visita Chirurgica Vascolare
-- pulsanti per somma y resta degli input type number
+  7.- I0067922-EcocolorDoppler Vasi Collo
+  - Con imagine.
+  6.- I0067573-EcocolorDoppler Arti Inferiori Arterioso
+  - con immagine
+  5.- I0067622-EcoColorDoppler Arti Inferiori Venoso
+  - con immagine DX - SX
+  4.- I0067923-Visita Chirurgica Vascolare
+  - con immagine, le gambe.
+  3.- I0067569-Doppler Arti Inf
+  - Tabella di dati.
+  - risolvere formula
+  2.- I0067567-VisitaChirurgicaToracica
+  1.- I0067944-Visita Chirurgica Vascolare
+  - pulsanti per somma y resta degli input type number
 
 
 TODO: inizio [10/09/2018]
-[*] Ordinare le schede per livello di complessità.
-[*] Fare i modelli HTML di ognuna Scheda (a locale e seconda la richiesta) per prendere una idea generale di ognuna.
-[ ] Perfezionare ognuna scheda
-    (*) 1.- I0067944 - Visita Chirurgica Vascolare.
-    ( ) 2.- I0067567-VisitaChirurgicaToracica
-    ( ) 3.- I0067569-Doppler Arti Inf
-    ( ) 4.- I0067923-Visita Chirurgica Vascolare
-    ( ) 5.- I0067622-EcoColorDoppler Arti Inferiori Venoso
-    ( ) 6.- I0067573-EcocolorDoppler Arti Inferiori Arterioso
-    ( ) 7.- I0067922-EcocolorDoppler Vasi Collo
+  [*] Ordinare le schede per livello di complessità.
+  [*] Fare i modelli HTML di ognuna Scheda (a locale e seconda la richiesta) per prendere una idea generale di ognuna.
+  [*] Fare un modello di Stampa (Una Base per tutti il resto).
+  [ ] Perfezionare ognuna scheda && fare la stampa.
+      (*) 1.- I0067944  - Visita Chirurgica Vascolare.
+                          [ ] Scheda
+                          [ ] Ricuperare i dati
+                          [ ] Stampa
+
+      ( ) 2.- I0067567  - Visita Chirurgica Toracica
+      ( ) 3.- I0067569  - Doppler Arti Inf
+      ( ) 4.- I0067923  - Visita Chirurgica Vascolare2
+      ( ) 5.- I0067622  - EcoColorDoppler Arti Inferiori Venoso
+      ( ) 6.- I0067573  - EcocolorDoppler Arti Inferiori Arterioso
+      ( ) 7.- I0067922  - EcocolorDoppler Vasi Collo
+
+  *[ ] Mappare i dati del paziente.
+
+
+
+Mappare i dati del paziente:
+  1.- Presenti in I0067944
+    - Ultima anamnesi specialista del paziente.
+      initData.patient.anamnesisSummaryFormatted.
+    - Sintomi (presente in cartella).
+    - Altra soggettività (presente in cartella).
+    - Obiettività (presente in cartella).
+    - Esame Obiettivo (presente in cartella).
+    - Diagnosi (riferita alla visita in NGH).
+    - Tutte le Diagnosi (in cartella per il paziente).
+  2.- Presenti in I0067567
+    - Ultima anamnesi specialista del paziente.
+      initData.patient.anamnesisSummaryFormatted.
+    - Eventuali tag inseriti per il paziente.
+    - Allergie (presenti in cartella).
+      initData.patient.allergiesSummaryFormatted
+    - Sintomi (presente in cartella).
+    - Altra soggettività (presente in cartella).
+    - Esame obiettivo (presente in cartella).
+    - Altra soggettività (presente in cartella).
+    - Diagnosi (riferita alla visita in NGH).
+    - Informazioni del campo raccomandazioni (step pianificazione)
+  3.- Presenti in I0067569
+    - Diagnosi (agganciata alla visita corrente)(se presente)
+  4.- Presenti in I0067923
+    - Ultima anamnesi specialista del paziente.
+      initData.patient.anamnesisSummaryFormatted.
+    - Allergie (presenti in cartella).
+      initData.patient.allergiesSummaryFormatted
+    - Sintomi (presente in cartella).
+    - Altra soggettività (presente in cartella).
+    - Obiettività (presente in cartella).
+    - Esame Obiettivo (presente in cartella).
+    - Diagnosi (riferita alla visita in NGH).
+  5.- Presenti in I0067622
+    - Diagnosi (agganciata alla visita).
+  6.- Presenti in I0067573
+    - Diagnosi (agganciata alla visita corrente)(se presente)
+  7.- Presenti in I0067922
+    - Diagnosi (riferita alla visita in NGH).
+
+
+MAPPA DEGLI DATI DEL JSON:
+  Leggenda:
+    [*] = Trovato.
+    [ ] = Non trovato.
+    [/] = Con dubbi.
+    <*> = Dubbio risolto.
+    < > = Dubbio non risolto.
+    =>  = Risposta.
+  Mappa generale presente di dati da prendere in richieste (I0067944,I0067567,I0067569,I0067923,I0067622,I0067573,I0067922) del cliente SAIM:
+    [*] Ultima anamnesi specialista del paziente.
+        (initData.patient.anamnesisSummary[0].dataInserimento) + (initData.patient.anamnesisSummary[0].utenteInserimento)+"\n"+(initData.patient.anamnesisSummary[0].tipologia)+"\n"+(initData.patient.anamnesisSummary[0].descrizione);
+    [*] Tutte le anamnesi formatade del paziente.
+        initData.patient.anamnesisSummaryFormatted
+    [ ] Sintomi (presente in cartella).
+    [ ] Altra soggettività (presente in cartella).
+    [ ] Obiettività (presente in cartella).
+    [ ] Esame Obiettivo (presente in cartella).
+    [ ] Eventuali tag inseriti per il paziente.
+    [*] Allergie (presenti in cartella).
+        initData.patient.allergiesSummaryFormatted
+    [ ] Altra soggettività (presente in cartella).
+    [ ] Informazioni del campo raccomandazioni (step pianificazione).
+    [*] Tutte le Diagnosi (in cartella per il paziente).
+        initData.patient.diagnosisSummaryFormatted
+        < > La "diagnosisSummaryFormatted" solo porta i testi della ultima diagnosi oppure di tutte?.
+            =>
+        initData.patient.diagnosisSummary[*]
+    [*] Diagnosi (riferita alla visita in NGH).
+        sovpSummary
+    [/] Diagnosi (agganciata alla visita corrente)(se presente).
+        initData.encounter.diagnosis
+    [*] Terapia
+        initData.patient.homeTherapiesFormatted;

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final utlizzo versione della libreria JasperReports6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="scheda-ecografia-addominale" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="91b6865e-8925-4732-9d28-b01d63654bb1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="base\DataAdapter_modello.xml"/>
+	<queryString language="json">
+		<![CDATA[]]>
+	</queryString>
+	<field name="paziente.nome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="paziente.cognome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientLastName]]></fieldDescription>
+	</field>
+	<field name="paziente.eta" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.age]]></fieldDescription>
+	</field>
+	<field name="paziente.CF" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.taxCode]]></fieldDescription>
+	</field>
+	<field name="paziente.medicoFamiglia" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.generalPractitioner]]></fieldDescription>
+	</field>
+	<field name="paziente.natoIl" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="utente.lingua" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="esame.descrizione" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.orders.exams[0].exam.description]]></fieldDescription>
+	</field>
+	<field name="medico.titolo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.reportingDoctor.title]]></fieldDescription>
+	</field>
+	<field name="medico.nomeCognome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userFullName]]></fieldDescription>
+	</field>
+	<field name="data.visita" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.entryDate]]></fieldDescription>
+	</field>
+	<field name="userLanguage" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="currentDateTime" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.currentDateTime]]></fieldDescription>
+	</field>
+	<field name="patientName" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="surname" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientLastName]]></fieldDescription>
+	</field>
+	<field name="patientBirthdate" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="cf" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.taxCode]]></fieldDescription>
+	</field>
+	<field name="exam" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.orders.exams.exam.description]]></fieldDescription>
+	</field>
+	<field name="birthdate" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="servicePoint" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.servicePoint]]></fieldDescription>
+	</field>
+	<field name="patient.language" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.language]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="0" y="0" width="180" height="51" uuid="dfa4848b-3fa3-41ac-be00-a2d474f14d17"/>
+				<imageExpression><![CDATA["images/altoadige.jpg"]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="422" y="51" width="132" height="19" uuid="934a1f56-8a49-4a3b-a9cd-656cb9db788f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement x="180" y="10" width="242" height="20" uuid="9e398a9a-5347-4d24-9780-51b1de3c5890"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{servicePoint}!=null && !$F{servicePoint}.equals(""))?" "+$F{servicePoint}+" ":" "]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="60" uuid="6ea0a44a-d64e-40f1-b779-71f99b9c7d97"/>
+				<box>
+					<pen lineColor="#8A8A8A"/>
+				</box>
+				<frame>
+					<reportElement x="0" y="0" width="280" height="60" uuid="9d7eb6d6-22ed-4de9-919d-5752f00d7c1a"/>
+					<box>
+						<pen lineWidth="0.5" lineColor="#8A8A8A"/>
+					</box>
+					<frame>
+						<reportElement positionType="Float" x="0" y="0" width="270" height="15" uuid="f7582476-bfa4-48c6-9dea-900e47124951"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="88ee3a37-e6e3-4dce-af64-e9de628948f1"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{surname}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="c59feb1d-3155-4dba-b46e-34ce9d7a60cf"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="0" y="0" width="90" height="15" uuid="a72009d4-d865-46fa-8369-cccd59d7050a"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"Cognome" : (($F{patient.language}.equals("de_DE"))?"Nachname" : "_Cognome")]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="15" width="270" height="15" uuid="8ace3c23-eb2a-4d71-abc0-70fdebba1873"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="8c14dc35-0943-43ca-a811-a8b1b5c03bfb"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="68841d23-d2ae-4db5-9486-4fe4e3678079"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="0" y="0" width="90" height="15" uuid="caa647e4-1759-4d32-9ff8-f45b56f55f83"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"Nome" : (($F{patient.language}.equals("de_DE"))?"Vorname" : "_Nome")]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="30" width="270" height="15" uuid="716c1e19-aa21-43b5-a65a-421fc4138836"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="824005da-efe7-41c8-870c-f7ffa31044a2"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{birthdate}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="f7af309b-6721-4112-a1cf-d1d190239ef1"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="0" y="0" width="90" height="15" uuid="c424bfed-c758-4946-9a4b-33c0df0a82eb"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"Data di nascita" : (($F{patient.language}.equals("de_DE"))?"Geburtsdatum" : "_Data di nascita")]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="45" width="270" height="15" uuid="7339e837-f820-4a03-b2fe-5cc9c1c85c41"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="eb0b6add-3189-45b2-9ad8-5e93ac70a0be"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{cf}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="fcfe0265-a985-4d97-b85e-9f8d4c661752"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="0" y="0" width="90" height="15" uuid="46e3d227-ebc2-4541-92be-b4fb2ff4248a"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"CF" : (($F{patient.language}.equals("de_DE"))?"Steuernummer" : "_CF")]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+				<frame>
+					<reportElement x="280" y="0" width="275" height="60" uuid="f514c7ea-aa11-414e-8b7b-e9ab33f4f6a8"/>
+					<box>
+						<pen lineWidth="0.5" lineColor="#8A8A8A"/>
+					</box>
+					<frame>
+						<reportElement positionType="Float" x="0" y="0" width="270" height="15" uuid="d4aebe48-2353-45d6-8ac9-0f0956831286"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="70345acc-b385-41ed-a581-e179d58afc3c"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{surname}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="dcf84563-b69e-4d8e-a5fd-d3272713927b"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+						<textField>
+							<reportElement x="0" y="0" width="90" height="15" uuid="b0602b96-fe57-4279-9440-98fceb2ca2b0"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<textElement textAlignment="Left"/>
+							<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"Medico di famiglia" : (($F{patient.language}.equals("de_DE"))?"Medico di famiglia" : "Medico di famiglia")]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="15" width="270" height="15" uuid="5ae95777-51a6-4da8-9792-3ba84f71096b"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="0c0fd9a0-d329-4a30-94c0-012f05eacfa5"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{data.visita}]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="30" width="270" height="15" uuid="344a18b1-4505-4192-a7b8-fcdc6e1dda52"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="31cb3240-a455-40b3-a619-5930d817591d"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{servicePoint}]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+			</frame>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="39">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="8" width="555" height="23" backcolor="#D3D7E6" uuid="44f986f4-7910-472a-936d-0f85c242790a"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="16" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tittolo di Scheda"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="65" splitType="Stretch">
+			<textField>
+				<reportElement x="431" y="50" width="100" height="15" uuid="25d032ee-1e50-43b9-9862-ce5b158a7876"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="531" y="50" width="25" height="15" uuid="79908e1f-6d7d-4520-aaca-935c9baca315"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" di " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="-1" y="10" width="555" height="30" uuid="7c9bcda6-50c4-4282-bb34-a00d618c9a3a"/>
+				<box>
+					<pen lineColor="#8A8A8A"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+				</box>
+				<frame>
+					<reportElement x="156" y="0" width="399" height="30" uuid="1302d17c-fe7a-4ccb-8da0-cd2b261d570d"/>
+					<box>
+						<pen lineColor="#8A8A8A"/>
+						<leftPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<frame>
+						<reportElement x="0" y="0" width="200" height="30" uuid="3a701ae3-dda8-4461-a1d1-0bcc199ae688"/>
+						<box>
+							<pen lineColor="#8A8A8A"/>
+							<rightPen lineWidth="1.0"/>
+						</box>
+						<frame>
+							<reportElement x="8" y="0" width="185" height="10" uuid="26bf13f0-2406-4ae9-a5af-409c6cfb1281"/>
+							<textField isStretchWithOverflow="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="ddadad07-badb-4417-a7ed-40d863df4091"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[(($F{paziente.cognome} != null && !$F{paziente.cognome}.equals(""))?$F{paziente.cognome}+" ":"")+(($F{paziente.nome}!=null && !$F{paziente.nome}.equals("")) ? $F{paziente.nome} : "")]]></textFieldExpression>
+							</textField>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="eed5c826-5bd8-4fc4-9685-af42acd0fecc"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+							<textField>
+								<reportElement x="0" y="0" width="64" height="10" uuid="ad60f589-6ff7-456e-9cf7-0d58555d70a6"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"Paziente" : (($F{patient.language}.equals("de_DE"))?"Paziente" : "Paziente")]]></textFieldExpression>
+							</textField>
+						</frame>
+						<frame>
+							<reportElement x="8" y="10" width="185" height="10" uuid="f53ef983-15bb-4c9e-99a6-6e0d87ef8ffc"/>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="2c7e1909-1e45-46f1-88b5-7371412d0b96"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="98718233-6a6e-4f45-bd1a-6b5776da4bbc"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{paziente.natoIl}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="0" width="64" height="10" uuid="8ec9a646-1e18-4d9f-b90d-986949dbc4d1"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"Data di nascita" : (($F{patient.language}.equals("de_DE"))?"Geburtsdatum" : "_Data di nascita")]]></textFieldExpression>
+							</textField>
+						</frame>
+						<frame>
+							<reportElement x="8" y="20" width="185" height="10" uuid="31918aa2-8ac8-444f-a333-b3e26f9ca48e"/>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="73405f12-4752-436b-8450-f3b263b190de"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="29f61f1c-7f12-4f70-a55d-3710a47b437a"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cf}]]></textFieldExpression>
+							</textField>
+							<textField>
+								<reportElement x="0" y="0" width="64" height="10" uuid="78478fa0-d1ec-4af3-8b34-f0cc291ef53c"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"CF" : (($F{patient.language}.equals("de_DE"))?"Steuernummer" : "_CF")]]></textFieldExpression>
+							</textField>
+						</frame>
+					</frame>
+					<frame>
+						<reportElement x="200" y="0" width="199" height="30" uuid="e7a31a07-4fd2-4e0f-b7fb-10a1348d3ca6"/>
+						<box>
+							<pen lineColor="#8A8A8A"/>
+							<leftPen lineWidth="1.0"/>
+						</box>
+						<frame>
+							<reportElement x="7" y="0" width="185" height="10" uuid="db53f98f-5833-4878-9c97-6cad8f91fdb9"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="df98a64a-c877-4a1f-935f-70d2d9731f62"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{paziente.medicoFamiglia}]]></textFieldExpression>
+							</textField>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="5f6d2a19-43c3-4b2c-93f8-012c8684d131"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+							<textField>
+								<reportElement x="0" y="0" width="64" height="10" uuid="fd341e0b-f7c6-4b10-9324-67dcc13de730"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($F{patient.language}.equals("it_IT"))?"Medico di famiglia" : (($F{patient.language}.equals("de_DE"))?"Medico di famiglia" : "Medico di famiglia")]]></textFieldExpression>
+							</textField>
+						</frame>
+						<frame>
+							<reportElement x="7" y="10" width="185" height="10" uuid="d4a89a0d-a34f-409b-b898-1e774a994cef"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="c353c3d8-2a6d-4830-8ba6-a20f4319bd17"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{data.visita}]]></textFieldExpression>
+							</textField>
+						</frame>
+						<frame>
+							<reportElement x="7" y="20" width="185" height="10" uuid="cebb9037-3fbc-4b8c-8d48-191884f23bc5"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="7a52e7f3-4748-44e0-89ed-b7983d3e9fe2"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{esame.descrizione}]]></textFieldExpression>
+							</textField>
+						</frame>
+					</frame>
+				</frame>
+			</frame>
+		</band>
+	</pageFooter>
+</jasperReport>

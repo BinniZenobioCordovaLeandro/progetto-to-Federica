@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final utlizzo versione della libreria JasperReports6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="scheda-ecografia-addominale" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="91b6865e-8925-4732-9d28-b01d63654bb1">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="scheda-ecografia-addominale\scheda-ecografia-addominale.dataAdapter.xml"/>
+	<queryString language="json">
+		<![CDATA[]]>
+	</queryString>
+	<field name="paziente.nome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="paziente.cognome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientLastName]]></fieldDescription>
+	</field>
+	<field name="paziente.eta" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.age]]></fieldDescription>
+	</field>
+	<field name="paziente.CF" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.taxCode]]></fieldDescription>
+	</field>
+	<field name="paziente.medicoFamiglia" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.generalPractitioner]]></fieldDescription>
+	</field>
+	<field name="paziente.natoIl" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="utente.lingua" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="esame.descrizione" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.orders.exams[0].exam.description]]></fieldDescription>
+	</field>
+	<field name="medico.titolo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.reportingDoctor.title]]></fieldDescription>
+	</field>
+	<field name="medico.nomeCognome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userFullName]]></fieldDescription>
+	</field>
+	<field name="data.visita" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.entryDate]]></fieldDescription>
+	</field>
+	<field name="userLanguage" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="currentDateTime" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.currentDateTime]]></fieldDescription>
+	</field>
+	<field name="patientName" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="surname" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientLastName]]></fieldDescription>
+	</field>
+	<field name="patientBirthdate" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="cf" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.taxCode]]></fieldDescription>
+	</field>
+	<field name="exam" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.orders.exams.exam.description]]></fieldDescription>
+	</field>
+	<field name="birthdate" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="addomeSuperiore_tuttoNormale" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.tuttoNormale]]></fieldDescription>
+	</field>
+	<field name="fegato_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.fegato.stato]]></fieldDescription>
+	</field>
+	<field name="fegato_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.fegato.note]]></fieldDescription>
+	</field>
+	<field name="colecisti_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.colecisti.stato]]></fieldDescription>
+	</field>
+	<field name="colecisti_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.colecisti.note]]></fieldDescription>
+	</field>
+	<field name="vieBiliari_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.vieBiliari.stato]]></fieldDescription>
+	</field>
+	<field name="vieBiliari_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.vieBiliari.note]]></fieldDescription>
+	</field>
+	<field name="reneESurrene_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.reneESurrene.stato]]></fieldDescription>
+	</field>
+	<field name="reneESurrene_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.reneESurrene.note]]></fieldDescription>
+	</field>
+	<field name="pancreas_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.pancreas.stato]]></fieldDescription>
+	</field>
+	<field name="pancreas_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.pancreas.note]]></fieldDescription>
+	</field>
+	<field name="milza_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.milza.stato]]></fieldDescription>
+	</field>
+	<field name="milza_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.milza.note]]></fieldDescription>
+	</field>
+	<field name="addomeInferiore_tuttoNormale" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.tuttoNormale]]></fieldDescription>
+	</field>
+	<field name="utero_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.utero.stato]]></fieldDescription>
+	</field>
+	<field name="utero_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.utero.note]]></fieldDescription>
+	</field>
+	<field name="ovaieEdAnnessi_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.ovaieEdAnnessi.stato]]></fieldDescription>
+	</field>
+	<field name="ovaieEdAnnessi_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.ovaieEdAnnessi.note]]></fieldDescription>
+	</field>
+	<field name="vescica_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.vescica.stato]]></fieldDescription>
+	</field>
+	<field name="vescica_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.vescica.note]]></fieldDescription>
+	</field>
+	<field name="prostata_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.prostata.stato]]></fieldDescription>
+	</field>
+	<field name="prostata_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.prostata.note]]></fieldDescription>
+	</field>
+	<field name="intestino_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.intestino.stato]]></fieldDescription>
+	</field>
+	<field name="intestino_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.intestino.note]]></fieldDescription>
+	</field>
+	<field name="aortaEGrandiVasi_tuttoNormale" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.tuttoNormale]]></fieldDescription>
+	</field>
+	<field name="aoSovrarenale_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoSovrarenale.stato]]></fieldDescription>
+	</field>
+	<field name="aoSovrarenale_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoSovrarenale.note]]></fieldDescription>
+	</field>
+	<field name="aoInfrarenale_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoInfrarenale.stato]]></fieldDescription>
+	</field>
+	<field name="aoInfrarenale_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoInfrarenale.note]]></fieldDescription>
+	</field>
+	<field name="troncoCeliaco_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.troncoCeliaco.stato]]></fieldDescription>
+	</field>
+	<field name="troncoCeliaco_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.troncoCeliaco.note]]></fieldDescription>
+	</field>
+	<field name="arteriaEpatica_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaEpatica.stato]]></fieldDescription>
+	</field>
+	<field name="arteriaEpatica_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaEpatica.note]]></fieldDescription>
+	</field>
+	<field name="arteriaSplenica_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaSplenica.stato]]></fieldDescription>
+	</field>
+	<field name="arteriaSplenica_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaSplenica.note]]></fieldDescription>
+	</field>
+	<field name="arteriaMesentericaSuperiore_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaSuperiore.stato]]></fieldDescription>
+	</field>
+	<field name="arteriaMesentericaSuperiore_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaSuperiore.note]]></fieldDescription>
+	</field>
+	<field name="arteriaMesentericaInferiore_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaInferiore.stato]]></fieldDescription>
+	</field>
+	<field name="arteriaMesentericaInferiore_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaInferiore.note]]></fieldDescription>
+	</field>
+	<field name="arteriaRenaleDx_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleDx.stato]]></fieldDescription>
+	</field>
+	<field name="arteriaRenaleDx_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleDx.note]]></fieldDescription>
+	</field>
+	<field name="arteriaRenaleSn_stato" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleSn.stato]]></fieldDescription>
+	</field>
+	<field name="arteriaRenaleSn_note" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleSn.note]]></fieldDescription>
+	</field>
+	<field name="relazioneNote" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.relazioneNote]]></fieldDescription>
+	</field>
+	<field name="addomeSuperiore.attivo" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeSuperiore.attivo]]></fieldDescription>
+	</field>
+	<field name="addomeInferiore.attivo" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.addomeInferiore.attivo]]></fieldDescription>
+	</field>
+	<field name="aortaEGrandiVasi.attivo" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.schedaEcografiaAddominale.aortaEGrandiVasi.attivo]]></fieldDescription>
+	</field>
+	<field name="servicePoint" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.servicePoint]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="0" y="0" width="180" height="51" uuid="dfa4848b-3fa3-41ac-be00-a2d474f14d17"/>
+				<imageExpression><![CDATA["images/altoadige.jpg"]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="422" y="51" width="132" height="19" uuid="934a1f56-8a49-4a3b-a9cd-656cb9db788f"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="false">
+				<reportElement x="180" y="10" width="242" height="20" uuid="9e398a9a-5347-4d24-9780-51b1de3c5890"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{servicePoint}!=null && !$F{servicePoint}.equals(""))?" "+$F{servicePoint}+" ":" "]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60">
+			<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="60" uuid="6ea0a44a-d64e-40f1-b779-71f99b9c7d97"/>
+				<box>
+					<pen lineColor="#8A8A8A"/>
+				</box>
+				<frame>
+					<reportElement x="0" y="0" width="280" height="60" uuid="9d7eb6d6-22ed-4de9-919d-5752f00d7c1a"/>
+					<box>
+						<pen lineWidth="0.5" lineColor="#8A8A8A"/>
+					</box>
+					<frame>
+						<reportElement positionType="Float" x="0" y="0" width="270" height="15" uuid="f7582476-bfa4-48c6-9dea-900e47124951"/>
+						<staticText>
+							<reportElement x="0" y="0" width="90" height="15" uuid="0aba5810-6410-4162-8056-3791a2821dbe"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[Cognome]]></text>
+						</staticText>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="88ee3a37-e6e3-4dce-af64-e9de628948f1"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{surname}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="c59feb1d-3155-4dba-b46e-34ce9d7a60cf"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="15" width="270" height="15" uuid="8ace3c23-eb2a-4d71-abc0-70fdebba1873"/>
+						<staticText>
+							<reportElement x="0" y="0" width="90" height="15" uuid="c64bf747-331b-4238-b0cf-4eb25bc17905"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[Nome]]></text>
+						</staticText>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="8c14dc35-0943-43ca-a811-a8b1b5c03bfb"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="68841d23-d2ae-4db5-9486-4fe4e3678079"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="30" width="270" height="15" uuid="716c1e19-aa21-43b5-a65a-421fc4138836"/>
+						<staticText>
+							<reportElement x="0" y="0" width="90" height="15" uuid="07c688e4-acae-4b00-9d88-11f2043f1639"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[Data di nascita]]></text>
+						</staticText>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="824005da-efe7-41c8-870c-f7ffa31044a2"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="true"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{birthdate}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="f7af309b-6721-4112-a1cf-d1d190239ef1"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="45" width="270" height="15" uuid="7339e837-f820-4a03-b2fe-5cc9c1c85c41"/>
+						<staticText>
+							<reportElement x="0" y="0" width="90" height="15" uuid="21d300b2-1770-47d0-b75d-6ff432463146"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[CF]]></text>
+						</staticText>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="eb0b6add-3189-45b2-9ad8-5e93ac70a0be"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{cf}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="fcfe0265-a985-4d97-b85e-9f8d4c661752"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+					</frame>
+				</frame>
+				<frame>
+					<reportElement x="280" y="0" width="275" height="60" uuid="f514c7ea-aa11-414e-8b7b-e9ab33f4f6a8"/>
+					<box>
+						<pen lineWidth="0.5" lineColor="#8A8A8A"/>
+					</box>
+					<frame>
+						<reportElement positionType="Float" x="0" y="0" width="270" height="15" uuid="d4aebe48-2353-45d6-8ac9-0f0956831286"/>
+						<staticText>
+							<reportElement x="0" y="0" width="90" height="15" uuid="9612e34d-9f49-4e11-b38c-5d2a26144e89"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<textElement textAlignment="Left"/>
+							<text><![CDATA[Medico di famiglia]]></text>
+						</staticText>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="70345acc-b385-41ed-a581-e179d58afc3c"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{surname}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement x="90" y="0" width="10" height="15" uuid="dcf84563-b69e-4d8e-a5fd-d3272713927b"/>
+							<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="1"/>
+							<text><![CDATA[:]]></text>
+						</staticText>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="15" width="270" height="15" uuid="5ae95777-51a6-4da8-9792-3ba84f71096b"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="0c0fd9a0-d329-4a30-94c0-012f05eacfa5"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{data.visita}]]></textFieldExpression>
+						</textField>
+					</frame>
+					<frame>
+						<reportElement positionType="Float" x="0" y="30" width="270" height="15" uuid="344a18b1-4505-4192-a7b8-fcdc6e1dda52"/>
+						<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+							<reportElement x="100" y="0" width="170" height="15" uuid="31cb3240-a455-40b3-a619-5930d817591d"/>
+							<textElement verticalAlignment="Middle" markup="none">
+								<font isBold="false"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$F{servicePoint}]]></textFieldExpression>
+						</textField>
+					</frame>
+				</frame>
+			</frame>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="39">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="8" width="555" height="23" backcolor="#D3D7E6" uuid="74404d0f-4f6c-4be8-a881-527fa634d010"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Bottom" rotation="None">
+					<font size="16" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ECOGRAFIA ADDOMINALE]]></text>
+			</staticText>
+		</band>
+		<band height="25" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="150" y="5" width="405" height="20" backcolor="#E6E8F2" uuid="f4840f28-b2d5-4d68-a94e-3bd06fcf2d8d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3dfa3f6-69f6-40f8-9792-1f61a655e7ab"/>
+				</reportElement>
+				<box padding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addomeSuperiore_tuttoNormale}?": Tutto Normale":" "]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="5" width="150" height="20" backcolor="#E6E8F2" uuid="9fbe277b-8026-4a6f-ac96-2475b4e6e39f"/>
+				<box padding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADDOME SUPERIORE]]></text>
+			</staticText>
+		</band>
+		<band height="90">
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="0" width="555" height="15" isRemoveLineWhenBlank="true" uuid="54e8b527-8fa5-445f-be71-4c57aceb2d32">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{fegato_stato}!=null || ($F{fegato_note}!=null && !$F{fegato_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="30ace521-ce18-41f1-be54-c5d3dc902e90"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Fegato]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="bdf5925b-f278-4279-b34d-5b644506afe6"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{fegato_stato}!=null)?": "+$F{fegato_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="775b4c6e-1b22-4d57-8293-5c0dffea30d0"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{fegato_note}!=null && !$F{fegato_note}.equals(""))?"<b>Note :</b> "+$F{fegato_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="15" width="555" height="15" isRemoveLineWhenBlank="true" uuid="ee00dd1c-d1f8-4c3a-93ee-c499c0c667f6">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{colecisti_stato}!=null || ($F{colecisti_note}!=null && !$F{colecisti_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="b9bcd079-945b-440f-806e-52f559be7b2f"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Colecisti]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="f9aa381a-6ccd-4c77-b45c-0b1b3e825184"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{colecisti_stato}!=null)?": "+$F{colecisti_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="b2de0444-042c-4c3c-b806-e7949d1d5712"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{colecisti_note}!=null && !$F{colecisti_note}.equals(""))?"<b>Note :</b> "+$F{colecisti_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="45" width="555" height="15" isRemoveLineWhenBlank="true" uuid="268daf48-a50c-4c47-a4c1-302080d70284">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{reneESurrene_stato}!=null || ($F{reneESurrene_note}!=null && !$F{reneESurrene_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="91b7d979-e83f-4700-b8b9-22a32de2e10f"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Rene e surrene]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="15fc6f00-86d8-48ee-adde-0f6e2672fc6e"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{reneESurrene_stato}!=null)?": "+$F{reneESurrene_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="6cc556a1-5d0d-4b73-b7c6-03598fbd889e"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{reneESurrene_note}!=null && !$F{reneESurrene_note}.equals(""))?"<b>Note :</b> "+$F{reneESurrene_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="60" width="555" height="15" isRemoveLineWhenBlank="true" uuid="26299b57-413d-4bd1-8917-d45ef9b9cddc">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{pancreas_stato}!=null || ($F{pancreas_note}!=null && !$F{pancreas_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="9387abd2-9384-4c38-a4f4-6373311774f6"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Pancreas]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="ff6500e9-aca6-4ab8-b029-18b6e8ffbff8"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{pancreas_stato}!=null)?": "+$F{pancreas_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="888cc2a5-2562-495a-a933-b3966c7c8f2f"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{pancreas_note}!=null && !$F{pancreas_note}.equals(""))?"<b>Note :</b> "+$F{pancreas_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="75" width="555" height="15" isRemoveLineWhenBlank="true" uuid="044e2fc5-2e68-4a23-95b0-fb671832c792">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{milza_stato}!=null || ($F{milza_note}!=null && !$F{milza_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="9e5a0e8f-40ad-4c78-9fc3-9076dc41ae5b"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Milza]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="b3d8070c-7053-4cf9-a91b-806b38330c9f"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{milza_stato}!=null)?": "+$F{milza_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="a9f0d63f-b110-4f00-8f49-f403fee6398d"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{milza_note}!=null && !$F{milza_note}.equals(""))?"<b>Note :</b> "+$F{milza_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="30" width="555" height="15" isRemoveLineWhenBlank="true" uuid="3a1943ac-1522-4e1e-9a87-1179a8a03ae8">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{vieBiliari_stato}!=null || ($F{vieBiliari_note}!=null && !$F{vieBiliari_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="92a5e7b1-346c-4f43-9d13-d706ad6bb4a8"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Vie biliari]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="113d792f-9aff-4c1a-a107-9523d02f62dd"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{vieBiliari_stato}!=null)?": "+$F{vieBiliari_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="2d45452e-5acc-42e6-9121-716ef2dfe6b1"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{vieBiliari_note}!=null && !$F{vieBiliari_note}.equals(""))?"<b>Note :</b> "+$F{vieBiliari_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="5" width="150" height="20" backcolor="#E6E8F2" uuid="15d4b3ea-0a18-49dd-896d-647d0a37cea6"/>
+				<box padding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADDOME INFERIORE]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="150" y="5" width="405" height="20" backcolor="#E6E8F2" uuid="3fe854d3-3635-4a53-aa3f-891cd217da71">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3dfa3f6-69f6-40f8-9792-1f61a655e7ab"/>
+				</reportElement>
+				<box padding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{addomeInferiore_tuttoNormale}?": Tutto Normale":" "]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="75">
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="0" width="555" height="15" isRemoveLineWhenBlank="true" uuid="12387699-979a-4714-9c16-9d4f125b35fd">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{utero_stato}!=null || ($F{utero_note}!=null && !$F{utero_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="9c5fafbb-c741-4ac9-b537-895d2958e2fd"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Utero]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="78eeb173-b4c6-4a73-b91c-ecfa0b351f66"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{utero_stato}!=null)?": "+$F{utero_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="481e6edb-ba42-4037-96a4-6bafe9736373"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{utero_note}!=null && !$F{utero_note}.equals(""))?"<b>Note :</b> "+$F{utero_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="15" width="555" height="15" isRemoveLineWhenBlank="true" uuid="62b73bff-0873-4a77-938a-711944a7463d">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{ovaieEdAnnessi_stato}!=null || ($F{ovaieEdAnnessi_note}!=null  && !$F{ovaieEdAnnessi_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="60d16791-b4cb-4dfc-bc2f-e3cff4d4ab88"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Ovaie ed annessi]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="d80c58bc-a2d6-4a52-af5a-381272071425"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{ovaieEdAnnessi_stato}!=null)?": "+$F{ovaieEdAnnessi_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="f3283852-298d-458b-a1f2-27f2edcd816e"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{ovaieEdAnnessi_note}!=null  && !$F{ovaieEdAnnessi_note}.equals(""))?"<b>Note :</b> "+$F{ovaieEdAnnessi_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="30" width="555" height="15" isRemoveLineWhenBlank="true" uuid="cdab2026-3c56-40e0-826c-64b770f4eda8">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{vescica_stato}!=null || ($F{vescica_note}!=null && !$F{vescica_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="6c8a9fb7-ab7e-42a4-a906-bc358daf973d"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Vescica]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="71adf236-bf96-4769-a30e-c8c6893e9626"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{vescica_stato}!=null)?": "+$F{vescica_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="9d9d5693-b9df-48a1-b485-95bda9403439"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{vescica_note}!=null && !$F{vescica_note}.equals(""))?"<b>Note :</b> "+$F{vescica_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="45" width="555" height="15" isRemoveLineWhenBlank="true" uuid="8f830e95-e74c-4c8f-8870-7510a314b373">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{prostata_stato}!=null || ($F{prostata_note}!=null && $F{prostata_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="39c5685a-2138-4829-b833-d485f87f831f"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Prostata]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="ee5c123d-959b-4ec7-b462-31ae8be90461"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{prostata_stato}!=null)?": "+$F{prostata_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="b2b778de-b0bb-4f25-9bf6-eb54cdd82b2e"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{prostata_note}!=null && $F{prostata_note}.equals(""))?"<b>Note :</b> "+$F{prostata_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="60" width="555" height="15" isRemoveLineWhenBlank="true" uuid="1ede175a-7689-47ee-b12d-ab28b0e450f2">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{intestino_stato}!=null || ($F{intestino_note}!=null && !$F{intestino_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="202e31e1-a97c-48c2-98f0-b0413e4d7b37"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Intestino]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="dfdfea6f-8329-42ff-ba9c-eb7654578b1a"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{intestino_stato}!=null)?": "+$F{intestino_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="f990040a-213c-469b-9176-87bdd32ba3b5"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{intestino_note}!=null && !$F{intestino_note}.equals(""))?"<b>Note :</b> "+$F{intestino_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="25">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="5" width="150" height="20" backcolor="#E6E8F2" uuid="c93fe233-98c0-4a4a-bc25-27fac1f3a1b2"/>
+				<box padding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[AORTA E GRANDI VASI]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="150" y="5" width="405" height="20" backcolor="#E6E8F2" uuid="df8c1d23-4afe-49da-bbae-e8d45689b192">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3dfa3f6-69f6-40f8-9792-1f61a655e7ab"/>
+				</reportElement>
+				<box padding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{aortaEGrandiVasi_tuttoNormale}?": Tutto Normale":" "]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="135">
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="0" width="555" height="15" isRemoveLineWhenBlank="true" uuid="92a92d57-ae41-4f6f-9d30-020db2b59993">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{aoSovrarenale_stato}!=null || ($F{aoSovrarenale_note}!=null && !$F{aoSovrarenale_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="152c78f7-73e5-460e-a115-f2e82181338f"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Ao sovrarenale]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="c5a2eb5f-2a93-42ed-ba22-9d8d531cccb7"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{aoSovrarenale_stato}!=null)?": "+$F{aoSovrarenale_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="2198b298-a7ea-4a23-8321-dcd16ffaf635"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{aoSovrarenale_note}!=null && !$F{aoSovrarenale_note}.equals(""))?"<b>Note :</b> "+$F{aoSovrarenale_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="15" width="555" height="15" isRemoveLineWhenBlank="true" uuid="3127e14a-72ab-489a-9648-bd1a801424fa">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{aoInfrarenale_stato}!=null || ($F{aoInfrarenale_note}!=null && !$F{aoInfrarenale_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="15255192-2559-4429-9334-2075fad41f3f"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Ao infrarenale]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="bff6d179-f119-435f-9958-74ac9d226d28"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{aoInfrarenale_stato}!=null)?": "+$F{aoInfrarenale_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="9a47f566-8acb-46b5-8933-60febba81e45"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{aoInfrarenale_note}!=null && !$F{aoInfrarenale_note}.equals(""))?"<b>Note :</b> "+$F{aoInfrarenale_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="30" width="555" height="15" isRemoveLineWhenBlank="true" uuid="87cb425d-2f98-4701-9112-7ebe2c0be087">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{troncoCeliaco_stato}!=null || ($F{troncoCeliaco_note}!=null && !$F{troncoCeliaco_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="bd40195a-48b4-4bcd-b561-66827282ee3f"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Tronco celiaco]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="edcb95b9-a4b4-44bf-974b-69d4d3d1994b"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{troncoCeliaco_stato}!=null)?": "+$F{troncoCeliaco_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="09d3343b-b5bd-4149-bd32-984063f79b08"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{troncoCeliaco_note}!=null && !$F{troncoCeliaco_note}.equals(""))?"<b>Note :</b> "+$F{troncoCeliaco_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="45" width="555" height="15" isRemoveLineWhenBlank="true" uuid="bdd528c9-f042-4f16-942d-d8c812ab5ef7">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{arteriaEpatica_stato}!=null || ($F{arteriaEpatica_note}!=null && !$F{arteriaEpatica_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="347452e0-6560-46b5-9057-7bb379dc36e8"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Arteria epatica]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="6b0e3f98-326a-4e2e-b616-3c12ca7feaaf"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{arteriaEpatica_stato}!=null)?": "+$F{arteriaEpatica_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="2648ee2f-606d-4096-a0d8-2e05f362081f"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{arteriaEpatica_note}!=null && !$F{arteriaEpatica_note}.equals(""))?"<b>Note :</b> "+$F{arteriaEpatica_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="60" width="555" height="15" isRemoveLineWhenBlank="true" uuid="3220d24d-727b-4688-b427-612964d93611">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{arteriaSplenica_stato}!=null || ($F{arteriaSplenica_note}!=null && !$F{arteriaSplenica_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="05f4b643-5327-4e84-a306-e00e45ac5e53"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Arteria splenica]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="64b3fbce-b953-47ef-9ca6-37b3efe679fe"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{arteriaSplenica_stato}!=null)?": "+$F{arteriaSplenica_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="67c12822-4ba2-45d8-bee8-7fb95f78da1e"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{arteriaSplenica_note}!=null && !$F{arteriaSplenica_note}.equals(""))?"<b>Note :</b> "+$F{arteriaSplenica_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="75" width="555" height="15" isRemoveLineWhenBlank="true" uuid="0d74bf09-af3f-45a6-be9f-8247ffb53f79">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{arteriaMesentericaSuperiore_stato}!=null || ($F{arteriaMesentericaSuperiore_note}!=null && !$F{arteriaMesentericaSuperiore_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="2e7be2a3-2536-41fe-9185-8ba7f3ccf979"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Arteria mesenterica superiore]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="4bc0f36b-6246-4a02-88d8-2770a3dad3d7"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{arteriaMesentericaSuperiore_stato}!=null)?": "+$F{arteriaMesentericaSuperiore_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="b8d5fd79-b988-4d26-a613-50a8fcfe3e2c"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{arteriaMesentericaSuperiore_note}!=null && !$F{arteriaMesentericaSuperiore_note}.equals(""))?"<b>Note :</b> "+$F{arteriaMesentericaSuperiore_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="90" width="555" height="15" isRemoveLineWhenBlank="true" uuid="3fc5c85e-064c-4d08-87c2-e08b9cfb2d22">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{arteriaMesentericaInferiore_stato}!=null || ($F{arteriaMesentericaInferiore_note}!=null && !$F{arteriaMesentericaInferiore_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="23b85dea-b8c4-4b2b-8a91-1173726165fb"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Arteria mesenterica inferiore]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="9bde3317-c1ec-497d-b9e0-4550d92b74b3"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{arteriaMesentericaInferiore_stato}!=null)?": "+$F{arteriaMesentericaInferiore_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="a2178cc8-6125-4465-9353-b4240019ebe3"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{arteriaMesentericaInferiore_note}!=null && !$F{arteriaMesentericaInferiore_note}.equals(""))?"<b>Note :</b> "+$F{arteriaMesentericaInferiore_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="105" width="555" height="15" isRemoveLineWhenBlank="true" uuid="adfe5e03-25f8-4e13-aeb4-366349cb3e0f">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{arteriaRenaleDx_stato}!=null || ($F{arteriaRenaleDx_note}!=null && !$F{arteriaRenaleDx_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="11870572-b6d9-47a5-98bc-014f62b1353d"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Arteria renale dx]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="f0521095-212e-438c-a824-d58afc0814bd"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{arteriaRenaleDx_stato}!=null)?": "+$F{arteriaRenaleDx_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="56b2530f-f710-40ee-8eb0-ffd6ccc2afce"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{arteriaRenaleDx_note}!=null && !$F{arteriaRenaleDx_note}.equals(""))?"<b>Note :</b> "+$F{arteriaRenaleDx_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+			<frame borderSplitType="DrawBorders">
+				<reportElement positionType="Float" x="0" y="120" width="555" height="15" isRemoveLineWhenBlank="true" uuid="62610307-52dd-496b-9a19-42fcafb7f713">
+					<property name="ShowOutOfBoundContent" value="false"/>
+					<printWhenExpression><![CDATA[($F{arteriaRenaleSn_stato}!=null || ($F{arteriaRenaleSn_note}!=null && !$F{arteriaRenaleSn_note}.equals("")))]]></printWhenExpression>
+				</reportElement>
+				<box topPadding="0" leftPadding="0" bottomPadding="4" rightPadding="0">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<staticText>
+					<reportElement x="0" y="0" width="150" height="15" uuid="530e57e9-473f-4f2f-b787-80f36361ac79"/>
+					<box topPadding="1" leftPadding="5" bottomPadding="1" rightPadding="3"/>
+					<text><![CDATA[Arteria renale sn]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="150" y="0" width="130" height="15" uuid="5ad2b653-9c20-4704-8b5d-fdc14fc89122"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="3"/>
+					<textFieldExpression><![CDATA[($F{arteriaRenaleSn_stato}!=null)?": "+$F{arteriaRenaleSn_stato}:""]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="281" y="0" width="274" height="15" uuid="8cf1b16c-ca08-44bc-8bdf-0cde6c9cba63"/>
+					<box topPadding="1" leftPadding="3" bottomPadding="1" rightPadding="5"/>
+					<textElement textAlignment="Justified" markup="html"/>
+					<textFieldExpression><![CDATA[($F{arteriaRenaleSn_note}!=null && !$F{arteriaRenaleSn_note}.equals(""))?"<b>Note :</b> "+$F{arteriaRenaleSn_note}:""]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="44">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="5" width="555" height="20" backcolor="#E6E8F2" uuid="e196d01f-af9f-4aac-a6b5-4db069538c0e"/>
+				<box padding="3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relazione - Note]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="29" width="555" height="15" uuid="1a2b0b59-e692-48af-8465-26517586211a"/>
+				<box topPadding="0" leftPadding="5" bottomPadding="0" rightPadding="5"/>
+				<textElement textAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$F{relazioneNote}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="65" splitType="Stretch">
+			<textField>
+				<reportElement x="431" y="50" width="100" height="15" uuid="25d032ee-1e50-43b9-9862-ce5b158a7876"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Pagina " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="531" y="50" width="25" height="15" uuid="79908e1f-6d7d-4520-aaca-935c9baca315"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[" di " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<frame>
+				<reportElement x="-1" y="10" width="555" height="30" uuid="7c9bcda6-50c4-4282-bb34-a00d618c9a3a"/>
+				<box>
+					<pen lineColor="#8A8A8A"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#8A8A8A"/>
+				</box>
+				<frame>
+					<reportElement x="156" y="0" width="399" height="30" uuid="1302d17c-fe7a-4ccb-8da0-cd2b261d570d"/>
+					<box>
+						<pen lineColor="#8A8A8A"/>
+						<leftPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<frame>
+						<reportElement x="0" y="0" width="200" height="30" uuid="3a701ae3-dda8-4461-a1d1-0bcc199ae688"/>
+						<box>
+							<pen lineColor="#8A8A8A"/>
+							<rightPen lineWidth="1.0"/>
+						</box>
+						<frame>
+							<reportElement x="8" y="0" width="185" height="10" uuid="26bf13f0-2406-4ae9-a5af-409c6cfb1281"/>
+							<staticText>
+								<reportElement x="0" y="0" width="64" height="10" uuid="3c607f05-e221-4402-8af1-4e162db248e2"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[Paziente]]></text>
+							</staticText>
+							<textField isStretchWithOverflow="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="ddadad07-badb-4417-a7ed-40d863df4091"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[(($F{paziente.cognome} != null && !$F{paziente.cognome}.equals(""))?$F{paziente.cognome}+" ":"")+(($F{paziente.nome}!=null && !$F{paziente.nome}.equals("")) ? $F{paziente.nome} : "")]]></textFieldExpression>
+							</textField>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="eed5c826-5bd8-4fc4-9685-af42acd0fecc"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+						</frame>
+						<frame>
+							<reportElement x="8" y="10" width="185" height="10" uuid="f53ef983-15bb-4c9e-99a6-6e0d87ef8ffc"/>
+							<staticText>
+								<reportElement x="0" y="0" width="64" height="10" uuid="a858a01c-8a14-47ea-8f36-b1b994de428d"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[Data di nascita]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="2c7e1909-1e45-46f1-88b5-7371412d0b96"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="98718233-6a6e-4f45-bd1a-6b5776da4bbc"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{paziente.natoIl}]]></textFieldExpression>
+							</textField>
+						</frame>
+						<frame>
+							<reportElement x="8" y="20" width="185" height="10" uuid="31918aa2-8ac8-444f-a333-b3e26f9ca48e"/>
+							<staticText>
+								<reportElement x="0" y="0" width="64" height="10" uuid="595789a7-8bc1-4b28-bd5a-0bd82d1a211c"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[CF]]></text>
+							</staticText>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="73405f12-4752-436b-8450-f3b263b190de"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="29f61f1c-7f12-4f70-a55d-3710a47b437a"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{cf}]]></textFieldExpression>
+							</textField>
+						</frame>
+					</frame>
+					<frame>
+						<reportElement x="200" y="0" width="199" height="30" uuid="e7a31a07-4fd2-4e0f-b7fb-10a1348d3ca6"/>
+						<box>
+							<pen lineColor="#8A8A8A"/>
+							<leftPen lineWidth="1.0"/>
+						</box>
+						<frame>
+							<reportElement x="7" y="0" width="185" height="10" uuid="db53f98f-5833-4878-9c97-6cad8f91fdb9"/>
+							<staticText>
+								<reportElement x="0" y="0" width="64" height="10" uuid="bb149101-7d0e-47b0-9601-399039728f36"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[Medico di famiglia]]></text>
+							</staticText>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="df98a64a-c877-4a1f-935f-70d2d9731f62"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{paziente.medicoFamiglia}]]></textFieldExpression>
+							</textField>
+							<staticText>
+								<reportElement x="64" y="0" width="5" height="10" uuid="5f6d2a19-43c3-4b2c-93f8-012c8684d131"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<text><![CDATA[:]]></text>
+							</staticText>
+						</frame>
+						<frame>
+							<reportElement x="7" y="10" width="185" height="10" uuid="d4a89a0d-a34f-409b-b898-1e774a994cef"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="c353c3d8-2a6d-4830-8ba6-a20f4319bd17"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{data.visita}]]></textFieldExpression>
+							</textField>
+						</frame>
+						<frame>
+							<reportElement x="7" y="20" width="185" height="10" uuid="cebb9037-3fbc-4b8c-8d48-191884f23bc5"/>
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="69" y="0" width="116" height="10" uuid="7a52e7f3-4748-44e0-89ed-b7983d3e9fe2"/>
+								<textElement>
+									<font size="7"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{esame.descrizione}]]></textFieldExpression>
+							</textField>
+						</frame>
+					</frame>
+				</frame>
+			</frame>
+		</band>
+	</pageFooter>
+</jasperReport>

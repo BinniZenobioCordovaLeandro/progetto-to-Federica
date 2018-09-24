@@ -1,0 +1,31 @@
+{{'variabiletittle'|translate}}
+it_IT : Ambulatorio di Chirurgica Toracica
+de_DE : Thoraxchirurgisches ambulatorium
+
+{{'variabileAnamnesi'|translate}}
+it_IT : Anamnesi
+de_DE : Anamnese
+
+{{'variabileFattori'|translate}}
+it_IT : Fattori di rischio
+de_DE : Risikofaktoren
+
+{{'variabileallergie'|translate}}
+it_IT : Allergie
+de_DE : Allergien
+
+{{'variabileDisturbi'|translate}}
+it_IT : Disturbi
+de_DE : Beschwerdwn
+
+{{'variabileEsame'|translate}}
+it_IT : Esame Obiettivo
+de_DE : Untersuchungsbefund
+
+{{'variabileDiagnosi'|translate}}
+it_IT : Diagnosi
+de_DE : Diagnose
+
+{{'variabileConsigli'|translate}}
+it_IT : Consigli
+de_DE : Empfehlungen

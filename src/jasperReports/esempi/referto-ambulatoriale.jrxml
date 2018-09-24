@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final utlizzo versione della libreria JasperReports6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Referto" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6164ea25-ffc4-4e3f-b7f7-3be50ecf0ef0">
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="358"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="628"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="referto-ambulatoriale-test"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box padding="3">
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box padding="3">
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="TerapieDomiciliari" uuid="9eae9893-9140-4d35-8d6f-4e26ed8630ee">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="data\RefertoAmbGenericoDataAdapter.xml"/>
+		<parameter name="XML_DATA_DOCUMENT" class="org.w3c.dom.Document" isForPrompting="false"/>
+		<parameter name="XML_INPUT_STREAM" class="java.io.InputStream" isForPrompting="false"/>
+		<parameter name="XML_FILE" class="java.io.File" isForPrompting="false"/>
+		<parameter name="net.sf.jasperreports.xml.source" class="java.lang.String" isForPrompting="false"/>
+		<parameter name="XML_DATE_PATTERN" class="java.lang.String" isForPrompting="false"/>
+		<parameter name="XML_NUMBER_PATTERN" class="java.lang.String" isForPrompting="false"/>
+		<parameter name="XML_LOCALE" class="java.util.Locale" isForPrompting="false"/>
+		<parameter name="XML_TIME_ZONE" class="java.util.TimeZone" isForPrompting="false"/>
+		<parameter name="languageIT" class="java.lang.String"/>
+		<parameter name="utente.lingua" class="java.lang.String"/>
+		<queryString language="JSON">
+			<![CDATA[formDocument.initData.patient.homeTherapiesSummary]]>
+		</queryString>
+		<field name="dataInizio" class="java.lang.String">
+			<fieldDescription><![CDATA[dataInizio]]></fieldDescription>
+		</field>
+		<field name="nomeFarmaco" class="java.lang.String">
+			<fieldDescription><![CDATA[nomeFarmaco]]></fieldDescription>
+		</field>
+		<field name="posologia" class="java.lang.String">
+			<fieldDescription><![CDATA[posologia]]></fieldDescription>
+		</field>
+		<field name="note" class="java.lang.String">
+			<fieldDescription><![CDATA[note]]></fieldDescription>
+		</field>
+	</subDataset>
+	<parameter name="languageIT" class="java.lang.String">
+		<defaultValueExpression><![CDATA["it_IT"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="comprensorio.descrizione" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitCustomParameters.report.district]]></fieldDescription>
+	</field>
+	<field name="comprensorio.ospedaleDi" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitCustomParameters.report.hospital]]></fieldDescription>
+	</field>
+	<field name="comprensorio.reparto" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.servicePoint]]></fieldDescription>
+	</field>
+	<field name="reparto.dottPrimario" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.servicePointCustomParameters.report.doctor]]></fieldDescription>
+	</field>
+	<field name="comprensorio.provincia" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitCustomParameters.report.organizationUnitMunicipality]]></fieldDescription>
+	</field>
+	<field name="comprensorio.indirizzo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitAddress]]></fieldDescription>
+	</field>
+	<field name="comprensorio.cap" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitZipCode]]></fieldDescription>
+	</field>
+	<field name="comprensorio.tel" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitCustomParameters.report.phoneNumber]]></fieldDescription>
+	</field>
+	<field name="comprensorio.fax" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitCustomParameters.report.fax]]></fieldDescription>
+	</field>
+	<field name="comprensorio.email" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.organizationUnitCustomParameters.report.email]]></fieldDescription>
+	</field>
+	<field name="ragioneSociale" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.healthDistrict]]></fieldDescription>
+	</field>
+	<field name="paziente.nome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="paziente.cognome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientLastName]]></fieldDescription>
+	</field>
+	<field name="paziente.eta" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.age]]></fieldDescription>
+	</field>
+	<field name="paziente.CF" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.taxCode]]></fieldDescription>
+	</field>
+	<field name="paziente.medicoFamiglia" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.generalPractitioner]]></fieldDescription>
+	</field>
+	<field name="paziente.natoIl" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="utente.lingua" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="esame.descrizione" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.orders.exams[0].exam.description]]></fieldDescription>
+	</field>
+	<field name="medico.titolo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.reportingDoctor.title]]></fieldDescription>
+	</field>
+	<field name="medico.nomeCognome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userFullName]]></fieldDescription>
+	</field>
+	<field name="data.visita" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.encounter.entryDate]]></fieldDescription>
+	</field>
+	<field name="data.attuale" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.requestData.generalData.currentDateTime]]></fieldDescription>
+	</field>
+	<field name="allergie.testo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.allergie]]></fieldDescription>
+	</field>
+	<field name="allergie.nonStampare" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.stampaAllergie]]></fieldDescription>
+	</field>
+	<field name="diagnosi.testo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.diagnosiNote]]></fieldDescription>
+	</field>
+	<field name="diagnosi.nonStampare" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.stampaDiagnosi]]></fieldDescription>
+	</field>
+	<field name="terapie.testo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.terapieInAtto]]></fieldDescription>
+	</field>
+	<field name="terapie.nonStampare" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.stampaTerapie]]></fieldDescription>
+	</field>
+	<field name="anamnesi.testo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.anamnesi]]></fieldDescription>
+	</field>
+	<field name="anamnesi.nonStampare" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.stampaAnamnesi]]></fieldDescription>
+	</field>
+	<field name="referto.testo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.referto]]></fieldDescription>
+	</field>
+	<field name="prescrizioni.testo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.prescrizioni]]></fieldDescription>
+	</field>
+	<field name="referto.allegato1" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.allegato1]]></fieldDescription>
+	</field>
+	<field name="referto.allegato2" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.allegato2]]></fieldDescription>
+	</field>
+	<variable name="v_dataAttuale" class="java.util.Date">
+		<variableExpression><![CDATA[new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss").parse($F{data.attuale})]]></variableExpression>
+	</variable>
+	<variable name="v_dataVisita" class="java.util.Date">
+		<variableExpression><![CDATA[new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm:ss").parse($F{data.visita})]]></variableExpression>
+	</variable>
+	<variable name="homeTherapies.size" class="java.lang.Integer">
+		<initialValueExpression><![CDATA[new java.lang.Integer(0)]]></initialValueExpression>
+	</variable>
+	<title>
+		<band height="83" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="160" height="69" uuid="f08edfb8-2675-4451-879e-b371d216f839"/>
+				<imageExpression><![CDATA["images/logo_TITOLO.png"]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="348" y="0" width="206" height="11" uuid="140084de-f716-495b-8740-80c4acd22b09">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reparto.dottPrimario} == null || $F{reparto.dottPrimario}.isEmpty() ? "" : ($F{utente.lingua}.equals($P{languageIT}) ? "Primario: " : "Primar: ") + $F{reparto.dottPrimario}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="348" y="11" width="206" height="11" uuid="a6880e47-8439-45f7-8a32-ff9abe4db7c4">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{comprensorio.indirizzo} == null ? "" :  ($F{comprensorio.indirizzo} + " | ") )  + $F{comprensorio.provincia} == null || $F{comprensorio.provincia}.isEmpty() ? "" : $F{comprensorio.provincia}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="348" y="33" width="207" height="11" uuid="c2c12e81-7a42-4c18-97ae-fb99fcda3f7b">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA["http://www.asdaa.it | " + ( $F{comprensorio.email} == null ? "" : $F{comprensorio.email} )]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="348" y="22" width="206" height="11" uuid="f55757a8-65c7-4495-afb9-2f58f523a940">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{comprensorio.tel} == null ? "" :  ("tel. " +$F{comprensorio.tel} ) + " | "  ) +
+( $F{comprensorio.fax} == null ? "" :  ("fax. " + $F{comprensorio.fax}  ) )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="348" y="55" width="206" height="11" uuid="52c492c0-dfd1-4a27-8ad5-127bdcbb7469">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Cod. fisc./P. IVA: " : "MwSt. Nr./St. Nr.: ")
++ "00773750211"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="348" y="44" width="206" height="11" uuid="7550ae0d-21f3-47f3-9e4a-23fc940a373e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Rag. soc.: " : "Firmenbezeichnung: ") +
+( $F{ragioneSociale} == null ? "" : $F{ragioneSociale} )]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="176" y="0" width="160" height="11" uuid="7667abd7-34cf-4765-b66d-4f747aa77a57">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comprensorio.descrizione}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="176" y="14" width="160" height="11" uuid="90899f7a-f708-4755-a593-aa42b346089e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7" isBold="false" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comprensorio.ospedaleDi}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="176" y="28" width="160" height="11" forecolor="#000000" uuid="5579234f-c95a-408f-bad7-de0d3ab29558">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<printWhenExpression><![CDATA[$F{comprensorio.reparto} != null && !$F{comprensorio.reparto}.trim().isEmpty()]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="7" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Reparto " : "Abteilung ") + $F{comprensorio.reparto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="112" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="37" width="555" height="63" uuid="83455b67-a64d-45bb-883b-52ed6ad51a65">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#999999"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+				</box>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="8" y="3" width="232" height="15" uuid="de89b928-28f2-40e6-8c93-8f1ae0f06196">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement markup="html"/>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Cognome: " : "Nachname: ") +
+( $F{paziente.cognome} == null ? "" : "<b>" + $F{paziente.cognome} + "</b>")]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="8" y="17" width="232" height="15" uuid="0f0871f9-be0e-4eb5-a328-3369541f8f3b">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement markup="html"/>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Nome: " : "Vorname: ") +
+( $F{paziente.nome} == null ? "" : "<b>" + $F{paziente.nome} + "</b>" )]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="8" y="31" width="232" height="15" uuid="c8fa502a-b85f-4f00-a0c6-39550f9a0e2a">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement markup="html"/>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Data di nascita: " : "Geboren am: ") +
+( $F{paziente.natoIl} == null ? "" : "<b>" + $F{paziente.natoIl} + "</b>" )]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="8" y="45" width="232" height="15" uuid="e6f23409-7f9a-4091-bf64-ac42ff6e8eb3">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "CF: " : "St. Nr.: ") +
+( $F{paziente.CF} == null ? "" : $F{paziente.CF} )]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="245" y="0" width="1" height="63" forecolor="#999999" uuid="74c7cfcd-d9ee-4cc9-8512-ffc1ae47d8dc">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="251" y="3" width="300" height="15" uuid="e1b06f11-d587-4d07-b17b-e418593a0529">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{paziente.medicoFamiglia} != null && $F{paziente.medicoFamiglia} != ""]]></printWhenExpression>
+					</reportElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Medico di famiglia: " : "Allgemeinmedizin Arzt: ") +  ( $F{paziente.medicoFamiglia} == null ? "" : $F{paziente.medicoFamiglia} )]]></textFieldExpression>
+				</textField>
+				<textField pattern="dd/MM/yyyy HH:mm" isBlankWhenNull="true">
+					<reportElement x="251" y="17" width="300" height="15" uuid="ea2ce34f-1266-4c3b-8d51-58b87f7f556a">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textFieldExpression><![CDATA[$V{v_dataVisita}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement x="251" y="32" width="300" height="15" uuid="6552993d-149c-4639-a3f4-392fbd95e9d5">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement verticalAlignment="Top"/>
+					<textFieldExpression><![CDATA[$F{esame.descrizione}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField isBlankWhenNull="true">
+				<reportElement x="478" y="8" width="77" height="15" uuid="ecc0b040-4190-423d-844d-039327001351"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{v_dataAttuale}]]></textFieldExpression>
+				<patternExpression><![CDATA["dd/MM/yyyy"]]></patternExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="268" y="8" width="210" height="15" uuid="3667482b-dd92-42c9-b296-b9b63653e6e1">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{comprensorio.provincia} == null || $F{comprensorio.provincia}.isEmpty() ? "" : $F{comprensorio.provincia} + ", "]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="53" splitType="Stretch">
+			<printWhenExpression><![CDATA[$F{referto.testo} != null]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="563d10da-ba3f-4c63-93cc-4afe6762411c">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Relazione" : "Abschlussbericht")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="20" width="555" height="30" isPrintWhenDetailOverflows="true" uuid="d09cad36-0f58-4650-b84c-1cce619189a2">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$F{referto.testo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="275">
+			<printWhenExpression><![CDATA[$F{referto.allegato1} != null || $F{referto.allegato2} != null]]></printWhenExpression>
+			<frame>
+				<reportElement x="0" y="0" width="555" height="275" uuid="392edeee-f95c-406b-a50d-a3084a514b8b"/>
+				<componentElement>
+					<reportElement stretchType="ElementGroupHeight" x="15" y="20" width="250" height="250" isPrintWhenDetailOverflows="true" uuid="b346885c-8588-427f-b9f3-e262c34ce1ed"/>
+					<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Center" verticalAlign="Top">
+						<hc:htmlContentExpression><![CDATA[$F{referto.allegato1}]]></hc:htmlContentExpression>
+					</hc:html>
+				</componentElement>
+				<componentElement>
+					<reportElement stretchType="ElementGroupHeight" x="290" y="20" width="250" height="250" isPrintWhenDetailOverflows="true" uuid="000afc6d-950f-41bb-b71c-dd3e1944358b"/>
+					<hc:html xmlns:hc="http://jasperreports.sourceforge.net/htmlcomponent" xsi:schemaLocation="http://jasperreports.sourceforge.net/htmlcomponent http://jasperreports.sourceforge.net/xsd/htmlcomponent.xsd" scaleType="RetainShape" horizontalAlign="Center" verticalAlign="Top">
+						<hc:htmlContentExpression><![CDATA[$F{referto.allegato2}]]></hc:htmlContentExpression>
+					</hc:html>
+				</componentElement>
+				<textField>
+					<reportElement x="15" y="0" width="250" height="20" uuid="725601c0-c7fe-4d79-9e0d-73f095117fcd">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Immagine 1" : "Bild 1")]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="290" y="0" width="250" height="20" uuid="8ad55846-fed9-45ea-b688-59157707c584">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Immagine 2" : "Bild 2")]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+		<band height="42">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[($F{diagnosi.nonStampare} == null || $F{diagnosi.nonStampare} != true) && $F{diagnosi.testo} != null]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="25073418-ffb1-4691-b413-f370a874330e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement markup="html">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Diagnosi Note" : "Bekannte Diagnosen")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="20" width="555" height="17" uuid="821b6abf-bde0-4c8c-bbdb-742aaec99151">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{diagnosi.testo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="40">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[($F{allergie.nonStampare} == null || $F{allergie.nonStampare} != true) && $F{allergie.testo} != null]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="a28996ed-ab6f-4a7f-91f1-8ee473f5ced0">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Allergie" : "Allergien")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="20" width="555" height="17" uuid="f9e3427f-9263-4278-babf-6a32987d4408">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{allergie.testo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="69">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[($F{terapie.nonStampare} == null || ($F{terapie.nonStampare} != null && $F{terapie.nonStampare} != true))]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="5" width="555" height="20" uuid="f9142f35-556a-4800-aa07-030daf2099f4">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Terapie Farmacologiche" : "Medikamentöse Therapien")]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="0" y="25" width="555" height="40" uuid="e284ecfc-5c7b-4523-a399-eb48200bf538">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="TerapieDomiciliari" uuid="aa2e9971-62cd-4654-b3bb-d918fa91c8ac">
+						<datasetParameter name="languageIT">
+							<datasetParameterExpression><![CDATA[$P{languageIT}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="utente.lingua">
+							<datasetParameterExpression><![CDATA[$F{utente.lingua}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="JSON_INPUT_STREAM">
+							<datasetParameterExpression><![CDATA[$P{JSON_INPUT_STREAM}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.source">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.source}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.sources">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.sources}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.date.pattern">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.date.pattern}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.number.pattern">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.number.pattern}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="JSON_LOCALE">
+							<datasetParameterExpression><![CDATA[$P{JSON_LOCALE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.locale.code">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.locale.code}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="JSON_TIME_ZONE">
+							<datasetParameterExpression><![CDATA[$P{JSON_TIME_ZONE}]]></datasetParameterExpression>
+						</datasetParameter>
+						<datasetParameter name="net.sf.jasperreports.json.timezone.id">
+							<datasetParameterExpression><![CDATA[$P{net.sf.jasperreports.json.timezone.id}]]></datasetParameterExpression>
+						</datasetParameter>
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("formDocument.initData.patient.homeTherapiesSummary")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="60" uuid="86c5fa1c-f33d-4596-9089-034a206dc637">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonna1"/>
+						<jr:columnHeader style="Table_TH" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="54" height="14" uuid="384e0574-6fd0-40ac-af52-bee9755d21a0"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($P{utente.lingua}.equals($P{languageIT}) ? "Data Inizio" : "Anfangsdatum")]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="0" width="54" height="14" uuid="b66a69ce-1c7a-4d53-b026-6181cd41113a"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textFieldExpression><![CDATA[$F{dataInizio}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="135" uuid="fa3e8734-d640-43f5-b9e4-62729155aad3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonna2"/>
+						<jr:columnHeader style="Table_TH" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="129" height="14" uuid="762736c7-77b7-457a-be01-e6da2bdaa2da"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($P{utente.lingua}.equals($P{languageIT}) ? "Nome farmaco" : "Medikamentenname")]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="0" width="129" height="14" uuid="2b99e2ab-bffd-4950-9156-cf1648611cc5"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textFieldExpression><![CDATA[$F{nomeFarmaco}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="d21fcc69-45de-449d-a576-26e452b44598">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonna3"/>
+						<jr:columnHeader style="Table_TH" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="06431a0d-66ee-4e80-b810-21b717dfa500"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($P{utente.lingua}.equals($P{languageIT}) ? "Colaz." : "Früh.")]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="45c57f98-0d76-45a6-b689-61fbe04c0c80"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textFieldExpression><![CDATA[$F{posologia} != null && !$F{posologia}.isEmpty() && $F{posologia}.indexOf("-") >= 0 ? $F{posologia}.substring(0, $F{posologia}.indexOf("-")-1 ) : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="131f40fc-20d0-4c58-9cc2-ae2707e73ab2">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonna4"/>
+						<jr:columnHeader style="Table_TH" height="20" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="6689f8b4-734d-49d0-8161-c42442d6e54b"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($P{utente.lingua}.equals($P{languageIT}) ? "Pranzo" : "Mitt.")]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="fa8df316-c668-4fdb-89a4-6a2893c45a46"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textFieldExpression><![CDATA[$F{posologia} != null && !$F{posologia}.isEmpty() && $F{posologia}.indexOf("-") >= 0 ? $F{posologia}.substring($F{posologia}.indexOf("-")+2, $F{posologia}.substring($F{posologia}.indexOf("-")+1, $F{posologia}.length()-1).indexOf("-")+$F{posologia}.indexOf("-")) : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="ea2daf96-af6f-440e-8591-7f0e55e978c5">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonna5"/>
+						<jr:columnHeader style="Table_TH" height="20" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="8a0170d7-c02e-4a2d-9155-c3e972652f8e"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($P{utente.lingua}.equals($P{languageIT}) ? "Cena" : "Abend.")]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="3348fdb4-cef5-4caa-8a89-a1955df829a2"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textFieldExpression><![CDATA[$F{posologia} != null && !$F{posologia}.isEmpty() && $F{posologia}.indexOf("-") >= 0 ? $F{posologia}.substring($F{posologia}.substring($F{posologia}.indexOf("-")+1, $F{posologia}.length()-1).indexOf("-")+$F{posologia}.indexOf("-")+2, $F{posologia}.lastIndexOf("-")-1) : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="45" uuid="0fe6ca11-d938-44da-b57b-1aefa6d3be35">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonna6"/>
+						<jr:columnHeader style="Table_TH" height="20" rowSpan="1">
+							<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="9fb61be0-bfe1-4512-9aaa-baebbb3ab1cc"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($P{utente.lingua}.equals($P{languageIT}) ? "Notte" : "Nacht")]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="39" height="14" uuid="0fbd1d7d-ce5a-47c2-b3c0-cae73f6864a6"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textFieldExpression><![CDATA[$F{posologia} != null && !$F{posologia}.isEmpty() && $F{posologia}.indexOf("-") >= 0 ? $F{posologia}.substring($F{posologia}.lastIndexOf("-")+2) : ""]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="180" uuid="8b46d0a7-1397-4268-bc33-9a674addbef3">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Colonna7"/>
+						<jr:columnHeader style="Table_TH" height="20" rowSpan="1">
+							<textField>
+								<reportElement x="0" y="0" width="174" height="14" uuid="b874c221-5253-45a3-ad29-14e1ad62992f"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textElement>
+									<font isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[($P{utente.lingua}.equals($P{languageIT}) ? "Note" : "Notizen")]]></textFieldExpression>
+							</textField>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="20">
+							<textField isStretchWithOverflow="true">
+								<reportElement x="0" y="0" width="174" height="14" uuid="c5b7f692-193e-44ec-8394-454c3340b9d6"/>
+								<box leftPadding="3">
+									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+									<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								</box>
+								<textFieldExpression><![CDATA[($F{posologia}.indexOf("-") < 0 ? $F{posologia} + " - " : "") + ($F{note} != null ? $F{note} : "")]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<break>
+				<reportElement x="0" y="0" width="575" height="1" uuid="8e18ac60-27e6-4ef4-a4ee-9c4e838353ec"/>
+			</break>
+		</band>
+		<band height="41" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<printWhenExpression><![CDATA[($F{anamnesi.nonStampare} == null || $F{anamnesi.nonStampare} != true) && $F{anamnesi.testo}!= null]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="980c9a2c-425b-48e0-9ec6-99a14d555d3e">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Anamnesi" : "Anamnese")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="20" width="555" height="17" uuid="adea4025-1af8-45eb-ab64-133a38dd1bcf">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{anamnesi.testo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="41">
+			<printWhenExpression><![CDATA[$F{prescrizioni.testo} != null]]></printWhenExpression>
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="f564e0ee-fc2a-4aba-a31a-9eb00da59b77">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Prescrizioni" : "Verschreibungen")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="20" width="555" height="17" uuid="43ea9c9a-9741-4d0c-acc8-f29d5399b920">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[$F{prescrizioni.testo}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="25">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="251" y="3" width="285" height="15" uuid="14fac60d-cb90-4ffa-84ac-1376bf7cfe3d">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Dr. " + ( $F{medico.nomeCognome} == null ? "" : $F{medico.nomeCognome} )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="74" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="7" width="555" height="40" uuid="b887adf5-a7e8-4196-8146-633d6cd4650f">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#999999"/>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#999999"/>
+				</box>
+				<line>
+					<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="162" y="0" width="1" height="40" forecolor="#999999" uuid="3dc4d03d-465f-4468-8043-696eb7e0cefa">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement x="166" y="1" width="185" height="11" uuid="7c898f92-dbee-4416-967a-547fcbf80ace">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Paziente: " : "Patient: ") +
+( $F{paziente.cognome} == null ? "" :  ($F{paziente.cognome} + " ") ) +
+( $F{paziente.nome} == null ? "" : $F{paziente.nome} )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="166" y="13" width="185" height="11" uuid="75b1d26a-6f10-4eb1-9a58-68bbbb98036e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Data di nascita: " : "Geboren am: ") +
+( $F{paziente.natoIl} == null ? "" : $F{paziente.natoIl} )]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="166" y="25" width="185" height="11" uuid="294a2ae1-4dda-41cc-a3e7-2c7855216bd2">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "CF: " : "St. Nr.: ") +
+( $F{paziente.CF} == null ? "" : $F{paziente.CF} )]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="353" y="0" width="1" height="40" forecolor="#999999" uuid="0ede09a6-82d4-4c95-b968-bd9ea983cc67">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy HH:mm" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="357" y="1" width="195" height="11" uuid="5912a4ca-52d5-45ac-abb3-d597eb0e757e">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+						<printWhenExpression><![CDATA[$F{paziente.medicoFamiglia} != null && $F{paziente.medicoFamiglia} != ""]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Medico di famiglia: " : "Allgemeinmedizin Arzt: ") +  ( $F{paziente.medicoFamiglia} == null ? "" : $F{paziente.medicoFamiglia} )]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy HH:mm" isBlankWhenNull="true">
+					<reportElement positionType="Float" x="357" y="12" width="195" height="11" uuid="9d4e8e7f-da0a-4778-9f94-368a7dc3c46d">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$V{v_dataVisita}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="357" y="23" width="195" height="17" uuid="725382ab-a5e0-4ae3-a6b2-e4ef2bf2e454">
+						<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					</reportElement>
+					<textElement>
+						<font size="7"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{esame.descrizione}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField>
+				<reportElement positionType="Float" x="415" y="52" width="110" height="15" uuid="7b6b1040-2fed-45df-84ce-1d88ae1380e7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? "Pagina " : "Seite ") + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement positionType="Float" x="525" y="52" width="30" height="15" uuid="7b280a03-19be-4b6f-b4d5-9f810677368f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" isBold="false"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{utente.lingua}.equals($P{languageIT}) ? " di " : " von ") +$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

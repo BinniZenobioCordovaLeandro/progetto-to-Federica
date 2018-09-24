@@ -1,0 +1,11 @@
+{{'variabileTittle'|translate}}
+it_IT : Doppler Arti Inferiori Arterioso
+de_DE : Doppler Arti Inferiori Arterioso
+
+{{'variabileQuesito'|translate}}
+it_IT : Quesito Clinico
+de_DE : Klinische Frage
+
+{{'variabileConclusioni'|translate}}
+it_IT : Conclusioni
+de_DE : Schlussfolgerungen

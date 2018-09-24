@@ -1,0 +1,764 @@
+[{
+  "id": "5ba4a98ecfc10448cec3ceae",
+  "insertUserId": 16,
+  "insertUser": "Lorenzo Zanivan",
+  "insertTimeUTC": "2018-09-21T08:19:26.069+0000",
+  "insertTime": "2018-09-21T08:19:26.069+0000",
+  "updateUserId": 16,
+  "updateUser": "Lorenzo Zanivan",
+  "updateTimeUTC": "2018-09-21T10:51:45.470+0000",
+  "updateTime": "2018-09-21T10:51:45.470+0000",
+  "organizationId": 4,
+  "valid": true,
+  "cancellationTime": null,
+  "cancellationUser": null,
+  "cancellationUserId": null,
+  "cancellationTimeUTC": null,
+  "formInstanceId": "5ba4a98ecfc10448cec3cead",
+  "formDocument": {
+    "initData": {
+      "requestDate": "21/09/2018",
+      "generalData": {
+        "userId": "16",
+        "userFullName": "Lorenzo Zanivan",
+        "userLanguage": "it_IT",
+        "currentDateTime": "21/09/2018 12:51:44",
+        "userHealthCareProvider": null,
+        "userProfile": "Lorenzo Zanivan",
+        "username": "lorenzo.zanivan"
+      },
+      "encounter": {
+        "counter": "E2018001382",
+        "type": "VISIT",
+        "entryDate": "21/09/2018 09:05:23",
+        "priority": "P-Programmata",
+        "entryReason": "",
+        "clinicalSpeciality": "",
+        "treatmentType": "",
+        "clinicalQuestion": "",
+        "diagnosis": "",
+        "bed": "",
+        "agreement": "",
+        "priceList": "",
+        "priceListId": null,
+        "servicePoint": "BZH_Medicina Interna",
+        "servicePointCode": "5660",
+        "servicePointMedicalSpecializationCode": "",
+        "servicePointMedicalSpecializationDescription": "",
+        "organizationUnit": "Richiedente BZH_Medicina Interna",
+        "organizationUnitCode": "CUP_OE^IM^5660",
+        "organizationUnitAddress": " ",
+        "organizationUnitZipCode": null,
+        "organizationUnitMunicipality": "",
+        "organizationUnitCountry": "",
+        "patientSource": "",
+        "facility": "",
+        "ward": "",
+        "category": "",
+        "note": "",
+        "assessmentDiagnosis": "",
+        "assessmentOutcome": "",
+        "assessmentIntervention": "",
+        "assessmentActivityRecord": "",
+        "servicePointCustomParameters": {},
+        "organizationUnitCustomParameters": {}
+      },
+      "patient": {
+        "patientId": "2982",
+        "taxCode": "",
+        "patientFirstName": "MAX123",
+        "patientSecondName": "",
+        "patientThirdName": "",
+        "patientLastName": "MUSTERMANN",
+        "sex": "F",
+        "birthdate": "01/01/1966",
+        "age": "52 anni",
+        "birthPlace": "",
+        "legalAddressMunicipality": null,
+        "legalAddressProvince": null,
+        "legalAddressStreet": null,
+        "legalAddressZipCode": null,
+        "legalAddressCountry": null,
+        "phone": "07467985",
+        "mobilePhone": "333-9876543",
+        "email": "blabla@hi.it",
+        "healthDistrict": "",
+        "generalPractitioner": "",
+        "contactName": "",
+        "contactPhone": "",
+        "contactEmail": "",
+        "maritalStatus": "Sconosciuto",
+        "education": "",
+        "profession": "",
+        "problemSummary": "Diagnosi: \n   123.1, CISTICERCOSI, CISTICERCOSI nota ulteriore nota per prova modifica 13/07, Sospetto, 30/07/2018\n   123.1, CISTICERCOSI, CISTICERCOSI\n   123.1, CISTICERCOSI, CISTICERCOSI di prova riproviamo\n   123.1, CISTICERCOSI, CISTICERCOSI\n   428.0, INSUFFICIENZA CARDIACA CONGESTIZIA NON SPECIFICATA (SCOMPENSO CARDIACO CONGESTIZIO NON SPECIFICATO), Pre diagnosi, scompenso, mag 2018, 13/07/2018\n   434.11, EMBOLIA CEREBRALE CON INFARTO CEREBRALE, EMBOLIA CEREBRALE CON INFARTO CEREBRALE\n   427.0, TACHICARDIA PAROSSISTICA SOPRAVENTRICOLARE, TACHICARDIA PAROSSISTICA SOPRAVENTRICOLARE\n   032.84, CISTITE DIFTERICA, CISTITE DIFTERICA aggiungo nota, ago 2018\n   250.20, DIABETE CON IPEROSMOLARITÀ ,TIPO II O NON SPECIFICATO,NON DEFINITO SE SCOMPENSATO, DIABETE CON IPEROSMOLARITÀ ,TIPO II O NON SPECIFICATO,NON DEFINITO SE SCOMPENSATO, 19/09/2018\n   075., MONONUCLEOSI INFETTIVA, MONONUCLEOSI INFETTIVA prova, Sospetto\n   228.01, EMANGIOMA DELLA CUTE E DEL TESSUTO SOTTOCUTANEO, EMANGIOMA DELLA CUTE E DEL TESSUTO SOTTOCUTANEO, 09/07/2018\n   015.12, TUBERCOLOSI DELL'ANCA,RISULTATO DELL'ESAME BATTERIOLOGICO O ISTOLOGICO NON CONOSCIUTO (ALLO STATO ATTUALE), TUBERCOLOSI DELL'ANCA,RISULTATO DELL'ESAME BATTERIOLOGICO O ISTOLOGICO NON CONOSCIUTO (ALLO STATO ATTUALE), Cronico\n   427.31, FIBRILLAZIONE ATRIALE, FIBRILLAZIONE ATRIALE\n   423.2, PERICARDITE COSTRITTIVA, PERICARDITE COSTRITTIVA\n   345.10, EPILESSIA GENERALIZZATA CONVULSIVA,SENZA MENZIONE DI EPILESSIA NON TRATTABILE, EPILESSIA GENERALIZZATA CONVULSIVA,SENZA MENZIONE DI EPILESSIA NON TRATTABILE, Sospetto, feb 2018\n   535.40, ALTRA GASTRITE SPECIFICATA SENZA MENZIONE DI EMORRAGIA, ALTRA GASTRITE SPECIFICATA SENZA MENZIONE DI EMORRAGIA, Sospetto, feb 2018\n   414.9, CARDIOPATIA ISCHEMICA CRONICA NON SPECIFICATA, CARDIOPATIA ISCHEMICA CRONICA NON SPECIFICATA Eigener Zusatztext zur Diagnose, feb 2018\n   472.0, RINITE CRONICA, RINITE CRONICA, Cronico\n   252.1, IPOPARATIROIDISMO, qui il medico scrive quello che vuole sulla diagnosi, Sospetto, lug 2018\n   428.21,  INSUFFICIENZA CARDIACA SISTOLICA ACUTA, INSUFFICIENZA CARDIACA SISTOLICA ACUTA inserita in data 28/08/2018, ago 2018\n   V10.43, ANAMNESI PERSONALE DI TUMORE MALIGNO DELL'OVAIO, ANAMNESI PERSONALE DI TUMORE MALI, Cronico\n   V15.6, ANAMNESI PERSONALE DI AVVELENAMENTO,CON RISCHIO DI MALATTIA, avvelenamento\n   733.93, FRATTURA DA STRESS DELLA TIBIA O PERONE, FRATTURA DA STRESS DELLA TIBIA O PERONE, gen 2018, 09/07/2018\n   003.23, ARTRITE DA SALMONELLA, artrite Oriella, mag 2018\n   099.3, MALATTIA DI REITER, MALATTIA DI REITER di prova\n   003.24, OSTEOMIELITE DA SALMONELLA, OSTEOMIELITE DA SALMONELLA\n   003.24, OSTEOMIELITE DA SALMONELLA, OSTEOMIELITE DA SALMONELLA\n   093.9, SIFILIDE CARDIOVASCOLARE,NON SPECIFICATA, SIFILIDE CARDIOVASCOLARE,NON SPECIFICATA di prova\n   571.0, STEATOSI EPATICA ALCOLICA, STEATOSI EPATICA ALCOLICA\n   157.2, TUMORI MALIGNI DELLA CODA DEL PANCREAS, TUMORI MALIGNI DELLA CODA DEL PANCREAS, Sospetto, 06/05/2018\n   428.21,  INSUFFICIENZA CARDIACA SISTOLICA ACUTA,  INSUFFICIENZA CARDIACA SISTOLICA ACUTA, mar 2018\n   482.9, POLMONITE BATTERICA,NON SPECIFICATA, POLMONITE BATTERICA,NON SPECIFICATA, mar 2018\n   428.21,  INSUFFICIENZA CARDIACA SISTOLICA ACUTA,  INSUFFICIENZA CARDIACA SISTOLICA ACUTA, apr 2018\n   482.9, POLMONITE BATTERICA,NON SPECIFICATA, POLMONITE BATTERICA,NON SPECIFICATA, mag 2018\n   242.90, TIREOTOSSICOSI SENZA MENZIONE DI GOZZO O DI ALTRA CAUSA E SENZA CRISI TIREOTOSSICA, TIREOTOSSICOSI SENZA MENZIONE DI GOZZO O DI ALTRA CAUSA E SENZA CRISI TIREOTOSSICA, Sospetto\n   428.21,  INSUFFICIENZA CARDIACA SISTOLICA ACUTA,  INSUFFICIENZA CARDIACA SISTOLICA ACUTA, Sospetto, mag 2018\n   427.31, FIBRILLAZIONE ATRIALE, FIBRILLAZIONE ATRIALE test\n   648.24, ANEMIA,CONDIZIONE O COMPLICAZIONE POSTPARTUM, ANEMIA,CONDIZIONE O COMPLICAZIONE POSTPARTUM, 11/06/2018\n   V15.6, ANAMNESI PERSONALE DI AVVELENAMENTO,CON RISCHIO DI MALATTIA, ANAMNESI PERSONALE DI AVVELENAMENTO,CON RISCHIO DI MALATTIA\n   007.0, BALANTIDIASI, BALANTIDIASI, Sospetto\n   458.1, IPOTENSIONE CRONICA, IPOTENSIONE CRONICA - tremori 13/07 accert\n   244.0, IPOTIROIDISMO POST-CHIRURGICO, IPOTIROIDISMO POST-CHIRURGICO QUI DOBBIAMO VERIFICARE COSA RIPORTA NEL REFERTO\n   009.2, DIARREA INFETTIVA, DIARREA INFETTIVA\n   427.31, FIBRILLAZIONE ATRIALE, Pre diagnosi, FIBRILLAZIONE ATRIALE, Sospetto\n   448.1, NEVO,NON NEOPLASTICO, NEVO,NON NEOPLASTICO - prova 13/07, lug 2018\n   009.0, COLITE,ENTERITE E GASTROENTERITE INFETTIVE, COLITE,ENTERITE E GASTROENTERITE INFETTIVE, set 2018\n   482.9, POLMONITE BATTERICA,NON SPECIFICATA, POLMONITE BATTERICA,NON SPECIFICATA, ago 2018\n   491.21, BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA), BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA), set 2018\n   491.21, BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA), BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA), ago 2018\n   599.0, INFEZIONE DEL SISTEMA URINARIO,SITO NON SPECIFICATO, INFEZIONE DEL SISTEMA URINARIO,SITO NON SPECIFICATO, lug 2018\n   240.9, GOZZO NON SPECIFICATO, GOZZO NON SPECIFICATO SUFFICIENTE\n   V10.11, ANAMNESI PERSONALE DI TUMORE MALIGNO DI BRONCHI E POLMONI, ANAMNESI PERSONALE DI TUMORE MALIGNO DI BRONCHI E POLMONI, ago 2018\n   094.81, ENCEFALITE SIFILITICA, ENCEFALITE SIFILITICA, Sospetto, gen 2018\n\nValutazione clinica:\nAnamnesi familiare e sociale\n<br/>20/09/2018 prova\n<br/>Anamnesi personale di specialità\n<br/>20/09/2018 Medicina - o\n<br/>\n<br/>Esami effettuati\n<br/>* VISITA INTERNISTICA DI CONTROLLO\n<br/>\n<br/>",
+        "allergiesSummary": [{
+          "tipoAllergia": "AMBIENTALE",
+          "allergenePrincipioAttivo": "Additivi",
+          "provenienza": "Esame Obiettivo",
+          "gravita": null,
+          "nota": "bla bla",
+          "dataChisura": "",
+          "notaChiusura": null
+        }, {
+          "tipoAllergia": "AMBIENTALE",
+          "allergenePrincipioAttivo": "Pollini di piante arboree",
+          "provenienza": "Referto",
+          "gravita": null,
+          "nota": "",
+          "dataChisura": "",
+          "notaChiusura": null
+        }, {
+          "tipoAllergia": "FARMACO",
+          "allergenePrincipioAttivo": "ACIDO CLAVULANICO",
+          "provenienza": "Paziente",
+          "gravita": null,
+          "nota": "",
+          "dataChisura": "",
+          "notaChiusura": null
+        }, {
+          "tipoAllergia": "AMBIENTALE",
+          "allergenePrincipioAttivo": "Parassiti",
+          "provenienza": "",
+          "gravita": null,
+          "nota": "inserita 13/7 - modifica 20/9",
+          "dataChisura": "",
+          "notaChiusura": null
+        }, {
+          "tipoAllergia": "FARMACO",
+          "allergenePrincipioAttivo": "METOCLOPRAMIDE CLORIDRATO",
+          "provenienza": "Paziente",
+          "gravita": null,
+          "nota": "eh si",
+          "dataChisura": "",
+          "notaChiusura": null
+        }],
+        "allergiesSummaryFormatted": "Additivi (bla bla)\nPollini di piante arboree\nACIDO CLAVULANICO\nParassiti (inserita 13/7 - modifica 20/9)\nMETOCLOPRAMIDE CLORIDRATO (eh si)\n",
+        "diagnosisSummary": [{
+          "codiceDiagnosi": "123.1",
+          "descrizioneDiagnosi": "CISTICERCOSI",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "123.1",
+          "descrizioneDiagnosi": "CISTICERCOSI",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "434.11",
+          "descrizioneDiagnosi": "EMBOLIA CEREBRALE CON INFARTO CEREBRALE",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "427.0",
+          "descrizioneDiagnosi": "TACHICARDIA PAROSSISTICA SOPRAVENTRICOLARE",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "032.84",
+          "descrizioneDiagnosi": "CISTITE DIFTERICA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "ago 2018"
+        }, {
+          "codiceDiagnosi": "075.",
+          "descrizioneDiagnosi": "MONONUCLEOSI INFETTIVA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "015.12",
+          "descrizioneDiagnosi": "TUBERCOLOSI DELL'ANCA,RISULTATO DELL'ESAME BATTERIOLOGICO O ISTOLOGICO NON CONOSCIUTO (ALLO STATO ATTUALE)",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Cronico Accertato",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "427.31",
+          "descrizioneDiagnosi": "FIBRILLAZIONE ATRIALE",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "423.2",
+          "descrizioneDiagnosi": "PERICARDITE COSTRITTIVA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "345.10",
+          "descrizioneDiagnosi": "EPILESSIA GENERALIZZATA CONVULSIVA,SENZA MENZIONE DI EPILESSIA NON TRATTABILE",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "feb 2018"
+        }, {
+          "codiceDiagnosi": "535.40",
+          "descrizioneDiagnosi": "ALTRA GASTRITE SPECIFICATA SENZA MENZIONE DI EMORRAGIA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "feb 2018"
+        }, {
+          "codiceDiagnosi": "414.9",
+          "descrizioneDiagnosi": "CARDIOPATIA ISCHEMICA CRONICA NON SPECIFICATA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "feb 2018"
+        }, {
+          "codiceDiagnosi": "472.0",
+          "descrizioneDiagnosi": "RINITE CRONICA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Cronico",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "252.1",
+          "descrizioneDiagnosi": "IPOPARATIROIDISMO",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "lug 2018"
+        }, {
+          "codiceDiagnosi": "428.21",
+          "descrizioneDiagnosi": " INSUFFICIENZA CARDIACA SISTOLICA ACUTA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "ago 2018"
+        }, {
+          "codiceDiagnosi": "V10.43",
+          "descrizioneDiagnosi": "ANAMNESI PERSONALE DI TUMORE MALIGNO DELL'OVAIO",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Cronico Accertato",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "V15.6",
+          "descrizioneDiagnosi": "ANAMNESI PERSONALE DI AVVELENAMENTO,CON RISCHIO DI MALATTIA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "003.23",
+          "descrizioneDiagnosi": "ARTRITE DA SALMONELLA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "mag 2018"
+        }, {
+          "codiceDiagnosi": "099.3",
+          "descrizioneDiagnosi": "MALATTIA DI REITER",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "003.24",
+          "descrizioneDiagnosi": "OSTEOMIELITE DA SALMONELLA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "003.24",
+          "descrizioneDiagnosi": "OSTEOMIELITE DA SALMONELLA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "093.9",
+          "descrizioneDiagnosi": "SIFILIDE CARDIOVASCOLARE,NON SPECIFICATA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "428.21",
+          "descrizioneDiagnosi": " INSUFFICIENZA CARDIACA SISTOLICA ACUTA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "mar 2018"
+        }, {
+          "codiceDiagnosi": "482.9",
+          "descrizioneDiagnosi": "POLMONITE BATTERICA,NON SPECIFICATA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "mar 2018"
+        }, {
+          "codiceDiagnosi": "428.21",
+          "descrizioneDiagnosi": " INSUFFICIENZA CARDIACA SISTOLICA ACUTA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "apr 2018"
+        }, {
+          "codiceDiagnosi": "482.9",
+          "descrizioneDiagnosi": "POLMONITE BATTERICA,NON SPECIFICATA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "mag 2018"
+        }, {
+          "codiceDiagnosi": "242.90",
+          "descrizioneDiagnosi": "TIREOTOSSICOSI SENZA MENZIONE DI GOZZO O DI ALTRA CAUSA E SENZA CRISI TIREOTOSSICA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "428.21",
+          "descrizioneDiagnosi": " INSUFFICIENZA CARDIACA SISTOLICA ACUTA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "mag 2018"
+        }, {
+          "codiceDiagnosi": "427.31",
+          "descrizioneDiagnosi": "FIBRILLAZIONE ATRIALE",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Infermieristico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "V15.6",
+          "descrizioneDiagnosi": "ANAMNESI PERSONALE DI AVVELENAMENTO,CON RISCHIO DI MALATTIA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "007.0",
+          "descrizioneDiagnosi": "BALANTIDIASI",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "458.1",
+          "descrizioneDiagnosi": "IPOTENSIONE CRONICA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Accertato",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "244.0",
+          "descrizioneDiagnosi": "IPOTIROIDISMO POST-CHIRURGICO",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "009.2",
+          "descrizioneDiagnosi": "DIARREA INFETTIVA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "427.31",
+          "descrizioneDiagnosi": "FIBRILLAZIONE ATRIALE",
+          "stadioDiagnosi": "Pre diagnosi",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "448.1",
+          "descrizioneDiagnosi": "NEVO,NON NEOPLASTICO",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "lug 2018"
+        }, {
+          "codiceDiagnosi": "009.0",
+          "descrizioneDiagnosi": "COLITE,ENTERITE E GASTROENTERITE INFETTIVE",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "set 2018"
+        }, {
+          "codiceDiagnosi": "482.9",
+          "descrizioneDiagnosi": "POLMONITE BATTERICA,NON SPECIFICATA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "ago 2018"
+        }, {
+          "codiceDiagnosi": "491.21",
+          "descrizioneDiagnosi": "BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA)",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "set 2018"
+        }, {
+          "codiceDiagnosi": "491.21",
+          "descrizioneDiagnosi": "BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA)",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "ago 2018"
+        }, {
+          "codiceDiagnosi": "599.0",
+          "descrizioneDiagnosi": "INFEZIONE DEL SISTEMA URINARIO,SITO NON SPECIFICATO",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "lug 2018"
+        }, {
+          "codiceDiagnosi": "240.9",
+          "descrizioneDiagnosi": "GOZZO NON SPECIFICATO",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": ""
+        }, {
+          "codiceDiagnosi": "V10.11",
+          "descrizioneDiagnosi": "ANAMNESI PERSONALE DI TUMORE MALIGNO DI BRONCHI E POLMONI",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "ago 2018"
+        }, {
+          "codiceDiagnosi": "094.81",
+          "descrizioneDiagnosi": "ENCEFALITE SIFILITICA",
+          "stadioDiagnosi": "",
+          "statoDiagnosi": "Sospetto",
+          "tipoDiagnosi": "Medico",
+          "dataInsorgenza": "gen 2018"
+        }],
+        "diagnosisSummaryFormatted": " - CISTICERCOSI \n - CISTICERCOSI \n - EMBOLIA CEREBRALE CON INFARTO CEREBRALE \n - TACHICARDIA PAROSSISTICA SOPRAVENTRICOLARE \nago 2018 - CISTITE DIFTERICA \n - MONONUCLEOSI INFETTIVA \n - TUBERCOLOSI DELL'ANCA,RISULTATO DELL'ESAME BATTERIOLOGICO O ISTOLOGICO NON CONOSCIUTO (ALLO STATO ATTUALE) \n - FIBRILLAZIONE ATRIALE \n - PERICARDITE COSTRITTIVA \nfeb 2018 - EPILESSIA GENERALIZZATA CONVULSIVA,SENZA MENZIONE DI EPILESSIA NON TRATTABILE \nfeb 2018 - ALTRA GASTRITE SPECIFICATA SENZA MENZIONE DI EMORRAGIA \nfeb 2018 - CARDIOPATIA ISCHEMICA CRONICA NON SPECIFICATA \n - RINITE CRONICA \nlug 2018 - IPOPARATIROIDISMO \nago 2018 -  INSUFFICIENZA CARDIACA SISTOLICA ACUTA \n - ANAMNESI PERSONALE DI TUMORE MALIGNO DELL'OVAIO \n - ANAMNESI PERSONALE DI AVVELENAMENTO,CON RISCHIO DI MALATTIA \nmag 2018 - ARTRITE DA SALMONELLA \n - MALATTIA DI REITER \n - OSTEOMIELITE DA SALMONELLA \n - OSTEOMIELITE DA SALMONELLA \n - SIFILIDE CARDIOVASCOLARE,NON SPECIFICATA \nmar 2018 -  INSUFFICIENZA CARDIACA SISTOLICA ACUTA \nmar 2018 - POLMONITE BATTERICA,NON SPECIFICATA \napr 2018 -  INSUFFICIENZA CARDIACA SISTOLICA ACUTA \nmag 2018 - POLMONITE BATTERICA,NON SPECIFICATA \n - TIREOTOSSICOSI SENZA MENZIONE DI GOZZO O DI ALTRA CAUSA E SENZA CRISI TIREOTOSSICA \nmag 2018 -  INSUFFICIENZA CARDIACA SISTOLICA ACUTA \n - FIBRILLAZIONE ATRIALE \n - ANAMNESI PERSONALE DI AVVELENAMENTO,CON RISCHIO DI MALATTIA \n - BALANTIDIASI \n - IPOTENSIONE CRONICA \n - IPOTIROIDISMO POST-CHIRURGICO \n - DIARREA INFETTIVA \n - FIBRILLAZIONE ATRIALE \nlug 2018 - NEVO,NON NEOPLASTICO \nset 2018 - COLITE,ENTERITE E GASTROENTERITE INFETTIVE \nago 2018 - POLMONITE BATTERICA,NON SPECIFICATA \nset 2018 - BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA) \nago 2018 - BRONCHITE CRONICA OSTRUTTIVA,CON ESACERBAZIONE (ACUTA) \nlug 2018 - INFEZIONE DEL SISTEMA URINARIO,SITO NON SPECIFICATO \n - GOZZO NON SPECIFICATO \nago 2018 - ANAMNESI PERSONALE DI TUMORE MALIGNO DI BRONCHI E POLMONI \ngen 2018 - ENCEFALITE SIFILITICA \n",
+        "homeTherapiesSummary": [{
+          "nomeFarmaco": "MADOPAR*30CPS 100MG+25MG",
+          "formaFarmacologica": "CAPSULE RIGIDE",
+          "posologia": "2 - 4 - 4 - 2",
+          "dataInizio": "set 2018",
+          "note": "alle 8:00 2 cp\nalle 13:00 2 cp",
+          "dataSospensione": "set 2018",
+          "noteSospensione": ""
+        }, {
+          "nomeFarmaco": "KEPPRA*60CPR RIV 500MG",
+          "formaFarmacologica": "COMPRESSE RIVESTITE",
+          "posologia": "1 - 0 - 1 - 0",
+          "dataInizio": "set 2018",
+          "note": "",
+          "dataSospensione": "set 2018",
+          "noteSospensione": ""
+        }, {
+          "nomeFarmaco": "NEONISIDINA*12CPR",
+          "formaFarmacologica": "COMPRESSE",
+          "posologia": "1 - 0 - 0 - 0",
+          "dataInizio": "set 2018",
+          "note": "",
+          "dataSospensione": "set 2018",
+          "noteSospensione": ""
+        }, {
+          "nomeFarmaco": "LULULU",
+          "formaFarmacologica": "",
+          "posologia": "1 - 0 - 0 - 0",
+          "dataInizio": "lug 2018",
+          "note": "PROVA",
+          "dataSospensione": "lug 2018",
+          "noteSospensione": ""
+        }, {
+          "nomeFarmaco": "BRUFEN*OS GRAT 30BUST 600MG",
+          "formaFarmacologica": "GRANULATO",
+          "posologia": "Al bisogno",
+          "dataInizio": "lug 2018",
+          "note": "PROVA DI CANCELLAZIONE",
+          "dataSospensione": "lug 2018",
+          "noteSospensione": ""
+        }],
+        "homeTherapiesFormatted": "MADOPAR*30CPS 100MG+25MG CAPSULE RIGIDE 2 - 4 - 4 - 2 alle 8:00 2 cp\nalle 13:00 2 cp \nKEPPRA*60CPR RIV 500MG COMPRESSE RIVESTITE 1 - 0 - 1 - 0\nNEONISIDINA*12CPR COMPRESSE 1 - 0 - 0 - 0\nLULULU  1 - 0 - 0 - 0 PROVA \nBRUFEN*OS GRAT 30BUST 600MG GRANULATO Al bisogno PROVA DI CANCELLAZIONE \n",
+        "anamnesisSummary": [{
+          "dataInserimento": "20/09/2018",
+          "utenteInserimento": "NIKOLAJ OLIVER STIEF",
+          "tipologia": "",
+          "descrizione": "prova"
+        }, {
+          "dataInserimento": "20/09/2018",
+          "utenteInserimento": "NIKOLAJ OLIVER STIEF",
+          "tipologia": "Medicina",
+          "descrizione": "o"
+        }, {
+          "dataInserimento": "20/09/2018",
+          "utenteInserimento": "NIKOLAJ OLIVER STIEF",
+          "tipologia": "",
+          "descrizione": "prova"
+        }, {
+          "dataInserimento": "19/09/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "",
+          "descrizione": "vive solo con 5 cani"
+        }, {
+          "dataInserimento": "19/09/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "di specialita xxxx"
+        }, {
+          "dataInserimento": "17/09/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "",
+          "descrizione": "FAM FAM FAM"
+        }, {
+          "dataInserimento": "17/09/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "Medicina",
+          "descrizione": "SPEC SPEC SPEC"
+        }, {
+          "dataInserimento": "13/09/2018",
+          "utenteInserimento": "EMANUELA TURRI",
+          "tipologia": "",
+          "descrizione": "vive sola con il gatto"
+        }, {
+          "dataInserimento": "12/09/2018",
+          "utenteInserimento": "ROBERTO CURRO' DOSSI",
+          "tipologia": "",
+          "descrizione": "coniugato, 2 fili. 10 sigarette"
+        }, {
+          "dataInserimento": "12/09/2018",
+          "utenteInserimento": "ROBERTO CURRO' DOSSI",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "appendicectomia"
+        }, {
+          "dataInserimento": "28/08/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "",
+          "descrizione": "anamnesi familiare in data 28/08/2018"
+        }, {
+          "dataInserimento": "28/08/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "Medicina",
+          "descrizione": "anamnesi di specialità in data 28/08/2018"
+        }, {
+          "dataInserimento": "09/08/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "specillità nuova"
+        }, {
+          "dataInserimento": "09/08/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "",
+          "descrizione": "Specialità"
+        }, {
+          "dataInserimento": "09/08/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "",
+          "descrizione": "familiare"
+        }, {
+          "dataInserimento": "09/08/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "",
+          "descrizione": "sociale"
+        }, {
+          "dataInserimento": "09/08/2018",
+          "utenteInserimento": "valentina.nizzaro ",
+          "tipologia": "",
+          "descrizione": "Prova anamn soc"
+        }, {
+          "dataInserimento": "30/07/2018",
+          "utenteInserimento": "Federica Fiorese",
+          "tipologia": "",
+          "descrizione": "PROVA"
+        }, {
+          "dataInserimento": "30/07/2018",
+          "utenteInserimento": "Federica Fiorese",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "PROVA"
+        }, {
+          "dataInserimento": "20/07/2018",
+          "utenteInserimento": "valentina.nizzaro ",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "quella di specialità è utile\nvado a capo..\n\nqui lascio una riga vuota"
+        }, {
+          "dataInserimento": "20/07/2018",
+          "utenteInserimento": "valentina.nizzaro ",
+          "tipologia": "",
+          "descrizione": "qua scrivo familiare, bisogna"
+        }, {
+          "dataInserimento": "16/07/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "",
+          "descrizione": "anamnesi familiare new"
+        }, {
+          "dataInserimento": "16/07/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "Medicina",
+          "descrizione": "anamnesi di medicina new"
+        }, {
+          "dataInserimento": "19/06/2018",
+          "utenteInserimento": "Federica Fiorese",
+          "tipologia": "",
+          "descrizione": "nuova anamnesi familiare e sociale"
+        }, {
+          "dataInserimento": "22/05/2018",
+          "utenteInserimento": "Federica Fiorese",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "nuova anamnesi di specialità"
+        }, {
+          "dataInserimento": "17/05/2018",
+          "utenteInserimento": "valentina.nizzaro ",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "prova prova prova prova prova prova prova prova prova prova prova prova prova pro"
+        }, {
+          "dataInserimento": "16/05/2018",
+          "utenteInserimento": "FRANCESCO MICELI",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova"
+        }, {
+          "dataInserimento": "06/05/2018",
+          "utenteInserimento": "oriella.pallottino ",
+          "tipologia": "Chirurgia Generale",
+          "descrizione": "paziente con questa anamnesi di specialità"
+        }],
+        "anamnesisSummaryFormatted": "Anamnesi familiare e sociale\n\n20/09/2018 - prova\n20/09/2018 - prova\n19/09/2018 - vive solo con 5 cani\n17/09/2018 - FAM FAM FAM\n13/09/2018 - vive sola con il gatto\n12/09/2018 - coniugato, 2 fili. 10 sigarette\n28/08/2018 - anamnesi familiare in data 28/08/2018\n09/08/2018 - Specialità\n09/08/2018 - familiare\n09/08/2018 - sociale\n09/08/2018 - Prova anamn soc\n30/07/2018 - PROVA\n20/07/2018 - qua scrivo familiare, bisogna\n16/07/2018 - anamnesi familiare new\n19/06/2018 - nuova anamnesi familiare e sociale\n\n\nAnamnesi personale di specialità\n\n20/09/2018 Medicina - o\n19/09/2018 Chirurgia Generale - di specialita xxxx\n17/09/2018 Medicina - SPEC SPEC SPEC\n12/09/2018 Chirurgia Generale - appendicectomia\n28/08/2018 Medicina - anamnesi di specialità in data 28/08/2018\n09/08/2018 Chirurgia Generale - specillità nuova\n30/07/2018 Chirurgia Generale - PROVA\n20/07/2018 Chirurgia Generale - quella di specialità è utile\nvado a capo..\n\nqui lascio una riga vuota\n16/07/2018 Medicina - anamnesi di medicina new\n22/05/2018 Chirurgia Generale - nuova anamnesi di specialità\n17/05/2018 Chirurgia Generale - prova prova prova prova prova prova prova prova prova prova prova prova prova pro\n16/05/2018 Chirurgia Generale - prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova prova\n06/05/2018 Chirurgia Generale - paziente con questa anamnesi di specialità\n\n",
+        "language": "it_IT"
+      },
+      "orders": [{
+        "orderEventExamId": "1409",
+        "startDate": "21/09/2018",
+        "endDate": "",
+        "seenDate": "",
+        "doctor": {
+          "id": 1147,
+          "version": 3,
+          "className": "it.gpi.his.commons.dtos.catalogs.DoctorDto",
+          "code": "239706",
+          "description": "LOCHMANN ANDREAS",
+          "language": null,
+          "roleTypes": null,
+          "valid": true,
+          "codeLang1": "it_IT",
+          "descriptionLang1": "LOCHMANN ANDREAS",
+          "descriptions": null,
+          "title": null,
+          "role": "MMG",
+          "categories": [],
+          "taxCode": "LCHNRS54E22E434Q",
+          "pinCode": null
+        },
+        "reportingDoctor": null,
+        "sovpSummary": "Anamnesi familiare e sociale\n<br/>20/09/2018 prova\n<br/>Anamnesi personale di specialità\n<br/>20/09/2018 Medicina - o\n<br/>\n<br/>Esami effettuati\n<br/>* VISITA INTERNISTICA DI CONTROLLO\n<br/>\n<br/>",
+        "totalAmount": "0.0",
+        "additionalPrescriptions": "",
+        "counter": "1938533",
+        "externalIdentifier": "",
+        "servicePoint": "IST Medicina Interna Accesso Diretto",
+        "servicePointCode": "14195",
+        "servicePointMedicalSpecializationCode": "MEDICINA",
+        "servicePointMedicalSpecializationDescription": "Medicina",
+        "organizationUnit": "BZH Medicina",
+        "organizationUnitCode": "8060",
+        "organizationUnitAddress": " ",
+        "organizationUnitZipCode": null,
+        "organizationUnitMunicipality": "",
+        "organizationUnitCountry": "",
+        "servicePointCustomParameters": {},
+        "organizationUnitCustomParameters": {},
+        "exams": [{
+          "exam": {
+            "id": 1718,
+            "version": 5,
+            "className": "it.gpi.his.commons.dtos.catalogs.ExamDto",
+            "code": "89.01_8",
+            "description": "VISITA INTERNISTICA DI CONTROLLO",
+            "language": null,
+            "roleTypes": null,
+            "valid": true,
+            "codeLang1": "it_IT",
+            "descriptionLang1": "VISITA INTERNISTICA DI CONTROLLO",
+            "descriptions": null,
+            "type": "PROBLEM_ORIENTED",
+            "examMedicalSpecializationCode": null,
+            "preparationTime": 0,
+            "durationTime": 30,
+            "releaseTime": 0,
+            "examInitDetection": null,
+            "needAmbiguous": false,
+            "needSerologicalEquivalent": false,
+            "prescriptionStepEnabled": false,
+            "context": null,
+            "cyclicalEnabled": false,
+            "notes": null
+          },
+          "medicalSpecialization": "",
+          "examsDescription": "VISITA INTERNISTICA DI CONTROLLO",
+          "doctorName": "",
+          "price": null
+        }],
+        "surgicalOperation": {
+          "id": 1071,
+          "uniqueIdentifier": null,
+          "roomEntranceDate": null,
+          "roomExitDate": null,
+          "anesthesiaStartDate": null,
+          "anesthesiaEndDate": null,
+          "procedureStartDate": null,
+          "procedureEndDate": null,
+          "painStartDate": null,
+          "guideWireStartDate": null,
+          "resultsReport": null,
+          "members": []
+        }
+      }],
+      "folder": {
+        "counter": "F2018000968",
+        "openDate": "",
+        "closeDate": "",
+        "notes": "",
+        "closureNotes": "",
+        "referringDoctor": ""
+      }
+    },
+    "formData": null,
+    "summaryFieldsData": null,
+    "conceptFieldsData": null,
+    "metaData": null
+  },
+  "version": 1,
+  "status": "NEW",
+  "patient": {
+    "insertUserId": null,
+    "insertUser": null,
+    "insertTimeUTC": null,
+    "insertTime": null,
+    "updateUserId": null,
+    "updateUser": null,
+    "updateTimeUTC": null,
+    "updateTime": null,
+    "organizationId": null,
+    "valid": true,
+    "cancellationTime": null,
+    "cancellationUser": null,
+    "cancellationUserId": null,
+    "cancellationTimeUTC": null,
+    "firstName": "MAX123",
+    "lastName": "MUSTERMANN",
+    "sex": "F",
+    "birthDate": "1966-01-01T11:00:00.000+0000",
+    "uniqueIdentifier": "10114821",
+    "phone": "07467985",
+    "mobilePhone": "333-9876543",
+    "email": "blabla@hi.it",
+    "language": "it_IT",
+    "deathDate": null,
+    "isDead": false,
+    "patientId": "2982",
+    "accountNumber": null
+  }
+}]

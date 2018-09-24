@@ -1,0 +1,35 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4>{{'variabileTittle'|translate}}</h4>
+  </div>
+  <div class="panel-body">
+    <div class="panel panel-warning">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-lg-6">
+            <label>{{'variabileTerapia'|translate}}</label>
+          </div>
+          <div class="col-xs-6 col-sm-6 hidden-lg hidden-xl pull-right">
+            <label class="ui-checkbox"><input ng-model="formData.schedaRefertoBreve.terapia.nonStampare" name="checkbox1" type="checkbox" value="true"><span>{{'variabileNonStampare'|translate}}</span></label>
+          </div>
+          <div class="col-lg-6 col-xl-6 hidden-sm hidden-xs">
+            <label class="ui-checkbox"><input ng-model="formData.schedaRefertoBreve.terapia.nonStampare" name="checkbox1" type="checkbox" value="true"><span>{{'variabileNonStampare'|translate}}</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <textarea ng-model="formData.schedaRefertoBreve.terapia.testo" class="form-control" name="name" rows="5" cols="80" disabled></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+         <label>{{'variabileNote'|translate}}</label>
+         <text-angular ng-model="formData.schedaRefertoBreve.referto"></text-angular>
+       </div>
+    </div>
+  </div>
+</div>

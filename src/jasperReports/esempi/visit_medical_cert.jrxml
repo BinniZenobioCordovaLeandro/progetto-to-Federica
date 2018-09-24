@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final utlizzo versione della libreria JasperReports6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report_certificato" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="c9fe8b2b-1470-4113-9825-c50171bd29f8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="167"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="data\CertDatoreLavoroDataAdapter.xml"/>
+	<queryString language="JSON">
+		<![CDATA[/]]>
+	</queryString>
+	<field name="userLanguage" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.nome]]></fieldDescription>
+	</field>
+	<field name="natoa" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.luogoNascita]]></fieldDescription>
+	</field>
+	<field name="natoil" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.dataNascita]]></fieldDescription>
+	</field>
+	<field name="ilgiorno" class="java.util.Date">
+		<fieldDescription><![CDATA[formDocument.formData.dataVisita]]></fieldDescription>
+	</field>
+	<field name="ilgiornodalleore" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.dalle]]></fieldDescription>
+	</field>
+	<field name="ilgiornoalleore" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.alle]]></fieldDescription>
+	</field>
+	<field name="A349" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I348/A349]]></fieldDescription>
+	</field>
+	<field name="A352" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I351/A352]]></fieldDescription>
+	</field>
+	<field name="A404" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I354/A404]]></fieldDescription>
+	</field>
+	<field name="A725Value" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I724/A725Value]]></fieldDescription>
+	</field>
+	<field name="A727Value" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I724/A727Value]]></fieldDescription>
+	</field>
+	<field name="A729Value" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I724/A729Value]]></fieldDescription>
+	</field>
+	<field name="A930" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I929/A930]]></fieldDescription>
+	</field>
+	<field name="A3845" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I3844/A3845]]></fieldDescription>
+	</field>
+	<field name="userFullName" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/requestData/generalData/userFullName]]></fieldDescription>
+	</field>
+	<field name="titoloSezione" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S101/titoloSezione]]></fieldDescription>
+	</field>
+	<field name="testoDomanda" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I2473/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda2" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I2476/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda3" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I2694/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda4" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I2483/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda5" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I2480/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda6" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I7174/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda7" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I3363/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda8" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I348/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda9" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I351/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda10" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I354/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="testoDomanda11" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I724/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="A725Label" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I724/A725Label]]></fieldDescription>
+	</field>
+	<field name="A727Label" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I724/A727Label]]></fieldDescription>
+	</field>
+	<field name="A729Label" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I724/A729Label]]></fieldDescription>
+	</field>
+	<field name="testoDomanda12" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I929/testoDomanda]]></fieldDescription>
+	</field>
+	<field name="A933" class="java.lang.String">
+		<fieldDescription><![CDATA[/SAIM_CertificatoDatLavoro/S130/S312/I932/A933]]></fieldDescription>
+	</field>
+	<field name="indirizzo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.indirizzo]]></fieldDescription>
+	</field>
+	<field name="citta" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.citta]]></fieldDescription>
+	</field>
+	<field name="provincia" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.provincia]]></fieldDescription>
+	</field>
+	<field name="accompagnamentoPersona" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.accompagnamentoPersona]]></fieldDescription>
+	</field>
+	<field name="presso" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.presso]]></fieldDescription>
+	</field>
+	<field name="luogo" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.luogo]]></fieldDescription>
+	</field>
+	<field name="data" class="java.util.Date">
+		<fieldDescription><![CDATA[formDocument.formData.data]]></fieldDescription>
+	</field>
+	<field name="userFullName_1" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userFullName]]></fieldDescription>
+	</field>
+	<field name="visita" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.visita]]></fieldDescription>
+	</field>
+	<field name="diagnositcoStrumentali" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.diagnositcoStrumentali]]></fieldDescription>
+	</field>
+	<field name="medicinaLegale" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.medicinaLegale]]></fieldDescription>
+	</field>
+	<field name="accompagnamento" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.accompagnamento]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="131" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="375" y="0" width="180" height="74" uuid="681193d2-fe11-4c26-84c8-5fca62e8a0e1"/>
+				<imageExpression><![CDATA["images/altoadige.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="20" uuid="93a0088c-afc9-43d5-af16-f4a101ae424a"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "Su richiesta dell'interessato/a si attesta che" : "Auf antrag der interessierten partei")]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="90" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="20" width="510" height="20" uuid="a559dc69-6b49-4447-8a32-66d9c4735609"/>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "nato a " : "geboren am ") + $F{natoa} + ($F{userLanguage}.equals("it_IT") ? " il " : " die ") +  $F{natoil}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="510" height="20" uuid="caccfd7c-5c18-4079-bb0d-bcdfa57129b8"/>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "il sign./la sign.ra " : "dass Herr/Frau ") + $F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="510" height="20" uuid="57d4fe13-7d4f-4bac-951a-32d73bec747e"/>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "residente in " : "wohnhaft in ") + ($F{citta} != null ? $F{citta} : " ") + ($F{userLanguage}.equals("it_IT") ? " via " : " straße ") + ($F{indirizzo} != null ?  $F{indirizzo} : " ") + ($F{userLanguage}.equals("it_IT") ? " provincia " : " umland ") + ($F{provincia} != null ? $F{provincia} : " ")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="62" width="510" height="20" uuid="45a556a5-4665-4508-9e58-b5605f3e6db9"/>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "il giorno " : "am ") +DateFormat.getDateInstance(DateFormat.SHORT, $P{REPORT_LOCALE}).format( $F{ilgiorno} ) +  ($F{userLanguage}.equals("it_IT") ? " dalle " : " von ") + $F{ilgiornodalleore} + ($F{userLanguage}.equals("it_IT") ? " alle " : " bis ") + $F{ilgiornoalleore}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="474" splitType="Stretch">
+			<textField>
+				<reportElement x="13" y="98" width="555" height="20" uuid="05ea6157-41d7-4ace-83e3-738c5f2bbd90">
+					<printWhenExpression><![CDATA[$F{accompagnamento}]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "HA ACCOMPAGNATO " : "UM  ") + $F{accompagnamentoPersona} + ($F{userLanguage}.equals("it_IT") ? " CHE SI E' SOTTOPOSTA/O AD ACCERTAMENTI SANITARI " : " ZU BEGLEITEN, DER/DIE ÄRZTLICHEN UNTERSUCHUNGEN UNTERZOGEN WORDEN IST ")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="13" y="38" width="494" height="20" isRemoveLineWhenBlank="true" uuid="0b804c13-05ac-44b9-a366-814142e8bed7">
+					<printWhenExpression><![CDATA[$F{visita}]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "SI E' SOTTOPOSTO A VISITA MEDICA O CONSULENZA " : "UM SICH EINER ÄRZTLICHEN UNTERSUCHUNG ODER EINER KONSULENZ ZU UNTERZIEHEN ")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="13" y="78" width="494" height="20" isRemoveLineWhenBlank="true" uuid="63379ae1-4498-4bcd-abeb-264f01adcc15">
+					<printWhenExpression><![CDATA[$F{medicinaLegale}]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "SI E' SOTTOPOSTO A VISITA DI MEDICINA LEGALE " : "UM SICH EINER RECHT MEDIZINISCHEN UNTERSUCHUNG ZU UNTERZIEHEN")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="13" y="58" width="494" height="20" isRemoveLineWhenBlank="true" uuid="64f8b31a-ec31-450b-aa16-ef66e5d10ce0">
+					<printWhenExpression><![CDATA[$F{diagnositcoStrumentali}]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "SI E' SOTTOPOSTO A PRESTAZIONI DIAGNOSTICO-STRUMENTALI/TERAPEUTICHE " : "UM SICH INSTRUMENTUELL-DIAGNOSTICHEN/THERAPEUTISCHEN LEISTUNGEN ZU UNTERZIEHEN ")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="0" y="140" width="510" height="20" uuid="b102df9a-4c22-4133-96d3-4faab288b77e">
+					<printWhenExpression><![CDATA[$F{presso} != null]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[($F{userLanguage}.equals("it_IT") ? "presso " : "im ") + $F{presso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="0" y="182" width="275" height="20" uuid="8f692018-2060-4749-b300-6bcd85c2bd1a"/>
+				<textFieldExpression><![CDATA[($F{luogo} != null ? $F{luogo} : "") + ", " +DateFormat.getDateInstance(DateFormat.SHORT, $P{REPORT_LOCALE}).format( $F{data} )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="190" y="223" width="320" height="20" uuid="a17f076a-cad7-41c0-a341-f9acdcc35675"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Dr. "+$F{userFullName_1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="50"/>
+	</lastPageFooter>
+</jasperReport>

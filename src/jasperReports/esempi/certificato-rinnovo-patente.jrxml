@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final utlizzo versione della libreria JasperReports6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="anamnesi-neurochirurgia" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b7ec35db-5922-4a8d-b477-dd8cbaf60fe8">
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="481"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="507"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="data\certificato-rinnovo-patenteDataAdapter.xml"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="userLanguage" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.userLanguage]]></fieldDescription>
+	</field>
+	<field name="currentDateTime" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.generalData.currentDateTime]]></fieldDescription>
+	</field>
+	<field name="patientName" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientFirstName]]></fieldDescription>
+	</field>
+	<field name="surname" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.patientLastName]]></fieldDescription>
+	</field>
+	<field name="patientBirthdate" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.birthdate]]></fieldDescription>
+	</field>
+	<field name="cf" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.patient.taxCode]]></fieldDescription>
+	</field>
+	<field name="patientGroup" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.patientGroup]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.name]]></fieldDescription>
+	</field>
+	<field name="birthplace" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.birthplace]]></fieldDescription>
+	</field>
+	<field name="birthdate" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.birthdate]]></fieldDescription>
+	</field>
+	<field name="affected" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.affected]]></fieldDescription>
+	</field>
+	<field name="affectedFrom" class="java.util.Date">
+		<fieldDescription><![CDATA[formDocument.formData.affectedFrom]]></fieldDescription>
+	</field>
+	<field name="theraphyInsu" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.theraphyInsu]]></fieldDescription>
+	</field>
+	<field name="theraphyIpoOral" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.theraphyIpoOral]]></fieldDescription>
+	</field>
+	<field name="theraphyNutritional" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.theraphyNutritional]]></fieldDescription>
+	</field>
+	<field name="theraphyOther" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.theraphyOther]]></fieldDescription>
+	</field>
+	<field name="textOther" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.textOther]]></fieldDescription>
+	</field>
+	<field name="textDrug" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.textDrug]]></fieldDescription>
+	</field>
+	<field name="radioDrugs" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioDrugs]]></fieldDescription>
+	</field>
+	<field name="radioCrysis" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioCrysis]]></fieldDescription>
+	</field>
+	<field name="complication" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.complication]]></fieldDescription>
+	</field>
+	<field name="checkRetinopatia" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkRetinopatia]]></fieldDescription>
+	</field>
+	<field name="checkRetinopatiaNotPro" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkRetinopatiaNotPro]]></fieldDescription>
+	</field>
+	<field name="checkRetinopatiaPro" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkRetinopatiaPro]]></fieldDescription>
+	</field>
+	<field name="checkRetinopatiaEdem" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkRetinopatiaEdem]]></fieldDescription>
+	</field>
+	<field name="checkNeuropatia" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkNeuropatia]]></fieldDescription>
+	</field>
+	<field name="checkAuto" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkAuto]]></fieldDescription>
+	</field>
+	<field name="checkSensMot" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkSensMot]]></fieldDescription>
+	</field>
+	<field name="checkDrug" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkDrug]]></fieldDescription>
+	</field>
+	<field name="checkNefropatia" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkNefropatia]]></fieldDescription>
+	</field>
+	<field name="checkMicro" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkMicro]]></fieldDescription>
+	</field>
+	<field name="checkMacro" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkMacro]]></fieldDescription>
+	</field>
+	<field name="checkirc" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkirc]]></fieldDescription>
+	</field>
+	<field name="checkComplCardio" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkComplCardio]]></fieldDescription>
+	</field>
+	<field name="checkTia" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkTia]]></fieldDescription>
+	</field>
+	<field name="checkCardioOsc" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkCardioOsc]]></fieldDescription>
+	</field>
+	<field name="checkAngio" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkAngio]]></fieldDescription>
+	</field>
+	<field name="checkOther" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[formDocument.formData.checkOther]]></fieldDescription>
+	</field>
+	<field name="checkTextOther" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.checkTextOther]]></fieldDescription>
+	</field>
+	<field name="radioGlycemicControl" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioGlycemicControl]]></fieldDescription>
+	</field>
+	<field name="textOtherradioGlycemicControl" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.textOtherradioGlycemicControl]]></fieldDescription>
+	</field>
+	<field name="radioGlycemicManagment" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioGlycemicManagment]]></fieldDescription>
+	</field>
+	<field name="radioRisk" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioRisk]]></fieldDescription>
+	</field>
+	<field name="radioRiskTextLow" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioRiskTextLow]]></fieldDescription>
+	</field>
+	<field name="radioRiskTextMedium" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioRiskTextMedium]]></fieldDescription>
+	</field>
+	<field name="radioIpoRisk" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioIpoRisk]]></fieldDescription>
+	</field>
+	<field name="radioGlycemicRiskControl" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.formData.radioGlycemicRiskControl]]></fieldDescription>
+	</field>
+	<field name="visitDate" class="java.util.Date">
+		<fieldDescription><![CDATA[formDocument.formData.visitDate]]></fieldDescription>
+	</field>
+	<field name="exam" class="java.lang.String">
+		<fieldDescription><![CDATA[formDocument.initData.orders.exams.exam.description]]></fieldDescription>
+	</field>
+	<pageHeader>
+		<band height="70" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="0" y="0" width="180" height="51" uuid="3d65c0a1-3142-4943-9ad0-377331b5dbdc"/>
+				<imageExpression><![CDATA["images/altoadige.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="180" y="30" width="242" height="21" uuid="2e608c15-5ea1-4efd-9d3d-3aadc4554f6a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Comprensorio di Bolzano]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="10" width="242" height="20" uuid="45e29a88-0961-4908-b084-3b6d0df07c4b"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom"/>
+				<text><![CDATA[Direzione aziendale - Betriebsdirektion]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="422" y="51" width="123" height="19" uuid="faa26c4e-db7d-48f3-bfcb-30ad8e7566c2"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="65">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="0" width="236" height="65" uuid="f58a1926-d283-458c-94e4-70113b0b4371"/>
+				<box topPadding="2" leftPadding="4" bottomPadding="0" rightPadding="4">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["Cognome: " + "<b>" + $F{surname} + "</b>" + "<br>" +
+"Nome: " + "<b>" + $F{patientName} + "</b>" + "<br>" +
+"Data di nascita: " + "<b>" + $F{patientBirthdate} + "</b>" + "<br>" +
+"CF: " +$F{cf}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="240" y="0" width="310" height="65" uuid="16b6c17c-1874-4989-a274-fc67a91e784b"/>
+				<box topPadding="2" leftPadding="4" bottomPadding="0" rightPadding="4">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{currentDateTime} + "\n" +
+($F{userLanguage}.equals("it_IT") ? "Certificato rinnovo patente" : "Certificato rinnovo patente")]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="594">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<textField>
+				<reportElement positionType="Float" x="4" y="0" width="546" height="32" uuid="36c79f1d-28b5-416b-b30e-770c6c9033d3"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{patientGroup}.equals("first") ? ($F{userLanguage}.equals("it_IT") ? "Paziente gruppo 1 (patenti A-B) - Paziente diabetico" : "Patentgruppe 1 (patenti A-B) - Diabetiker") : (($F{userLanguage}.equals("it_IT") ? "Paziente gruppo 2 (patenti C-D-E) - Paziente diabetico" : "Patentgruppe 1 (patenti C-D-E) - Diabetiker"))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="32" width="376" height="22" uuid="0b871dc0-b793-4c8c-bb73-e3a0748fc20a"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Si certifica che il Sig./la Sig.ra" : "es ist das zertifiziert dass Herr/Frau"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="160" y="32" width="390" height="22" uuid="8dac86ec-6081-43a8-9dce-aaea318f2795"/>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? $F{name} : ("        " + $F{name})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="54" width="176" height="22" uuid="d50c5851-6582-4ac3-8d3d-771c6d3be4b5"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "nato/a" : "geboren am"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="39" y="54" width="201" height="22" uuid="6840d05f-0428-4cef-b642-7f2d60438ec9"/>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? $F{birthplace} : ("          " + $F{birthplace})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="240" y="54" width="200" height="22" uuid="70f819a8-7651-4b69-bbb8-c7f02c6325d3"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "il" : "die"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="280" y="54" width="270" height="22" uuid="09b37822-7621-4dea-aaf6-dd79db5b1573"/>
+				<textFieldExpression><![CDATA[$F{birthdate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="76" width="176" height="22" uuid="3fb651a7-c29a-4bbc-a61c-71e93a4b8d93"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "è affetto da" : "ist befallen von"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="65" y="76" width="175" height="22" uuid="717ae849-73c1-47c3-a4f1-7fdf6037c8ca"/>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? $F{affected} : ("       " + $F{affected})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="240" y="76" width="200" height="22" uuid="822f49cb-80e1-46db-9dbb-9d7fa3317788"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "dal " : "vom"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="280" y="76" width="270" height="22" uuid="dc6923f5-353e-4ba4-9574-070ea162cca8"/>
+				<textFieldExpression><![CDATA[$F{affectedFrom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="98" width="376" height="22" uuid="69a7e53f-0040-420c-b1af-a5e421970017"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Terapia attuale" : "Derzeitige Therapie"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="90" y="98" width="460" height="22" uuid="568fdb79-efc3-436d-b36d-99ee90f7af0a"/>
+				<textFieldExpression><![CDATA[(AND($F{theraphyNutritional} != null, $F{theraphyNutritional}) ? ($F{userLanguage}.equals("it_IT") ? "nutrizionale    " :
+"    nutrizionale") : "") +
+(AND($F{theraphyIpoOral} != null, $F{theraphyIpoOral}) ? ($F{userLanguage}.equals("it_IT") ? "ipoglicemizzanti orali    " :
+"    ipoglicemizzanti orali") : "") +
+(AND($F{theraphyInsu} != null, $F{theraphyInsu}) ? ($F{userLanguage}.equals("it_IT") ? "insulina    " :
+"    insulina") : "") +
+(AND($F{theraphyOther} != null, $F{theraphyOther}) ? ($F{userLanguage}.equals("it_IT") ? $F{textOther} :
+	("    " + $F{textOther})) : "")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="120" width="546" height="22" uuid="f39f1d93-b579-4c4a-9a5c-cd362abf1106"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Farmaci: " : "Arzneimittel:"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="142" width="236" height="22" uuid="9f80f7ef-4de1-468e-8159-8e2ef58e4ba9"/>
+				<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="4">
+					<pen lineWidth="0.5"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{textDrug}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="250" y="142" width="300" height="22" uuid="c98a7e3e-efbd-4744-b924-786804840e70"/>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? ($F{radioDrugs}.equals( "Can" ) ? "che possono indurre ipoglicemie gravi" : "che non inducono ipoglicemie gravi") : ($F{radioDrugs}.equals( "Can" ) ? "was zu schweren Hypoglykämien führen kann" : "die keine schwere Hypoglykämie induzieren")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="170" width="546" height="22" uuid="f4320012-9330-4ab1-af5e-cd37c19ef7ca"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Crisi ipoglicemiche negli ultimi 12 mesi " : "Hypoglykämische Krisen in den letzten 12 Monaten"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="192" width="546" height="22" uuid="76a90763-2819-4e77-b254-0d7e1be77ec5"/>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? ("Riferisce episodi di crisi ipoglicemiche gravi (che richiedono l'intervento di altra persona) e ricorrenti (almeno 2 episodi): " + ($F{radioCrysis}.equals( "Yes" ) ? "Si" : "No")) : ("Berichte über Episoden einer schweren hypoglykämischen Krise (die die Intervention einer anderen Person erfordert) und wiederkehrende (mindestens 2 Episoden):" + ($F{radioCrysis}.equals( "Yes" ) ? "Ja" : "Nein"))]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="214" width="376" height="22" uuid="328a9b12-0497-4f07-a2c1-0928a371c0ed"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Complicanze:" : "Komplikationen:"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="80" y="214" width="470" height="22" uuid="d4647d5e-a6ce-4ce0-b316-7ca40e6253ab"/>
+				<textFieldExpression><![CDATA[$F{complication}.equals( "Following Complications" ) ? "Presenta le seguenti complicanze" : "Non presenta complicanze"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="50" y="236" width="160" height="22" isRemoveLineWhenBlank="true" uuid="3669774f-7335-42c3-bdcc-3bf97de632cc">
+					<printWhenExpression><![CDATA[AND($F{checkRetinopatia},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Retinopatia" : "Retinopathie"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="150" y="236" width="400" height="22" isRemoveLineWhenBlank="true" uuid="aa532488-3158-4839-80d0-27990bd28027">
+					<printWhenExpression><![CDATA[AND($F{checkRetinopatia},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[AND($F{checkRetinopatia},$F{complication}.equals( "Following Complications" )) ? (
+(AND($F{checkRetinopatiaNotPro} != null, $F{checkRetinopatiaNotPro}) ? ($F{userLanguage}.equals("it_IT") ? "non proliferante    " : "nicht proliferierend    ") : "")  +
+(AND($F{checkRetinopatiaPro} != null, $F{checkRetinopatiaPro}) ? ($F{userLanguage}.equals("it_IT") ? "proliferante    " : "proliferierend    ") : "") +
+(AND($F{checkRetinopatiaEdem} != null, $F{checkRetinopatiaEdem}) ? ($F{userLanguage}.equals("it_IT") ? "edema maculare" : "makulaödem") : "")
+): ""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="50" y="258" width="160" height="22" isRemoveLineWhenBlank="true" uuid="fa144614-40d6-4944-b490-796d75ebd4e6">
+					<printWhenExpression><![CDATA[AND($F{checkNeuropatia},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Neuropatia" : "Neuropathie"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="150" y="258" width="400" height="22" isRemoveLineWhenBlank="true" uuid="5cb4768f-d410-437c-a4da-ca2041ba3263">
+					<printWhenExpression><![CDATA[AND($F{checkNeuropatia},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[AND($F{checkNeuropatia},$F{complication}.equals( "Following Complications" )) ? (
+(AND($F{checkAuto} != null, $F{checkAuto}) ? ($F{userLanguage}.equals("it_IT") ? "autonomica    " : "vegetativ    ") : "") +
+(AND($F{checkSensMot} != null, $F{checkSensMot}) ? ($F{userLanguage}.equals("it_IT") ? "sensitivo-motoria    " : "sensomotorische    ") : "") +
+(AND($F{checkDrug} != null, $F{checkDrug}) ? ($F{userLanguage}.equals("it_IT") ? "uso di farmaci specifici" : "Verwendung bestimmter Drogen") : "")
+): ""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="50" y="280" width="160" height="22" isRemoveLineWhenBlank="true" uuid="53e0a2cc-27cd-4192-9dfc-d24d123ae10a">
+					<printWhenExpression><![CDATA[AND($F{checkNefropatia},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Nefropatia" : "Nephropathie"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="150" y="280" width="400" height="22" isRemoveLineWhenBlank="true" uuid="79790b89-c757-4496-b404-2e19de3d075c">
+					<printWhenExpression><![CDATA[AND($F{checkNefropatia},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[AND($F{checkNefropatia},$F{complication}.equals( "Following Complications" )) ? (
+(AND($F{checkMicro} != null, $F{checkMicro}) ? ($F{userLanguage}.equals("it_IT") ? "microalbuminuria    " : "Mikroalbuminurie    ") : "") +
+(AND($F{checkMacro} != null, $F{checkMacro}) ? ($F{userLanguage}.equals("it_IT") ? "macroalbuminuria    " : "Makroalbuminurie    ") : "") +
+(AND($F{checkirc} != null, $F{checkirc}) ? ("I.R.C") : "")
+): ""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="50" y="302" width="200" height="22" isRemoveLineWhenBlank="true" uuid="6fd65d47-3144-4e8b-99e3-553a24189aaf">
+					<printWhenExpression><![CDATA[AND($F{checkComplCardio},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Complicanze cardiovascolari" : "Herz-Kreislauf-Komplikationen"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="210" y="302" width="340" height="22" isRemoveLineWhenBlank="true" uuid="29be953a-0c65-4e70-9608-cfba68531b71">
+					<printWhenExpression><![CDATA[AND($F{checkComplCardio},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[AND($F{checkComplCardio},$F{complication}.equals( "Following Complications" )) ? (
+(AND($F{checkTia} != null, $F{checkTia}) ? ($F{userLanguage}.equals("it_IT") ? "TIA/ictus    " : "TIA/Schlaganfall    ") : "") +
+(AND($F{checkCardioOsc} != null, $F{checkCardioOsc}) ? ($F{userLanguage}.equals("it_IT") ? "Cardiopatia oschemica    " : "Ischämische Herzkrankheit    ") : "") +
+(AND($F{checkAngio} != null, $F{checkAngio}) ? ($F{userLanguage}.equals("it_IT") ? "Angiopatia arti inferiori clinicamente severa" : "Klinisch schwere Angiopathie der unteren Gliedmaßen") : "")
+): ""]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="50" y="324" width="160" height="22" isRemoveLineWhenBlank="true" uuid="8acaa0eb-e722-4bb9-85c3-30409ef5d55e">
+					<printWhenExpression><![CDATA[AND($F{checkOther},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Altro" : "mehr"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="150" y="324" width="400" height="22" isRemoveLineWhenBlank="true" uuid="3a3f0853-3f0c-4dea-85be-ab1870f7fa08">
+					<printWhenExpression><![CDATA[AND($F{checkOther},$F{complication}.equals( "Following Complications" ))]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{checkTextOther}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="352" width="546" height="22" isRemoveLineWhenBlank="true" uuid="87ffcc55-db3e-4f19-9184-a5c5a145be3e"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Giudizio sulla qualità del CONTROLLO GLICEMICO, riferito esclusivamente al giudizio di pericolosità alla guida:" : "Beurteilung del Qualität der GLYCEMIC CONTROL, bezogen sich ausschließlich auf die Beurteilung der Fahrgefachren:"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="374" width="546" height="22" isRemoveLineWhenBlank="true" uuid="292f53b9-ff7f-4b37-897e-957d517b55a8"/>
+				<textFieldExpression><![CDATA[$F{radioGlycemicControl}.contains( "letzter Wert HbA1c" ) ? (($F{userLanguage}.equals("it_IT") ? "Ultimo valore HbA1c " : "letzter Wert HbA1c ") + $F{textOtherradioGlycemicControl} + "%") : $F{radioGlycemicControl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="396" width="546" height="22" isRemoveLineWhenBlank="true" uuid="e7041af0-ee91-4f97-9c46-f1ebeaeb6daa"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Giudizio complessivo circa la frequenza e la capacità di gestire delle ipoglicemie " : "Gesamteinschätzung über die Häufigkeit und die Managementfähigkeit von Hypoglykämika"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="418" width="546" height="22" isRemoveLineWhenBlank="true" uuid="4dba740e-d10f-4145-8942-c0fd12141461"/>
+				<textFieldExpression><![CDATA[$F{radioGlycemicManagment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="4" y="440" width="546" height="22" isRemoveLineWhenBlank="true" uuid="1a6baaee-64a9-44df-bf33-c24206a826b6">
+					<printWhenExpression><![CDATA[$F{patientGroup}.equals( "first" )]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Giudizio sul profilo attribuibile in relazione al RISCHIO PER LA SICUREZZA ALLA GUIDA " : "Beurteilung des Profils im Zusammenhang mit dem Risiko für die Fahrsicherheit"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="462" width="546" height="22" isRemoveLineWhenBlank="true" uuid="2a75dbe2-c930-4ce0-81d2-82f9a10453e5">
+					<printWhenExpression><![CDATA[$F{patientGroup}.equals( "first" )]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "limitatamente a quanto concerce la patologia diabetica e le complicanze riscontrate:" : "Jahre beschränkt auf die diabetische Pathologie und die gefundenen Komplikationen:"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="484" width="546" height="22" isRemoveLineWhenBlank="true" uuid="f54ed4ef-0a7b-440f-b5d9-a88108b1dbe6">
+					<printWhenExpression><![CDATA[$F{patientGroup}.equals( "first" )]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{radioRisk}.equals( "high" ) ? ($F{userLanguage}.equals("it_IT") ? "Elevato \n" : "Hohes \n") :
+(($F{radioRisk}.equals( "low" ) ? (($F{userLanguage}.equals("it_IT") ? "Basso, si propone il rinnovo \n" : "Geringes, es wird zur Erneuerung vorgeschlagen \n") + $F{radioRiskTextLow}) :
+(($F{userLanguage}.equals("it_IT") ? "Medio, si propone il rinnovo \n" : "Mittleres, es wird zur Erneuerung vorgeschlagen \n") + $F{radioRiskTextMedium})))]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="528" width="546" height="22" isRemoveLineWhenBlank="true" uuid="b573d8b6-51cf-4fbf-ad60-9eb9a416b6db">
+					<printWhenExpression><![CDATA[$F{patientGroup}.equals( "second" )]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{radioIpoRisk}.equals( "Yes" ) ? ($F{userLanguage}.equals("it_IT") ? "Si" : "Ja") :
+($F{userLanguage}.equals("it_IT") ? "No" : "Nein")]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="506" width="546" height="22" isRemoveLineWhenBlank="true" uuid="aa450fc6-5cf9-4a40-9f8c-aa883a2de60a">
+					<printWhenExpression><![CDATA[$F{patientGroup}.equals( "second" )]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "L’ interessato dichiara di essere pienamente cosciente del rischio connessi all’ipoglicemia?" : "L’ interessato dichiara di essere pienamente cosciente del rischio connessi all’ipoglicemia?"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="550" width="546" height="22" isRemoveLineWhenBlank="true" uuid="0331bff2-043b-4005-b5b9-49188ca61442">
+					<printWhenExpression><![CDATA[$F{patientGroup}.equals( "second" )]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "L’ interessato dimostra di monitorare regolarmente la glicemia secondo il piano di cura?" : "L’ interessato dimostra di monitorare regolarmente la glicemia secondo il piano di cura?"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="572" width="546" height="22" isRemoveLineWhenBlank="true" uuid="c90dd4ec-e119-43a5-9552-0ddbd1dd662f">
+					<printWhenExpression><![CDATA[$F{patientGroup}.equals( "second" )]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{radioGlycemicRiskControl}.equals( "Yes" ) ? ($F{userLanguage}.equals("it_IT") ? "Si" : "Ja") :
+($F{userLanguage}.equals("it_IT") ? "No" : "Nein")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="108">
+			<textField>
+				<reportElement positionType="Float" x="4" y="0" width="276" height="22" uuid="362e74d8-72dc-451e-a191-46c48b439a86"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Firma dell'interessato" : "Unterschrift der interessierten Partei"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="280" y="0" width="270" height="22" uuid="a2177b62-f1dc-47fc-8f1e-bd50daad7363"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userLanguage}.equals("it_IT") ? "Firma del medico" : "Unterschrift des Facharztes"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="4" y="22" width="336" height="25" uuid="aaa07d93-6c1b-4dee-9c5f-7a5f872910b3"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["_____________________________________"]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="260" y="22" width="290" height="25" uuid="c390eec3-e5da-41da-a7dd-cf5b25737719"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["_____________________________________"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="4" y="58" width="156" height="50" uuid="8176d337-a6b0-4ff2-b087-7f9dac93aa2c"/>
+				<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="160" y="58" width="234" height="50" uuid="8311da8f-9455-49ee-a51d-17fab2f64018"/>
+				<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Paziente: " + $F{surname} + " " + $F{patientName} + "\n" +
+"Data di nascita: " + $F{patientBirthdate} + "\n" +
+"CF: " +$F{cf}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="394" y="58" width="156" height="50" uuid="976d52c1-203b-418b-827b-4aa8c7953632"/>
+				<box topPadding="2" leftPadding="4" bottomPadding="2" rightPadding="4">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{currentDateTime} + "\n" +
+$F{exam}.replaceAll(",","\n").replaceAll("[^a-zA-Z0-9\n ]+","")]]></textFieldExpression>
+			</textField>
+		</band>
+	</lastPageFooter>
+</jasperReport>

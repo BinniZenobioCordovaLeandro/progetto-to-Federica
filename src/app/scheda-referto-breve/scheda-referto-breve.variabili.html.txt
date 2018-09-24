@@ -1,0 +1,15 @@
+{{'variabileTittle'|translate}}
+it_IT : Referto ambulatoriale breve
+de_DE : Allgemeiner ambulanzbericht
+
+{{'variabileTerapia'|translate}}
+it_IT : Terapie in altto
+de_DE : Derzeitige Therapie
+
+{{'variabileNonStampare'|translate}}
+it_IT : Non stampare
+de_DE : Nicht drucken
+
+{{'variabileNote'|translate}}
+it_IT : Referto
+de_DE : Bericht

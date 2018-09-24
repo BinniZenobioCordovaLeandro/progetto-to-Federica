@@ -1,0 +1,31 @@
+SAIM (Alto Adige)
+
+
+
+Filezilla e Putty
+
+Host: app-ngh-a1.asb.sabes.it            user:  usergpi               psw: usergpi1234!             porta: 22
+
+Host: app-fm-a1.asb.sabes.it		 user:  usergpi		      psw: usergpi		    porta: 22     (Form Manager 2)
+
+Host: gpi-test-cce.asb.sabes.it		 user:  usergpi		      psw: GpiBz17!		    porta: 22     (Server di Test)
+
+Comandi Putty:
+
+wildfly
+cd wildfly-10.1.0.Final/standalone/configuration/gpi/his/reports/fm3/
+cp -r /appsrv/usergpi/reportsfm3/toracentesi.j* .
+
+
+-- Form Manager 2
+wildfly
+cd wildfly-10.1.0.Final/standalone/configuration/gpi/mdb/report
+cp /appsrv/usergpi/reportsFM/RefertoAmbGenerico.j* .
+
+
+Login:   Lorenzo.zanivan     Lorenzo@2017
+
+
+
+96.59_0    MEDICAZIONE DI FERITA
+88.71.4_5  ECOGRAFIA TIROIDE

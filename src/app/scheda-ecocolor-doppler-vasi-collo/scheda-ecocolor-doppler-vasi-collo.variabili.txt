@@ -1,0 +1,43 @@
+{{'variabilleTittle'|translate}}
+it_IT : Ecocolor Doppler Vasi Collo
+de_DE : Echocolordoppler Halsgefässe
+
+{{'variabileQuesito'|translate}}
+it_IT : Quesito Clinico
+de_DE : Fragestellung
+
+{{'variabileAcc'|translate}}
+it_IT : acc
+de_DE : acc
+
+{{'VariabileAcc2'|translate}}
+it_IT : acc
+de_DE : acc
+
+{{'variabileAci'|translate}}
+it_IT : aci
+de_DE : aci
+
+{{'variabileAci2'|translate}}
+it_IT : aci
+de_DE : aci
+
+{{'variabileAce'|translate}}
+it_IT : ace
+de_DE : ace
+
+{{'variabileAce2'|translate}}
+it_IT : ace
+de_DE : ace
+
+{{'variabileAv'|translate}}
+it_IT : av
+de_DE : av
+
+{{'variabileAv2'|translate}}
+it_IT : av
+de_DE : av
+
+{{'variabileAltro'|translate}}
+it_IT : Altro
+de_DE : Sonstiges

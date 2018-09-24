@@ -1,0 +1,559 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-xl-12">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-7 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <label class="ui-checkbox"><input ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.attivo" name="addomeSuperiore.attivo" type="checkbox" value="option1"><span><b>ADDOME SUPERIORE</b></span></label>
+              </div>
+              <div class="col-xs-5 col-sm-6 col-md-6 col-lg-6 col-xl-6" ng-show="formData.schedaEcografiaAddominale.addomeSuperiore.attivo">
+                <label class="ui-checkbox"><input ng-click="switch_addomeSuperiore()" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.tuttoNormale" name="addomeSuperiore.tuttoNormale" type="checkbox" value="true"><span>Tutto normale</span></label>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 pull-right hidden-xs" ng-show="formData.schedaEcografiaAddominale.addomeSuperiore.attivo">
+                <label>Note</label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body" ng-show="formData.schedaEcografiaAddominale.addomeSuperiore.attivo">
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Fegato</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="fegato" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.fegato.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="fegato" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.fegato.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="fegato" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.fegato.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.fegato.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Colecisti</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="colecisti" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.colecisti.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="colecisti" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.colecisti.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="colecisti" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.colecisti.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.colecisti.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Vie biliari</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="vieBiliari" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.vieBiliari.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="vieBiliari" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.vieBiliari.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="vieBiliari" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.vieBiliari.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.vieBiliari.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Rene e surrene</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="reneESurrene" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.reneESurrene.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="reneESurrene" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.reneESurrene.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="reneESurrene" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.reneESurrene.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.reneESurrene.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Pancreas</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="pancreas" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.pancreas.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="pancreas" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.pancreas.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="pancreas" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.pancreas.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.pancreas.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Milza</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="milza" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.milza.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="milza" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.milza.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeSuperiore()" name="milza" ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.milza.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeSuperiore.milza.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-xl-12">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-7 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <label class="ui-checkbox"><input ng-model="formData.schedaEcografiaAddominale.addomeInferiore.attivo" name="addomeInferiore.attivo" type="checkbox" value="true"><span><b>ADDOME INFERIORE</b></span></label>
+              </div>
+              <div class="col-xs-5 col-sm-6 col-md-6 col-lg-6 col-xl-6" ng-show="formData.schedaEcografiaAddominale.addomeInferiore.attivo">
+                <label ng-click="switch_addomeInferiore()" class="ui-checkbox"><input ng-model="formData.schedaEcografiaAddominale.addomeInferiore.tuttoNormale" name="addomeInferiore.tuttoNormale" type="checkbox" value="true"><span>Tutto normale</span></label>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 pull-right hidden-xs" ng-show="formData.schedaEcografiaAddominale.addomeInferiore.attivo">
+                <label>Note</label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body" ng-show="formData.schedaEcografiaAddominale.addomeInferiore.attivo">
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Utero</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="utero" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.utero.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="utero" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.utero.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="utero" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.utero.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeInferiore.utero.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Ovaie ed annessi</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="ovaieEdAnnessi" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.ovaieEdAnnessi.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="ovaieEdAnnessi" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.ovaieEdAnnessi.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="ovaieEdAnnessi" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.ovaieEdAnnessi.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeInferiore.ovaieEdAnnessi.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Vescica</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="vescica" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.vescica.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="vescica" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.vescica.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="vescica" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.vescica.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeInferiore.vescica.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Prostata</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="prostata" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.prostata.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="prostata" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.prostata.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="prostata" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.prostata.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeInferiore.prostata.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Intestino</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="intestino" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.intestino.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="intestino" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.intestino.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_addomeInferiore()" name="intestino" ng-model="formData.schedaEcografiaAddominale.addomeInferiore.intestino.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.addomeInferiore.intestino.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-12 col-xl-12">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-7 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <label class="ui-checkbox"><input ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.attivo" name="aortaEGrandiVasi.attivo" type="checkbox" value="option1"><span><b>AORTA E GRANDI VASI</b></span></label>
+              </div>
+              <div class="col-xs-5 col-sm-6 col-md-6 col-lg-6 col-xl-6" ng-show="formData.schedaEcografiaAddominale.aortaEGrandiVasi.attivo">
+                <label ng-click="switch_aortaEGrandiVasi()" class="ui-checkbox"><input ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.tuttoNormale" name="aortaEGrandiVasi.tuttoNormale" type="checkbox" value="true"><span>Tutto normale</span></label>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 pull-right hidden-xs" ng-show="formData.schedaEcografiaAddominale.aortaEGrandiVasi.attivo">
+                <label>Note</label>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body" ng-show="formData.schedaEcografiaAddominale.aortaEGrandiVasi.attivo">
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Ao sovrarenale</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="aoSovrarenale" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoSovrarenale.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="aoSovrarenale" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoSovrarenale.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="aoSovrarenale" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoSovrarenale.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoSovrarenale.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Ao infrarenale</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="aoInfrarenale" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoInfrarenale.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="aoInfrarenale" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoInfrarenale.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="aoInfrarenale" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoInfrarenale.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.aoInfrarenale.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Tronco celiaco</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="troncoCeliaco" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.troncoCeliaco.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="troncoCeliaco" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.troncoCeliaco.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="troncoCeliaco" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.troncoCeliaco.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.troncoCeliaco.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Arteria epatica</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaEpatica" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaEpatica.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaEpatica" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaEpatica.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaEpatica" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaEpatica.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaEpatica.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Arteria splenica</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaSplenica" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaSplenica.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaSplenica" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaSplenica.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaSplenica" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaSplenica.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaSplenica.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Arteria mesenterica superiore</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaMesentericaSuperiore" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaSuperiore.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaMesentericaSuperiore" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaSuperiore.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaMesentericaSuperiore" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaSuperiore.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaSuperiore.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Arteria mesenterica inferiore</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaMesentericaInferiore" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaInferiore.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaMesentericaInferiore" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaInferiore.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaMesentericaInferiore" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaInferiore.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaMesentericaInferiore.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Arteria renale dx</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaRenaleDx" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleDx.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaRenaleDx" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleDx.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaRenaleDx" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleDx.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleDx.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-3">
+                <label for="fegato">Arteria renale sn</label>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-xs-3 col-sm-3 col-lg-3 col-xl-3">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaRenaleSn" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleSn.stato" type="radio" value="Normale" ><span>Normale</span></label>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaRenaleSn" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleSn.stato" type="radio" value="Patologico" ><span>Patologico</span></label>
+                  </div>
+                  <div class="col-xs-5 col-sm-5 col-lg-5 col-xl-5">
+                    <label class="ui-radio"><input ng-click="validatore_aortaEGrandiVasi()" name="arteriaRenaleSn" ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleSn.stato" type="radio" value="Non valutabile" ><span>Non valutabile</span></label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="">
+                  <label class="hidden-sm hidden-md hidden-lg hidden-xl">Note</label>
+                  <textarea ng-model="formData.schedaEcografiaAddominale.aortaEGrandiVasi.arteriaRenaleSn.note" class="form-control" name="name" rows="1" cols="80"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-12">
+        <label>Relazione - Note</label>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-lg-12 colxl-12" style="background: none;">
+        <div class="">
+          <textarea ng-model="formData.schedaEcografiaAddominale.relazioneNote" class="form-control" name="name" rows="6" cols="80"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
